@@ -1,0 +1,586 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mediclaim Intelligence - Revolutionizing Healthcare Claims with AI Precision</title>
+    <meta name="description" content="Transform healthcare claims processing with AI-driven solutions. Reduce fraud, enhance efficiency, and deliver exceptional patient experiences.">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <style>
+        :root {
+            --primary-color: #007BFF;
+            --accent-color: #FF5733;
+            --background-color: #F5F5F5;
+            --text-color: #2C3E50;
+            --white-color: #FFFFFF;
+        }
+        
+        body {
+            font-family: 'Open Sans', sans-serif;
+            line-height: 1.6;
+        }
+        
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Roboto', sans-serif;
+        }
+        
+        .smooth-scroll {
+            scroll-behavior: smooth;
+        }
+        
+        .gradient-bg {
+            background: linear-gradient(135deg, #007BFF 0%, #0056b3 100%);
+        }
+        
+        .card-hover {
+            transition: all 0.3s ease;
+        }
+        
+        .card-hover:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 35px rgba(0, 123, 255, 0.1);
+        }
+        
+        .btn-primary {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 12px 24px;
+            border-radius: 8px;
+            text-decoration: none;
+            display: inline-block;
+            transition: all 0.3s ease;
+            font-weight: 600;
+        }
+        
+        .btn-primary:hover {
+            background-color: #0056b3;
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(0, 123, 255, 0.3);
+        }
+        
+        .btn-accent {
+            background-color: var(--accent-color);
+            color: white;
+            padding: 12px 24px;
+            border-radius: 8px;
+            text-decoration: none;
+            display: inline-block;
+            transition: all 0.3s ease;
+            font-weight: 600;
+        }
+        
+        .btn-accent:hover {
+            background-color: #e74c3c;
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(255, 87, 51, 0.3);
+        }
+        
+        .navbar {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);
+        }
+        
+        .hero-pattern {
+            background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.1'%3E%3Ccircle cx='6' cy='6' r='3'/%3E%3Ccircle cx='24' cy='6' r='3'/%3E%3Ccircle cx='42' cy='6' r='3'/%3E%3Ccircle cx='6' cy='24' r='3'/%3E%3Ccircle cx='24' cy='24' r='3'/%3E%3Ccircle cx='42' cy='24' r='3'/%3E%3Ccircle cx='6' cy='42' r='3'/%3E%3Ccircle cx='24' cy='42' r='3'/%3E%3Ccircle cx='42' cy='42' r='3'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+        }
+        
+        .service-icon {
+            color: var(--primary-color);
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+        
+        .contact-info-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 1rem;
+            padding: 0.5rem;
+            border-radius: 8px;
+            transition: all 0.3s ease;
+        }
+        
+        .contact-info-item:hover {
+            background-color: rgba(0, 123, 255, 0.05);
+        }
+        
+        .contact-info-item i {
+            color: var(--primary-color);
+            width: 20px;
+            margin-right: 12px;
+        }
+        
+        .map-container {
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body class="smooth-scroll">
+    <!-- Navigation -->
+    <nav class="navbar fixed w-full top-0 z-50 transition-all duration-300">
+        <div class="container mx-auto px-6 py-4">
+            <div class="flex justify-between items-center">
+                <div class="flex items-center">
+                    <i class="fas fa-brain text-3xl mr-3" style="color: var(--primary-color);"></i>
+                    <div>
+                        <h1 class="text-xl font-bold text-gray-800">Mediclaim Intelligence</h1>
+                        <p class="text-sm text-gray-600">AI-Powered Healthcare Claims</p>
+                    </div>
+                </div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="#home" class="text-gray-700 hover:text-blue-600 transition-colors">Home</a>
+                    <a href="#about" class="text-gray-700 hover:text-blue-600 transition-colors">About</a>
+                    <a href="#services" class="text-gray-700 hover:text-blue-600 transition-colors">Services</a>
+                    <a href="#contact" class="text-gray-700 hover:text-blue-600 transition-colors">Contact</a>
+                </div>
+                <div class="md:hidden">
+                    <button id="mobile-menu-btn" class="text-gray-700">
+                        <i class="fas fa-bars text-xl"></i>
+                    </button>
+                </div>
+            </div>
+            <!-- Mobile Menu -->
+            <div id="mobile-menu" class="hidden md:hidden mt-4 pb-4">
+                <a href="#home" class="block py-2 text-gray-700 hover:text-blue-600 transition-colors">Home</a>
+                <a href="#about" class="block py-2 text-gray-700 hover:text-blue-600 transition-colors">About</a>
+                <a href="#services" class="block py-2 text-gray-700 hover:text-blue-600 transition-colors">Services</a>
+                <a href="#contact" class="block py-2 text-gray-700 hover:text-blue-600 transition-colors">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="gradient-bg hero-pattern text-white text-center py-32 px-6 min-h-screen flex items-center">
+        <div class="container mx-auto">
+            <div class="max-w-4xl mx-auto">
+                <h1 class="text-5xl md:text-6xl font-bold mb-6 leading-tight">
+                    Revolutionizing Healthcare Claims with <span class="text-yellow-300">AI Precision</span>
+                </h1>
+                <p class="text-xl md:text-2xl mb-8 text-white leading-relaxed font-medium">
+                    Transform your healthcare claims processing with cutting-edge artificial intelligence. Reduce fraud, enhance efficiency, and deliver exceptional patient experiences with our innovative AI-driven solutions.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center items-center">
+                    <a href="#services" class="btn-accent text-lg px-8 py-4">
+                        <i class="fas fa-rocket mr-2"></i>Explore Our Services
+                    </a>
+                    <a href="#contact" class="btn-primary text-lg px-8 py-4">
+                        <i class="fas fa-phone mr-2"></i>Get Started Today
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
+            <a href="#about" class="text-white text-2xl">
+                <i class="fas fa-chevron-down"></i>
+            </a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 px-6" style="background-color: var(--background-color);">
+        <div class="container mx-auto">
+            <div class="max-w-6xl mx-auto">
+                <div class="text-center mb-16">
+                    <h2 class="text-4xl md:text-5xl font-bold mb-6" style="color: var(--text-color);">
+                        About Mediclaim Intelligence
+                    </h2>
+                    <div class="w-24 h-1 mx-auto mb-8" style="background-color: var(--primary-color);"></div>
+                </div>
+                
+                <div class="grid md:grid-cols-2 gap-12 items-center">
+                    <div>
+                        <img src="https://images.unsplash.com/photo-1559757148-5c350d0d3c56?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
+                             alt="AI Technology in Healthcare" 
+                             class="rounded-lg shadow-2xl w-full">
+                    </div>
+                    <div>
+                        <p class="text-lg mb-6 text-gray-700 leading-relaxed">
+                            At Mediclaim Intelligence, we specialize in leveraging cutting-edge AI technology to revolutionize healthcare claims processing. Our solutions bridge the gap between patients and providers, ensuring accurate, timely processing, and enhancing customer trust throughout the claims journey.
+                        </p>
+                        <p class="text-lg mb-6 text-gray-700 leading-relaxed">
+                            Our team of experts combines deep industry knowledge with technological innovation, ensuring every healthcare entity can navigate the complexities of claims processing with unprecedented ease and efficiency.
+                        </p>
+                        <p class="text-lg mb-8 text-gray-700 leading-relaxed">
+                            By employing Machine Learning, Natural Language Processing, and Advanced Data Analytics, we empower organizations to make informed decisions, automate tedious processes, and deliver exceptional patient care while reducing operational costs.
+                        </p>
+                        
+                        <div class="grid grid-cols-2 gap-6">
+                            <div class="text-center p-4 bg-white rounded-lg shadow-md">
+                                <div class="text-3xl font-bold text-blue-600 mb-2">98%</div>
+                                <div class="text-sm text-gray-600">Accuracy Rate</div>
+                            </div>
+                            <div class="text-center p-4 bg-white rounded-lg shadow-md">
+                                <div class="text-3xl font-bold text-blue-600 mb-2">75%</div>
+                                <div class="text-sm text-gray-600">Faster Processing</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-20 px-6 bg-white">
+        <div class="container mx-auto">
+            <div class="max-w-6xl mx-auto">
+                <div class="text-center mb-16">
+                    <h2 class="text-4xl md:text-5xl font-bold mb-6" style="color: var(--text-color);">Our Services</h2>
+                    <div class="w-24 h-1 mx-auto mb-8" style="background-color: var(--primary-color);"></div>
+                    <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                        Comprehensive AI-powered solutions designed to transform your healthcare claims processing from complex to simple, from slow to lightning-fast.
+                    </p>
+                </div>
+                
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div class="p-8 border-2 border-gray-100 rounded-xl card-hover bg-white">
+                        <div class="text-center mb-6">
+                            <i class="fas fa-cogs service-icon"></i>
+                        </div>
+                        <h3 class="text-2xl font-semibold mb-4 text-center" style="color: var(--text-color);">
+                            Claims Processing Automation
+                        </h3>
+                        <p class="text-gray-600 text-center leading-relaxed">
+                            Utilize advanced AI algorithms to automate claims processing, reducing manual errors by up to 95% and accelerating approval timelines. Our custom machine learning models ensure quicker approvals and significantly reduced backlog.
+                        </p>
+                        <div class="mt-6 text-center">
+                            <span class="inline-block bg-blue-100 text-blue-800 text-sm px-3 py-1 rounded-full mr-2 mb-2">Automated Workflow</span>
+                            <span class="inline-block bg-blue-100 text-blue-800 text-sm px-3 py-1 rounded-full mr-2 mb-2">Real-time Processing</span>
+                            <span class="inline-block bg-blue-100 text-blue-800 text-sm px-3 py-1 rounded-full mb-2">Error Reduction</span>
+                        </div>
+                    </div>
+                    
+                    <div class="p-8 border-2 border-gray-100 rounded-xl card-hover bg-white">
+                        <div class="text-center mb-6">
+                            <i class="fas fa-shield-alt service-icon"></i>
+                        </div>
+                        <h3 class="text-2xl font-semibold mb-4 text-center" style="color: var(--text-color);">
+                            Fraud Detection Solutions
+                        </h3>
+                        <p class="text-gray-600 text-center leading-relaxed">
+                            Leverage AI-driven analytics and pattern recognition to identify and prevent healthcare fraud in real-time. Our solution scrutinizes claims using advanced algorithms, ensuring the integrity and security of your business operations.
+                        </p>
+                        <div class="mt-6 text-center">
+                            <span class="inline-block bg-red-100 text-red-800 text-sm px-3 py-1 rounded-full mr-2 mb-2">Real-time Detection</span>
+                            <span class="inline-block bg-red-100 text-red-800 text-sm px-3 py-1 rounded-full mr-2 mb-2">Pattern Analysis</span>
+                            <span class="inline-block bg-red-100 text-red-800 text-sm px-3 py-1 rounded-full mb-2">Risk Assessment</span>
+                        </div>
+                    </div>
+                    
+                    <div class="p-8 border-2 border-gray-100 rounded-xl card-hover bg-white">
+                        <div class="text-center mb-6">
+                            <i class="fas fa-chart-line service-icon"></i>
+                        </div>
+                        <h3 class="text-2xl font-semibold mb-4 text-center" style="color: var(--text-color);">
+                            Data Analytics Services
+                        </h3>
+                        <p class="text-gray-600 text-center leading-relaxed">
+                            Transform your healthcare data into actionable insights with our comprehensive analytics platform. Our advanced tools help you understand trends, optimize operations, enhance patient experiences, and make data-driven strategic decisions.
+                        </p>
+                        <div class="mt-6 text-center">
+                            <span class="inline-block bg-green-100 text-green-800 text-sm px-3 py-1 rounded-full mr-2 mb-2">Predictive Analytics</span>
+                            <span class="inline-block bg-green-100 text-green-800 text-sm px-3 py-1 rounded-full mr-2 mb-2">Business Intelligence</span>
+                            <span class="inline-block bg-green-100 text-green-800 text-sm px-3 py-1 rounded-full mb-2">Trend Analysis</span>
+                        </div>
+                    </div>
+                    
+                    <div class="p-8 border-2 border-gray-100 rounded-xl card-hover bg-white">
+                        <div class="text-center mb-6">
+                            <i class="fas fa-headset service-icon"></i>
+                        </div>
+                        <h3 class="text-2xl font-semibold mb-4 text-center" style="color: var(--text-color);">
+                            Real-Time Patient Support
+                        </h3>
+                        <p class="text-gray-600 text-center leading-relaxed">
+                            Implement intelligent AI chatbots and virtual assistants to provide 24/7 patient support, guiding users through the claims process, answering queries instantly, and enhancing overall customer satisfaction and engagement.
+                        </p>
+                        <div class="mt-6 text-center">
+                            <span class="inline-block bg-purple-100 text-purple-800 text-sm px-3 py-1 rounded-full mr-2 mb-2">24/7 Support</span>
+                            <span class="inline-block bg-purple-100 text-purple-800 text-sm px-3 py-1 rounded-full mr-2 mb-2">AI Chatbots</span>
+                            <span class="inline-block bg-purple-100 text-purple-800 text-sm px-3 py-1 rounded-full mb-2">Instant Responses</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 px-6" style="background-color: var(--background-color);">
+        <div class="container mx-auto">
+            <div class="max-w-6xl mx-auto">
+                <div class="text-center mb-16">
+                    <h2 class="text-4xl md:text-5xl font-bold mb-6" style="color: var(--text-color);">Get in Touch</h2>
+                    <div class="w-24 h-1 mx-auto mb-8" style="background-color: var(--primary-color);"></div>
+                    <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                        Ready to transform your healthcare claims processing? Let's discuss how our AI solutions can revolutionize your operations.
+                    </p>
+                </div>
+                
+                <div class="grid md:grid-cols-2 gap-12">
+                    <!-- Contact Information -->
+                    <div class="bg-white p-8 rounded-xl shadow-lg">
+                        <h3 class="text-2xl font-semibold mb-6" style="color: var(--text-color);">Contact Information</h3>
+                        
+                        <div class="contact-info-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <strong>Address:</strong><br>
+                                701, Stellar Tower, Chembur East,<br>
+                                Sion Opposite, Diamond Garden,<br>
+                                Basant Garden, Chembur,<br>
+                                Mumbai, Maharashtra 400071
+                            </div>
+                        </div>
+                        
+                        <div class="contact-info-item">
+                            <i class="fas fa-phone"></i>
+                            <div>
+                                <strong>Phone:</strong><br>
+                                <a href="tel:+918369848475" class="hover:underline" style="color: var(--accent-color);">+91 8369848475</a>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-info-item">
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <strong>Email:</strong><br>
+                                <a href="mailto:info@mediclaim.co.in" class="hover:underline" style="color: var(--accent-color);">info@mediclaim.co.in</a>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-info-item">
+                            <i class="fas fa-globe"></i>
+                            <div>
+                                <strong>Website:</strong><br>
+                                <a href="http://mediclaim.co.in" target="_blank" class="hover:underline" style="color: var(--accent-color);">mediclaim.co.in</a>
+                            </div>
+                        </div>
+                        
+                        <div class="mt-8">
+                            <a href="https://wa.me/918369848475" target="_blank" class="btn-accent inline-flex items-center">
+                                <i class="fab fa-whatsapp mr-2 text-xl"></i>
+                                Chat with us on WhatsApp!
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <!-- Contact Form -->
+                    <div class="bg-white p-8 rounded-xl shadow-lg">
+                        <h3 class="text-2xl font-semibold mb-6" style="color: var(--text-color);">Send us a Message</h3>
+                        <form id="contactForm" class="space-y-6">
+                            <div>
+                                <label for="name" class="block text-sm font-medium text-gray-700 mb-2">Full Name *</label>
+                                <input type="text" id="name" name="name" required 
+                                       class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-colors">
+                            </div>
+                            
+                            <div>
+                                <label for="email" class="block text-sm font-medium text-gray-700 mb-2">Email Address *</label>
+                                <input type="email" id="email" name="email" required 
+                                       class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-colors">
+                            </div>
+                            
+                            <div>
+                                <label for="phone" class="block text-sm font-medium text-gray-700 mb-2">Phone Number</label>
+                                <input type="tel" id="phone" name="phone" 
+                                       class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-colors">
+                            </div>
+                            
+                            <div>
+                                <label for="subject" class="block text-sm font-medium text-gray-700 mb-2">Subject</label>
+                                <select id="subject" name="subject" 
+                                        class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-colors">
+                                    <option value="">Select a subject</option>
+                                    <option value="claims-automation">Claims Processing Automation</option>
+                                    <option value="fraud-detection">Fraud Detection Solutions</option>
+                                    <option value="data-analytics">Data Analytics Services</option>
+                                    <option value="patient-support">Patient Support Systems</option>
+                                    <option value="general-inquiry">General Inquiry</option>
+                                </select>
+                            </div>
+                            
+                            <div>
+                                <label for="message" class="block text-sm font-medium text-gray-700 mb-2">Message *</label>
+                                <textarea id="message" name="message" rows="5" required 
+                                          class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-colors resize-vertical"
+                                          placeholder="Tell us about your requirements..."></textarea>
+                            </div>
+                            
+                            <button type="submit" class="btn-primary w-full text-lg py-4">
+                                <i class="fas fa-paper-plane mr-2"></i>Send Message
+                            </button>
+                        </form>
+                    </div>
+                </div>
+                
+                <!-- Google Maps -->
+                <div class="mt-16">
+                    <h3 class="text-2xl font-semibold mb-6 text-center" style="color: var(--text-color);">Our Location</h3>
+                    <div class="map-container">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3771.5167833894486!2d72.8916208!3d19.0406693!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c8ae7ebaf35f%3A0x3e7eb4b64b41c764!2sChembur%2C%20Mumbai%2C%20Maharashtra%20400071!5e0!3m2!1sen!2sin!4v1642158973021!5m2!1sen!2sin" 
+                                width="100%" 
+                                height="400" 
+                                style="border:0;" 
+                                allowfullscreen="" 
+                                loading="lazy" 
+                                referrerpolicy="no-referrer-when-downgrade">
+                        </iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="gradient-bg text-white py-12 px-6">
+        <div class="container mx-auto">
+            <div class="max-w-6xl mx-auto">
+                <div class="grid md:grid-cols-4 gap-8 mb-8">
+                    <div class="md:col-span-2">
+                        <div class="flex items-center mb-4">
+                            <i class="fas fa-brain text-3xl mr-3"></i>
+                            <div>
+                                <h3 class="text-xl font-bold">Mediclaim Intelligence</h3>
+                                <p class="text-blue-200">Revolutionizing Healthcare Claims with AI Precision</p>
+                            </div>
+                        </div>
+                        <p class="text-blue-100 leading-relaxed">
+                            Empowering healthcare providers and insurance companies with AI-driven solutions that simplify complex claims processes, reduce fraud, and enhance patient experiences.
+                        </p>
+                    </div>
+                    
+                    <div>
+                        <h4 class="text-lg font-semibold mb-4">Quick Links</h4>
+                        <ul class="space-y-2">
+                            <li><a href="#home" class="text-blue-200 hover:text-white transition-colors">Home</a></li>
+                            <li><a href="#about" class="text-blue-200 hover:text-white transition-colors">About</a></li>
+                            <li><a href="#services" class="text-blue-200 hover:text-white transition-colors">Services</a></li>
+                            <li><a href="#contact" class="text-blue-200 hover:text-white transition-colors">Contact</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div>
+                        <h4 class="text-lg font-semibold mb-4">Services</h4>
+                        <ul class="space-y-2 text-sm">
+                            <li class="text-blue-200">Claims Processing Automation</li>
+                            <li class="text-blue-200">Fraud Detection Solutions</li>
+                            <li class="text-blue-200">Data Analytics Services</li>
+                            <li class="text-blue-200">Real-Time Patient Support</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="border-t border-blue-400 pt-8 text-center">
+                    <p class="text-blue-200 mb-2">&copy; 2025 Mediclaim Intelligence. All rights reserved.</p>
+                    <p class="text-sm text-blue-300">
+                        Owned by <a href="#" class="text-yellow-300 hover:underline">Scalium.in</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script>
+        // Mobile menu toggle
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                    // Close mobile menu if open
+                    mobileMenu.classList.add('hidden');
+                }
+            });
+        });
+
+        // Contact form submission
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            // Get form data
+            const formData = new FormData(this);
+            const name = formData.get('name');
+            const email = formData.get('email');
+            const phone = formData.get('phone');
+            const subject = formData.get('subject');
+            const message = formData.get('message');
+            
+            // Create mailto link
+            const mailtoLink = `mailto:info@mediclaim.co.in?subject=${encodeURIComponent(subject || 'Inquiry from Website')}&body=${encodeURIComponent(`Name: ${name}\nEmail: ${email}\nPhone: ${phone || 'Not provided'}\n\nMessage:\n${message}`)}`;
+            
+            // Open email client
+            window.location.href = mailtoLink;
+            
+            // Show success message
+            alert('Thank you for your message! Your email client should open now. We will get back to you soon.');
+            
+            // Reset form
+            this.reset();
+        });
+
+        // Navbar background change on scroll
+        window.addEventListener('scroll', () => {
+            const navbar = document.querySelector('.navbar');
+            if (window.scrollY > 100) {
+                navbar.style.background = 'rgba(255, 255, 255, 0.98)';
+            } else {
+                navbar.style.background = 'rgba(255, 255, 255, 0.95)';
+            }
+        });
+
+        // Animation on scroll
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, observerOptions);
+
+        // Observe all sections for animation
+        document.querySelectorAll('section').forEach(section => {
+            section.style.opacity = '0';
+            section.style.transform = 'translateY(30px)';
+            section.style.transition = 'all 0.6s ease';
+            observer.observe(section);
+        });
+
+        // Initialize first section
+        document.querySelector('#home').style.opacity = '1';
+        document.querySelector('#home').style.transform = 'translateY(0)';
+    </script>
+</body>
+</html>

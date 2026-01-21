@@ -1,0 +1,577 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Social AI Marketing - Transform Your Social Media Strategy with AI</title>
+    <meta name="description" content="Transform your social media strategy with AI-powered insights. Social AI Marketing offers advanced analytics, predictive marketing, and automated campaign management for businesses in India." />
+    <meta name="author" content="Social AI Marketing" />
+    <meta name="keywords" content="AI marketing, social media marketing, digital marketing, India, Mumbai, AI analytics, social media strategy" />
+
+    <meta property="og:title" content="Social AI Marketing - AI-Powered Social Media Solutions" />
+    <meta property="og:description" content="Transform your social media strategy with AI-powered insights and advanced analytics." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://socialmediamarketing.co.in" />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Social AI Marketing - AI-Powered Solutions" />
+    <meta name="twitter:description" content="Transform your social media strategy with AI-powered insights and advanced analytics." />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Custom CSS -->
+    <style>
+      :root {
+        --primary-color: #3A9C3A;
+        --accent-color: #FDD835;
+        --background-color: #F5F5F5;
+        --text-color: #212121;
+        --white-color: #FFFFFF;
+      }
+      
+      * {
+        scroll-behavior: smooth;
+      }
+      
+      body {
+        font-family: 'Roboto', sans-serif;
+        color: var(--text-color);
+        background-color: var(--background-color);
+      }
+      
+      h1, h2, h3, h4, h5, h6 {
+        font-family: 'Poppins', sans-serif;
+      }
+      
+      .gradient-bg {
+        background: linear-gradient(135deg, var(--primary-color) 0%, #2E7D2E 100%);
+      }
+      
+      .accent-gradient {
+        background: linear-gradient(45deg, var(--accent-color), #FFE082);
+      }
+      
+      .hover-lift {
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+      }
+      
+      .hover-lift:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+      }
+      
+      .fade-in {
+        opacity: 0;
+        transform: translateY(30px);
+        transition: opacity 0.6s ease, transform 0.6s ease;
+      }
+      
+      .fade-in.visible {
+        opacity: 1;
+        transform: translateY(0);
+      }
+      
+      .floating {
+        animation: floating 3s ease-in-out infinite;
+      }
+      
+      @keyframes floating {
+        0%, 100% { transform: translateY(0px); }
+        50% { transform: translateY(-20px); }
+      }
+      
+      .service-card {
+        background: white;
+        border-left: 4px solid var(--primary-color);
+        transition: all 0.3s ease;
+      }
+      
+      .service-card:hover {
+        border-left-width: 8px;
+        box-shadow: 0 8px 30px rgba(58, 156, 58, 0.1);
+      }
+      
+      .contact-button {
+        background: var(--primary-color);
+        color: white;
+        transition: all 0.3s ease;
+      }
+      
+      .contact-button:hover {
+        background: #2E7D2E;
+        transform: scale(1.05);
+      }
+      
+      .whatsapp-float {
+        position: fixed;
+        width: 60px;
+        height: 60px;
+        bottom: 40px;
+        right: 40px;
+        background-color: #25d366;
+        color: #FFF;
+        border-radius: 50px;
+        text-align: center;
+        font-size: 30px;
+        box-shadow: 2px 2px 3px #999;
+        z-index: 100;
+        transition: all 0.3s ease;
+      }
+      
+      .whatsapp-float:hover {
+        background-color: #20ba5a;
+        transform: scale(1.1);
+      }
+    </style>
+    
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              'primary': '#3A9C3A',
+              'accent': '#FDD835',
+              'bg-light': '#F5F5F5'
+            },
+            fontFamily: {
+              'roboto': ['Roboto', 'sans-serif'],
+              'poppins': ['Poppins', 'sans-serif']
+            }
+          }
+        }
+      }
+    </script>
+  </head>
+
+  <body class="bg-bg-light">
+    <!-- Header -->
+    <header class="bg-white shadow-lg fixed w-full top-0 z-50">
+      <nav class="container mx-auto px-6 py-4">
+        <div class="flex items-center justify-between">
+          <!-- Logo -->
+          <div class="text-2xl font-bold font-poppins text-primary">
+            Social AI Marketing
+          </div>
+          
+          <!-- Navigation Menu -->
+          <div class="hidden md:flex space-x-8">
+            <a href="#home" class="text-gray-700 hover:text-primary transition-colors duration-300">Home</a>
+            <a href="#about" class="text-gray-700 hover:text-primary transition-colors duration-300">About</a>
+            <a href="#services" class="text-gray-700 hover:text-primary transition-colors duration-300">Services</a>
+            <a href="#contact" class="text-gray-700 hover:text-primary transition-colors duration-300">Contact</a>
+          </div>
+          
+          <!-- Contact Icons -->
+          <div class="flex space-x-4">
+            <a href="tel:+918369848475" class="text-primary hover:text-green-700 transition-colors duration-300">
+              <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20">
+                <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"/>
+              </svg>
+            </a>
+            <a href="mailto:info@socialmediamarketing.co.in" class="text-primary hover:text-green-700 transition-colors duration-300">
+              <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20">
+                <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"/>
+                <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"/>
+              </svg>
+            </a>
+          </div>
+          
+          <!-- Mobile Menu Button -->
+          <div class="md:hidden">
+            <button id="mobile-menu-btn" class="text-gray-700 hover:text-primary">
+              <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+              </svg>
+            </button>
+          </div>
+        </div>
+        
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden mt-4 pb-4">
+          <div class="flex flex-col space-y-4">
+            <a href="#home" class="text-gray-700 hover:text-primary transition-colors duration-300">Home</a>
+            <a href="#about" class="text-gray-700 hover:text-primary transition-colors duration-300">About</a>
+            <a href="#services" class="text-gray-700 hover:text-primary transition-colors duration-300">Services</a>
+            <a href="#contact" class="text-gray-700 hover:text-primary transition-colors duration-300">Contact</a>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="gradient-bg min-h-screen flex items-center pt-20">
+      <div class="container mx-auto px-6">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+          <div class="text-white fade-in">
+            <h1 class="text-5xl md:text-6xl font-bold font-poppins mb-6 leading-tight">
+              Transform Your Social Media Strategy with
+              <span class="text-accent">AI-Powered Insights</span>
+            </h1>
+            <p class="text-xl mb-8 leading-relaxed opacity-90">
+              Discover how AI can elevate your marketing to new heights. Harness the power of advanced analytics and machine learning to drive unprecedented growth.
+            </p>
+            <div class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-6">
+              <a href="#contact" class="bg-accent text-gray-800 px-8 py-4 rounded-lg font-semibold hover:bg-yellow-400 transition-all duration-300 hover-lift text-center">
+                Get Started
+              </a>
+              <a href="#about" class="border-2 border-white text-white px-8 py-4 rounded-lg font-semibold hover:bg-white hover:text-primary transition-all duration-300 hover-lift text-center">
+                Learn More
+              </a>
+            </div>
+          </div>
+          <div class="hidden lg:block">
+            <div class="floating">
+              <svg class="w-full h-auto max-w-md mx-auto" viewBox="0 0 400 300" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="200" cy="150" r="80" fill="#FDD835" opacity="0.2"/>
+                <circle cx="200" cy="150" r="60" fill="#FDD835" opacity="0.4"/>
+                <circle cx="200" cy="150" r="40" fill="#FDD835"/>
+                <path d="M150 120h100v60H150z" fill="white" opacity="0.9"/>
+                <circle cx="170" cy="140" r="8" fill="#3A9C3A"/>
+                <circle cx="200" cy="140" r="8" fill="#3A9C3A"/>
+                <circle cx="230" cy="140" r="8" fill="#3A9C3A"/>
+                <rect x="160" y="155" width="80" height="4" rx="2" fill="#3A9C3A"/>
+                <rect x="160" y="165" width="60" height="4" rx="2" fill="#3A9C3A"/>
+              </svg>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-white">
+      <div class="container mx-auto px-6">
+        <div class="text-center mb-16 fade-in">
+          <h2 class="text-4xl md:text-5xl font-bold font-poppins text-gray-800 mb-6">
+            Who We Are
+          </h2>
+          <div class="w-24 h-1 bg-primary mx-auto mb-8"></div>
+        </div>
+        
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+          <div class="fade-in">
+            <p class="text-lg leading-relaxed text-gray-700 mb-6">
+              Social AI Marketing is dedicated to integrating advanced AI technologies into social media marketing, enabling businesses to thrive in the digital age. With a team of experts and innovative solutions, we ensure our clients achieve their marketing goals efficiently and effectively.
+            </p>
+            <p class="text-lg leading-relaxed text-gray-700 mb-6">
+              At Social AI Marketing, we believe that effective social media strategies are rooted in intelligent data analysis. As a pioneering force in AI-driven marketing solutions, we enable businesses to navigate the complexities of digital marketing.
+            </p>
+            <p class="text-lg leading-relaxed text-gray-700">
+              Our mission is to revolutionize the way businesses engage with their audiences online by integrating powerful AI capabilities, ensuring our clients stay ahead of the curve in the competitive digital landscape.
+            </p>
+          </div>
+          <div class="fade-in">
+            <div class="bg-gradient-to-br from-primary to-green-600 p-8 rounded-lg text-white">
+              <h3 class="text-2xl font-bold font-poppins mb-4">Our Expertise</h3>
+              <ul class="space-y-3">
+                <li class="flex items-center">
+                  <svg class="w-5 h-5 mr-3 text-accent" fill="currentColor" viewBox="0 0 20 20">
+                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                  </svg>
+                  AI Technology Integration
+                </li>
+                <li class="flex items-center">
+                  <svg class="w-5 h-5 mr-3 text-accent" fill="currentColor" viewBox="0 0 20 20">
+                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                  </svg>
+                  Social Media Management
+                </li>
+                <li class="flex items-center">
+                  <svg class="w-5 h-5 mr-3 text-accent" fill="currentColor" viewBox="0 0 20 20">
+                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                  </svg>
+                  Data-Driven Strategies
+                </li>
+                <li class="flex items-center">
+                  <svg class="w-5 h-5 mr-3 text-accent" fill="currentColor" viewBox="0 0 20 20">
+                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                  </svg>
+                  ROI Optimization
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-20 bg-bg-light">
+      <div class="container mx-auto px-6">
+        <div class="text-center mb-16 fade-in">
+          <h2 class="text-4xl md:text-5xl font-bold font-poppins text-gray-800 mb-6">
+            Our Services
+          </h2>
+          <div class="w-24 h-1 bg-primary mx-auto mb-8"></div>
+          <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+            Comprehensive AI-powered marketing services tailored for the social media landscape
+          </p>
+        </div>
+        
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div class="service-card p-8 rounded-lg hover-lift fade-in">
+            <div class="text-primary mb-4">
+              <svg class="w-12 h-12" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"/>
+              </svg>
+            </div>
+            <h3 class="text-xl font-bold font-poppins mb-4 text-gray-800">Advanced Social Analytics</h3>
+            <p class="text-gray-600 leading-relaxed">
+              Leverage AI algorithms to analyze user behavior, enabling you to create targeted campaigns that resonate with your audience.
+            </p>
+          </div>
+          
+          <div class="service-card p-8 rounded-lg hover-lift fade-in">
+            <div class="text-primary mb-4">
+              <svg class="w-12 h-12" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/>
+              </svg>
+            </div>
+            <h3 class="text-xl font-bold font-poppins mb-4 text-gray-800">Content Performance Optimization</h3>
+            <p class="text-gray-600 leading-relaxed">
+              Utilizing machine learning models to assess and adapt content strategies in real-time, ensuring maximum engagement and reach.
+            </p>
+          </div>
+          
+          <div class="service-card p-8 rounded-lg hover-lift fade-in">
+            <div class="text-primary mb-4">
+              <svg class="w-12 h-12" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"/>
+              </svg>
+            </div>
+            <h3 class="text-xl font-bold font-poppins mb-4 text-gray-800">Predictive Marketing</h3>
+            <p class="text-gray-600 leading-relaxed">
+              Implement AI models that analyze past data to forecast future trends, allowing you to stay proactive in your marketing efforts.
+            </p>
+          </div>
+          
+          <div class="service-card p-8 rounded-lg hover-lift fade-in">
+            <div class="text-primary mb-4">
+              <svg class="w-12 h-12" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11a7 7 0 01-7 7m0 0a7 7 0 01-7-7m7 7v4m0 0H8m4 0h4m-4-8a3 3 0 01-3-3V5a3 3 0 116 0v6a3 3 0 01-3 3z"/>
+              </svg>
+            </div>
+            <h3 class="text-xl font-bold font-poppins mb-4 text-gray-800">Social Listening Tools</h3>
+            <p class="text-gray-600 leading-relaxed">
+              Employ AI-driven insights to monitor brand reputation and public sentiment across various platforms, enabling timely engagement.
+            </p>
+          </div>
+          
+          <div class="service-card p-8 rounded-lg hover-lift fade-in">
+            <div class="text-primary mb-4">
+              <svg class="w-12 h-12" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z"/>
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"/>
+              </svg>
+            </div>
+            <h3 class="text-xl font-bold font-poppins mb-4 text-gray-800">Automated Campaign Management</h3>
+            <p class="text-gray-600 leading-relaxed">
+              Streamline your marketing efforts with AI solutions that automate the execution and monitoring of social media campaigns.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-white">
+      <div class="container mx-auto px-6">
+        <div class="text-center mb-16 fade-in">
+          <h2 class="text-4xl md:text-5xl font-bold font-poppins text-gray-800 mb-6">
+            Contact Us
+          </h2>
+          <div class="w-24 h-1 bg-primary mx-auto mb-8"></div>
+          <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+            Contact us to discover how we can transform your social media marketing strategies with intelligent AI solutions.
+          </p>
+        </div>
+        
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+          <div class="fade-in">
+            <div class="bg-gradient-to-br from-primary to-green-600 p-8 rounded-lg text-white mb-8">
+              <h3 class="text-2xl font-bold font-poppins mb-6">Get In Touch</h3>
+              
+              <div class="space-y-4">
+                <div class="flex items-start">
+                  <svg class="w-6 h-6 mr-3 mt-1 text-accent" fill="currentColor" viewBox="0 0 20 20">
+                    <path fill-rule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clip-rule="evenodd"/>
+                  </svg>
+                  <div>
+                    <p class="font-semibold">Address</p>
+                    <p class="text-sm opacity-90">701, Stellar Tower, Chembur East, Sion Opposite, Diamond Garden, Basant Garden, Chembur, Mumbai, Maharashtra 400071</p>
+                  </div>
+                </div>
+                
+                <div class="flex items-center">
+                  <svg class="w-6 h-6 mr-3 text-accent" fill="currentColor" viewBox="0 0 20 20">
+                    <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"/>
+                  </svg>
+                  <div>
+                    <p class="font-semibold">Phone</p>
+                    <a href="tel:+918369848475" class="text-accent hover:text-yellow-300 transition-colors">+91 8369848475</a>
+                  </div>
+                </div>
+                
+                <div class="flex items-center">
+                  <svg class="w-6 h-6 mr-3 text-accent" fill="currentColor" viewBox="0 0 20 20">
+                    <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"/>
+                    <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"/>
+                  </svg>
+                  <div>
+                    <p class="font-semibold">Email</p>
+                    <a href="mailto:info@socialmediamarketing.co.in" class="text-accent hover:text-yellow-300 transition-colors">info@socialmediamarketing.co.in</a>
+                  </div>
+                </div>
+                
+                <div class="flex items-center">
+                  <svg class="w-6 h-6 mr-3 text-accent" fill="currentColor" viewBox="0 0 20 20">
+                    <path fill-rule="evenodd" d="M4.083 9h1.946c.089-1.546.383-2.97.837-4.118A6.004 6.004 0 004.083 9zM10 2a8 8 0 100 16 8 8 0 000-16zm0 2c-.076 0-.232.032-.465.262-.238.234-.497.623-.737 1.182-.389.907-.673 2.142-.766 3.556h3.936c-.093-1.414-.377-2.649-.766-3.556-.24-.559-.5-.948-.737-1.182C10.232 4.032 10.076 4 10 4zm3.971 5c-.089-1.546-.383-2.97-.837-4.118A6.004 6.004 0 0115.917 9h-1.946zm-2.003 2H8.032c.093 1.414.377 2.649.766 3.556.24.559.5.948.737 1.182.233.23.389.262.465.262.076 0 .232-.032.465-.262.238-.234.498-.623.737-1.182.389-.907.673-2.142.766-3.556zm1.166 4.118c.454-1.147.748-2.572.837-4.118h1.946a6.004 6.004 0 01-2.783 4.118zm-6.268 0C6.412 13.97 6.118 12.546 6.03 11H4.083a6.004 6.004 0 002.783 4.118z" clip-rule="evenodd"/>
+                  </svg>
+                  <div>
+                    <p class="font-semibold">Website</p>
+                    <a href="https://www.socialmediamarketing.co.in" class="text-accent hover:text-yellow-300 transition-colors">www.socialmediamarketing.co.in</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="fade-in">
+            <form class="space-y-6" action="#" method="POST">
+              <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div>
+                  <label for="firstName" class="block text-sm font-medium text-gray-700 mb-2">First Name</label>
+                  <input type="text" id="firstName" name="firstName" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent transition-all duration-300">
+                </div>
+                <div>
+                  <label for="lastName" class="block text-sm font-medium text-gray-700 mb-2">Last Name</label>
+                  <input type="text" id="lastName" name="lastName" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent transition-all duration-300">
+                </div>
+              </div>
+              
+              <div>
+                <label for="email" class="block text-sm font-medium text-gray-700 mb-2">Email</label>
+                <input type="email" id="email" name="email" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent transition-all duration-300">
+              </div>
+              
+              <div>
+                <label for="phone" class="block text-sm font-medium text-gray-700 mb-2">Phone</label>
+                <input type="tel" id="phone" name="phone" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent transition-all duration-300">
+              </div>
+              
+              <div>
+                <label for="company" class="block text-sm font-medium text-gray-700 mb-2">Company</label>
+                <input type="text" id="company" name="company" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent transition-all duration-300">
+              </div>
+              
+              <div>
+                <label for="message" class="block text-sm font-medium text-gray-700 mb-2">Message</label>
+                <textarea id="message" name="message" rows="4" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent transition-all duration-300 resize-vertical"></textarea>
+              </div>
+              
+              <button type="submit" class="w-full contact-button px-8 py-4 rounded-lg font-semibold text-lg hover-lift">
+                Send Message
+              </button>
+            </form>
+          </div>
+        </div>
+        
+        <!-- Google Maps -->
+        <div class="mt-16 fade-in">
+          <div class="bg-gray-200 rounded-lg overflow-hidden h-96">
+            <iframe 
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3771.8374853144515!2d72.89086831489675!3d19.04325578711027!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c8c2b2e1c4a7%3A0x1234567890abcdef!2sChembur%2C%20Mumbai%2C%20Maharashtra%20400071!5e0!3m2!1sen!2sin!4v1640000000000!5m2!1sen!2sin"
+              width="100%" 
+              height="100%" 
+              style="border:0;" 
+              allowfullscreen="" 
+              loading="lazy" 
+              referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-8">
+      <div class="container mx-auto px-6 text-center">
+        <p class="mb-2">&copy; 2025 Social AI Marketing | All Rights Reserved</p>
+        <p class="text-gray-400">Owned by <a href="#" class="text-accent hover:text-yellow-300 transition-colors">Scalium.in</a></p>
+      </div>
+    </footer>
+
+    <!-- WhatsApp Float Button -->
+    <a href="https://wa.me/918369848475?text=Hello! I'm interested in your AI marketing services." target="_blank" class="whatsapp-float">
+      <svg class="w-8 h-8 mt-4 ml-4" fill="currentColor" viewBox="0 0 24 24">
+        <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893A11.821 11.821 0 0020.89 3.297"/>
+      </svg>
+    </a>
+
+    <script>
+      // Mobile menu toggle
+      const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+      const mobileMenu = document.getElementById('mobile-menu');
+      
+      mobileMenuBtn.addEventListener('click', () => {
+        mobileMenu.classList.toggle('hidden');
+      });
+      
+      // Smooth scrolling for navigation links
+      document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+          e.preventDefault();
+          const target = document.querySelector(this.getAttribute('href'));
+          if (target) {
+            target.scrollIntoView({
+              behavior: 'smooth',
+              block: 'start'
+            });
+          }
+        });
+      });
+      
+      // Fade in animation on scroll
+      const observerOptions = {
+        threshold: 0.1,
+        rootMargin: '0px 0px -50px 0px'
+      };
+      
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('visible');
+          }
+        });
+      }, observerOptions);
+      
+      document.querySelectorAll('.fade-in').forEach(el => {
+        observer.observe(el);
+      });
+      
+      // Header background on scroll
+      window.addEventListener('scroll', () => {
+        const header = document.querySelector('header');
+        if (window.scrollY > 100) {
+          header.classList.add('shadow-lg');
+        } else {
+          header.classList.remove('shadow-lg');
+        }
+      });
+      
+      // Form submission (you can replace this with your actual form handling)
+      document.querySelector('form').addEventListener('submit', function(e) {
+        e.preventDefault();
+        alert('Thank you for your message! We will get back to you soon.');
+        this.reset();
+      });
+    </script>
+  </body>
+</html>

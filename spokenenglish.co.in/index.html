@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spoken English AI - Elevate Your English with Intelligent Learning</title>
+    <meta name="description" content="AI-driven English learning platform for professionals. Personalized training, real-time feedback, and interactive workshops to master English communication.">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;600;700&family=Lora:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#3A8EBA',
+                        accent: '#F0AE37',
+                        'bg-light': '#F5F5F5',
+                        'bg-dark': '#FFFFFF',
+                    },
+                    fontFamily: {
+                        'roboto': ['Roboto', 'sans-serif'],
+                        'lora': ['Lora', 'serif'],
+                    },
+                    animation: {
+                        'fade-in': 'fadeIn 0.6s ease-in-out',
+                        'slide-up': 'slideUp 0.8s ease-out',
+                        'bounce-slow': 'bounce 2s infinite',
+                    },
+                }
+            }
+        }
+    </script>
+    
+    <style>
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        
+        @keyframes slideUp {
+            from { 
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to { 
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        .gradient-bg {
+            background: linear-gradient(135deg, #3A8EBA 0%, #2c5282 100%);
+        }
+        
+        .scroll-smooth {
+            scroll-behavior: smooth;
+        }
+        
+        .animate-on-scroll {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: all 0.6s ease-out;
+        }
+        
+        .animate-on-scroll.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        
+        .hover-lift {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        .hover-lift:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+        }
+        
+        .whatsapp-float {
+            position: fixed;
+            width: 60px;
+            height: 60px;
+            bottom: 20px;
+            right: 20px;
+            background-color: #25d366;
+            color: #FFF;
+            border-radius: 50px;
+            text-align: center;
+            font-size: 30px;
+            box-shadow: 2px 2px 3px #999;
+            z-index: 100;
+            transition: all 0.3s ease;
+        }
+        
+        .whatsapp-float:hover {
+            transform: scale(1.1);
+            box-shadow: 2px 2px 10px #999;
+        }
+        
+        .whatsapp-float i {
+            margin-top: 16px;
+        }
+    </style>
+</head>
+
+<body class="font-roboto scroll-smooth">
+    <!-- WhatsApp Float Button -->
+    <a href="https://wa.me/918369848475" target="_blank" class="whatsapp-float">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- Header -->
+    <header class="bg-white shadow-lg fixed w-full top-0 z-50 transition-all duration-300">
+        <div class="container mx-auto px-4 py-4">
+            <div class="flex justify-between items-center">
+                <!-- Logo -->
+                <div class="text-2xl font-bold text-gray-800 font-roboto">
+                    <span class="text-primary">Spoken English</span> AI
+                </div>
+                
+                <!-- Contact Icons -->
+                <div class="flex space-x-4">
+                    <a href="tel:+918369848475" class="text-primary hover:text-accent transition-colors duration-300 text-xl">
+                        <i class="fas fa-phone"></i>
+                    </a>
+                    <a href="mailto:info@spokenenglish.co.in" class="text-primary hover:text-accent transition-colors duration-300 text-xl">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="hero" class="gradient-bg text-white min-h-screen flex items-center pt-20">
+        <div class="container mx-auto px-4">
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div class="animate-on-scroll">
+                    <h1 class="text-4xl md:text-6xl font-bold mb-6 leading-tight">
+                        Unlock Global Opportunities with 
+                        <span class="text-accent">Expert English Training</span>
+                    </h1>
+                    <p class="text-xl md:text-2xl mb-8 font-lora opacity-90">
+                        AI-driven language learning tailored for professionals.
+                    </p>
+                    <button onclick="scrollToSection('services')" class="bg-accent hover:bg-yellow-500 text-gray-800 font-bold py-4 px-8 rounded-full text-lg transition-all duration-300 transform hover:scale-105 hover:shadow-lg">
+                        Get Started
+                    </button>
+                </div>
+                <div class="animate-on-scroll">
+                    <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=600&h=400&fit=crop&crop=center" 
+                         alt="AI Technology and Education" 
+                         class="rounded-2xl shadow-2xl w-full h-auto">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-bg-light">
+        <div class="container mx-auto px-4">
+            <div class="max-w-4xl mx-auto text-center animate-on-scroll">
+                <h2 class="text-4xl md:text-5xl font-bold text-gray-800 mb-8">
+                    Transforming English Learning with 
+                    <span class="text-primary">AI Technology</span>
+                </h2>
+                <div class="text-lg text-gray-600 leading-relaxed space-y-6 font-lora">
+                    <p>
+                        Spoken English AI leverages advanced AI technology to reshape how people learn English. Our platform offers personalized learning paths, ensuring each user can progress at their own pace. We recognize that employees everywhere are being asked to communicate across borders, and proficiency in English is essential.
+                    </p>
+                    <p>
+                        Our courses are designed to make learning convenient and effective, transforming hard-to-reach skills into simple, achievable tasks. Through continuous assessment and engagement, our tech-enhanced approach ensures learners are never left behind.
+                    </p>
+                    <p class="text-primary font-semibold text-xl">
+                        Join us in this exciting journey, where language becomes a bridge, not a barrier.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16 animate-on-scroll">
+                <h2 class="text-4xl md:text-5xl font-bold text-gray-800 mb-6">
+                    Our <span class="text-primary">AI-Powered</span> Services
+                </h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto font-lora">
+                    Comprehensive English learning solutions designed for modern professionals
+                </p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Service 1 -->
+                <div class="bg-white rounded-2xl p-8 shadow-lg hover-lift animate-on-scroll border border-gray-100">
+                    <div class="text-primary text-4xl mb-6">
+                        <i class="fas fa-user-cog"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-800 mb-4">Personalized Learning Plans</h3>
+                    <p class="text-gray-600 leading-relaxed">
+                        We create customized blueprints for each learner, focusing on their strengths and weaknesses to enhance their proficiency in practical contexts.
+                    </p>
+                </div>
+                
+                <!-- Service 2 -->
+                <div class="bg-white rounded-2xl p-8 shadow-lg hover-lift animate-on-scroll border border-gray-100">
+                    <div class="text-primary text-4xl mb-6">
+                        <i class="fas fa-comments"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-800 mb-4">Real-Time Feedback</h3>
+                    <p class="text-gray-600 leading-relaxed">
+                        Our AI analyzes user performance, offering immediate corrections and suggestions to streamline the learning process.
+                    </p>
+                </div>
+                
+                <!-- Service 3 -->
+                <div class="bg-white rounded-2xl p-8 shadow-lg hover-lift animate-on-scroll border border-gray-100">
+                    <div class="text-primary text-4xl mb-6">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-800 mb-4">Interactive Workshops</h3>
+                    <p class="text-gray-600 leading-relaxed">
+                        Participatory workshops, led by certified trainers, where learners can practice skills in real-life scenarios.
+                    </p>
+                </div>
+                
+                <!-- Service 4 -->
+                <div class="bg-white rounded-2xl p-8 shadow-lg hover-lift animate-on-scroll border border-gray-100">
+                    <div class="text-primary text-4xl mb-6">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-800 mb-4">Progress Tracking</h3>
+                    <p class="text-gray-600 leading-relaxed">
+                        Regular assessments gauge progress, ensuring that learners receive the insights they need to improve continuously.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-bg-light">
+        <div class="container mx-auto px-4">
+            <div class="max-w-6xl mx-auto">
+                <div class="text-center mb-16 animate-on-scroll">
+                    <h2 class="text-4xl md:text-5xl font-bold text-gray-800 mb-6">
+                        Get In <span class="text-primary">Touch</span>
+                    </h2>
+                    <p class="text-xl text-gray-600 font-lora">
+                        Ready to transform your English learning journey? Contact us today!
+                    </p>
+                </div>
+                
+                <div class="grid lg:grid-cols-2 gap-12">
+                    <!-- Contact Form -->
+                    <div class="animate-on-scroll">
+                        <div class="bg-white rounded-2xl p-8 shadow-lg">
+                            <h3 class="text-2xl font-bold text-gray-800 mb-6">Send us a message</h3>
+                            <form class="space-y-6">
+                                <div>
+                                    <label class="block text-gray-700 text-sm font-medium mb-2">Name</label>
+                                    <input type="text" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent transition-all duration-300" placeholder="Your full name">
+                                </div>
+                                <div>
+                                    <label class="block text-gray-700 text-sm font-medium mb-2">Email</label>
+                                    <input type="email" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent transition-all duration-300" placeholder="your.email@example.com">
+                                </div>
+                                <div>
+                                    <label class="block text-gray-700 text-sm font-medium mb-2">Message</label>
+                                    <textarea rows="5" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent transition-all duration-300" placeholder="Tell us about your English learning goals..."></textarea>
+                                </div>
+                                <button type="submit" class="w-full bg-primary hover:bg-blue-600 text-white font-bold py-3 px-6 rounded-lg transition-all duration-300 transform hover:scale-105">
+                                    Send Message
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                    
+                    <!-- Contact Info & Map -->
+                    <div class="animate-on-scroll space-y-8">
+                        <!-- Contact Details -->
+                        <div class="bg-white rounded-2xl p-8 shadow-lg">
+                            <h3 class="text-2xl font-bold text-gray-800 mb-6">Contact Information</h3>
+                            <div class="space-y-4">
+                                <div class="flex items-center space-x-4">
+                                    <div class="text-primary text-xl">
+                                        <i class="fas fa-phone"></i>
+                                    </div>
+                                    <div>
+                                        <p class="font-medium text-gray-800">Phone</p>
+                                        <a href="tel:+918369848475" class="text-primary hover:text-accent transition-colors">+91 8369848475</a>
+                                    </div>
+                                </div>
+                                <div class="flex items-center space-x-4">
+                                    <div class="text-primary text-xl">
+                                        <i class="fas fa-envelope"></i>
+                                    </div>
+                                    <div>
+                                        <p class="font-medium text-gray-800">Email</p>
+                                        <a href="mailto:info@spokenenglish.co.in" class="text-primary hover:text-accent transition-colors">info@spokenenglish.co.in</a>
+                                    </div>
+                                </div>
+                                <div class="flex items-center space-x-4">
+                                    <div class="text-primary text-xl">
+                                        <i class="fas fa-globe"></i>
+                                    </div>
+                                    <div>
+                                        <p class="font-medium text-gray-800">Website</p>
+                                        <p class="text-primary">spokenenglish.co.in</p>
+                                    </div>
+                                </div>
+                                <div class="flex items-start space-x-4">
+                                    <div class="text-primary text-xl mt-1">
+                                        <i class="fas fa-map-marker-alt"></i>
+                                    </div>
+                                    <div>
+                                        <p class="font-medium text-gray-800">Address</p>
+                                        <p class="text-gray-600">701, Stellar Tower, Chembur East, Sion Opposite, Diamond Garden, Basant Garden, Chembur, Mumbai, Maharashtra 400071</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Google Maps -->
+                        <div class="bg-white rounded-2xl p-4 shadow-lg">
+                            <iframe 
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3771.7449!2d72.8936!3d19.0437!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c8b1d7f0c1d1%3A0x1234567890abcdef!2sChembur%2C%20Mumbai%2C%20Maharashtra%20400071!5e0!3m2!1sen!2sin!4v1234567890123!5m2!1sen!2sin"
+                                width="100%" 
+                                height="300" 
+                                style="border:0;" 
+                                allowfullscreen="" 
+                                loading="lazy" 
+                                referrerpolicy="no-referrer-when-downgrade"
+                                class="rounded-lg">
+                            </iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid md:grid-cols-3 gap-8">
+                <div>
+                    <div class="text-2xl font-bold mb-4">
+                        <span class="text-primary">Spoken English</span> AI
+                    </div>
+                    <p class="text-gray-300 font-lora">
+                        Elevate Your English with Intelligent Learning
+                    </p>
+                </div>
+                
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Quick Links</h4>
+                    <div class="space-y-2">
+                        <a href="#hero" class="block text-gray-300 hover:text-accent transition-colors">Home</a>
+                        <a href="#about" class="block text-gray-300 hover:text-accent transition-colors">About</a>
+                        <a href="#services" class="block text-gray-300 hover:text-accent transition-colors">Services</a>
+                        <a href="#contact" class="block text-gray-300 hover:text-accent transition-colors">Contact</a>
+                    </div>
+                </div>
+                
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Connect With Us</h4>
+                    <div class="flex space-x-4">
+                        <a href="tel:+918369848475" class="text-gray-300 hover:text-accent transition-colors text-xl">
+                            <i class="fas fa-phone"></i>
+                        </a>
+                        <a href="mailto:info@spokenenglish.co.in" class="text-gray-300 hover:text-accent transition-colors text-xl">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                        <a href="https://wa.me/918369848475" target="_blank" class="text-gray-300 hover:text-accent transition-colors text-xl">
+                            <i class="fab fa-whatsapp"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-700 mt-8 pt-8 text-center">
+                <p class="text-gray-300">
+                    &copy; 2025 Spoken English AI. All rights reserved. | 
+                    <span class="text-accent">Owned by Scalium.in</span>
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Smooth scrolling function
+        function scrollToSection(sectionId) {
+            document.getElementById(sectionId).scrollIntoView({
+                behavior: 'smooth'
+            });
+        }
+
+        // Animate elements on scroll
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, observerOptions);
+
+        // Observe all elements with animate-on-scroll class
+        document.addEventListener('DOMContentLoaded', () => {
+            const animateElements = document.querySelectorAll('.animate-on-scroll');
+            animateElements.forEach(el => observer.observe(el));
+        });
+
+        // Header scroll effect
+        window.addEventListener('scroll', () => {
+            const header = document.querySelector('header');
+            if (window.scrollY > 100) {
+                header.classList.add('bg-opacity-95', 'backdrop-blur-sm');
+            } else {
+                header.classList.remove('bg-opacity-95', 'backdrop-blur-sm');
+            }
+        });
+
+        // Form submission
+        document.querySelector('form').addEventListener('submit', (e) => {
+            e.preventDefault();
+            alert('Thank you for your message! We will get back to you soon.');
+        });
+
+        // Add some interactive effects
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const targetId = this.getAttribute('href').substring(1);
+                scrollToSection(targetId);
+            });
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,617 @@
+
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+      <meta name="description" content="Transform your logistics operations with AI-powered document processing solutions. Automate invoice handling, contract management, and real-time analytics for enhanced efficiency.">
+      <meta name="theme-color" content="#ffffff">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="robots" content="">
+
+      <!-- Alpine.js - Load first -->
+      <script defer src="https://cdnjs.cloudflare.com/ajax/libs/alpinejs/3.13.3/cdn.min.js"></script>
+      
+      <link href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+      <title>AI-Powered Document Processing Solutions for Logistics | Automated Document Management</title>
+      <!-- SEO Description -->
+      <meta name="description" content="Transform your logistics operations with AI-powered document processing solutions. Automate invoice handling, contract management, and real-time analytics for enhanced efficiency.">
+
+      <!-- Performance optimization: Preload critical resources -->
+      <link rel="preload" href="https://cdn.tailwindcss.com" as="script">
+      
+      <!-- Core CSS and Scripts -->
+      <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+      <script src="https://cdn.tailwindcss.com"></script>
+      <script defer src="https://cdnjs.cloudflare.com/ajax/libs/apexcharts/3.45.1/apexcharts.min.js"></script>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+      
+      <!-- Project-specific styles -->
+      <style>
+        /* Base styles */
+        :root {
+          --primary-color: #0F172A;
+          --secondary-color: #3B82F6;
+          --accent-color: ;
+        }
+
+        /* Strict no-scrollbar rules */
+        * {
+          -ms-overflow-style: none !important;  /* IE and Edge */
+          scrollbar-width: none !important;     /* Firefox */
+        }
+        *::-webkit-scrollbar {
+          display: none !important;             /* Chrome, Safari and Opera */
+        }
+
+        /* Typography */
+        h1, h2, h3, h4, h5, h6 {
+          font-family: Sora, Inter, system-ui, sans-serif;
+        }
+        body {
+          font-family: Inter, Inter, system-ui, sans-serif;
+        }
+
+        /* Interactive elements */
+        .interactive-element {
+          transition: all 0.3s ease;
+        }
+        .interactive-element:hover {
+          transform: translateY(-2px);
+        }
+
+        /* Custom scrollbar */
+        ::-webkit-scrollbar {
+          width: 8px;
+          height: 8px;
+        }
+        ::-webkit-scrollbar-track {
+          background: #f1f1f1;
+        }
+        ::-webkit-scrollbar-thumb {
+          background: #888;
+          border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+          background: #555;
+        }
+
+        /* Animations */
+        @keyframes fadeIn {
+          from { opacity: 0; }
+          to { opacity: 1; }
+        }
+        .fade-in {
+          animation: fadeIn 0.5s ease-in-out;
+        }
+      </style>
+
+      <!-- Dynamic Meta Tags -->
+      <meta name="description" content="">
+      <meta name="keywords" content="">
+      <meta name="robots" content="">
+      <meta property="og:title" content="">
+      <meta property="og:description" content="">
+      <meta property="og:image" content="">
+      <meta property="og:type" content="website">
+      <meta property="og:locale" content="en_US">
+      <meta property="og:site_name" content="AI Logistics Automation Solutions">
+      
+      <!-- Favicon -->
+      <link rel="icon" type="image/x-icon" href="">
+
+      <!-- Header Scripts -->
+      <script id="header-scripts">
+        // This script tag will be replaced with actual scripts.head content
+        if (window.scripts && window.scripts.head) {
+          document.getElementById('header-scripts').outerHTML = window.scripts.head;
+        }
+      </script>
+
+      <!-- Project Configuration -->
+      <script>
+        window.projectConfig = {
+          name: 'AI Logistics Automation Solutions',
+          type: '',
+          settings: {
+            colors: {
+              primary: '#0F172A',
+              secondary: '#3B82F6',
+              accent: ''
+            },
+            fonts: {
+              primary: 'Sora',
+              secondary: 'Inter'
+            }
+          }
+        };
+      </script>
+   </head>
+   <body class="antialiased text-gray-800 min-h-screen flex flex-col">
+      <!-- Skip to main content link for accessibility -->
+      <a href="#main-content" 
+         class="sr-only focus:not-sr-only focus:absolute focus:top-0 focus:left-0 focus:z-50 focus:p-4 focus:bg-white focus:text-black">
+         Skip to main content
+      </a>
+
+      <!-- Main content area -->
+      <main id="main-content" class="flex-1 relative h-full">
+        <mountpoint>
+          <div id="RolloutPageContent"><element id="a5c17c07-d3a2-45e3-845e-a8368d9b3997" data-section-id="a5c17c07-d3a2-45e3-845e-a8368d9b3997">
+
+<nav id="header" class="bg-white shadow-sm py-4 px-6 md:px-10 lg:px-16 relative z-50">
+    <div class="max-w-7xl mx-auto flex justify-between items-center">
+        <!-- Logo -->
+        <a href="#" class="font-sora text-primary text-2xl font-bold">
+            AI Logistics
+        </a>
+
+        <!-- Desktop Navigation -->
+        <div class="hidden md:flex space-x-6">
+                <a href="#" class="font-sora text-neutral-700 hover:text-primary transition-colors duration-300">Home</a>
+                <a href="#about" class="font-sora text-neutral-700 hover:text-primary transition-colors duration-300">About</a>
+                <a href="#services" class="font-sora text-neutral-700 hover:text-primary transition-colors duration-300">Services</a>
+                <a href="#benefits" class="font-sora text-neutral-700 hover:text-primary transition-colors duration-300">Benefits</a>
+                <a href="#technology" class="font-sora text-neutral-700 hover:text-primary transition-colors duration-300">Technology</a>
+                <a href="#contact" class="font-sora text-neutral-700 hover:text-primary transition-colors duration-300">Contact</a>
+        </div>
+
+        <!-- Mobile Menu Button -->
+        <button id="mobile-menu-button" class="md:hidden p-2 rounded-md text-neutral-700 hover:text-primary hover:bg-neutral-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-primary" aria-controls="mobile-menu" aria-expanded="false">
+            <span class="sr-only">Open main menu</span>
+            <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+            </svg>
+        </button>
+    </div>
+
+    <!-- Mobile Menu Content -->
+    <div id="mobile-menu" class="md:hidden hidden mt-4 pb-2 bg-white w-full left-0 top-full shadow-lg transition-all duration-300 ease-in-out origin-top scale-y-0 absolute">
+        <div class="flex flex-col space-y-3 px-6 pb-4">
+                <a href="#" class="font-sora text-neutral-700 hover:text-primary transition-colors duration-300 block py-2">Home</a>
+                <a href="#about" class="font-sora text-neutral-700 hover:text-primary transition-colors duration-300 block py-2">About</a>
+                <a href="#services" class="font-sora text-neutral-700 hover:text-primary transition-colors duration-300 block py-2">Services</a>
+                <a href="#benefits" class="font-sora text-neutral-700 hover:text-primary transition-colors duration-300 block py-2">Benefits</a>
+                <a href="#technology" class="font-sora text-neutral-700 hover:text-primary transition-colors duration-300 block py-2">Technology</a>
+                <a href="#contact" class="font-sora text-neutral-700 hover:text-primary transition-colors duration-300 block py-2">Contact</a>
+        </div>
+    </div>
+</nav>
+</element><element id="56da403e-95cc-4728-9ea6-1a92e7d56f09" data-section-id="56da403e-95cc-4728-9ea6-1a92e7d56f09">
+
+<section id="hero" class="relative flex items-center justify-center min-h-screen bg-neutral-900 text-white overflow-hidden">
+    <!-- Background elements for visual interest -->
+    <div class="absolute inset-0 z-0">
+        <div class="absolute top-0 left-0 w-64 h-64 bg-blue-500 rounded-full mix-blend-multiply filter blur-xl opacity-20 animate-blob"></div>
+        <div class="absolute top-0 right-0 w-64 h-64 bg-purple-500 rounded-full mix-blend-multiply filter blur-xl opacity-20 animate-blob animation-delay-2000"></div>
+        <div class="absolute bottom-0 left-1/4 w-64 h-64 bg-pink-500 rounded-full mix-blend-multiply filter blur-xl opacity-20 animate-blob animation-delay-4000"></div>
+    </div>
+
+    <div class="relative z-10 text-center px-4 py-16 max-w-4xl mx-auto">
+        <h1 class="text-4xl sm:text-5xl md:text-6xl font-extrabold leading-tight mb-6">
+            AI Automation for Logistics Efficiency
+        </h1>
+        <p class="text-lg sm:text-xl md:text-2xl text-neutral-300 mb-10 max-w-2xl mx-auto">
+            Streamline document processing and gain real-time insights with our cutting-edge AI solutions.
+        </p>
+        <a href="#contact" class="inline-block bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-8 rounded-full shadow-lg transform transition duration-300 ease-in-out hover:scale-105 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-75">
+            Get a Free Consultation
+        </a>
+    </div>
+</section>
+</element><element id="5675fd76-1eb0-4ce7-989f-b40a832ad0c1" data-section-id="5675fd76-1eb0-4ce7-989f-b40a832ad0c1">
+
+<section id="about" class="py-16 sm:py-20 bg-white dark:bg-neutral-900 text-neutral-800 dark:text-neutral-100">
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="max-w-4xl mx-auto text-center">
+            <h2 class="text-3xl sm:text-4xl font-extrabold mb-6 leading-tight">About Us</h2>
+            <p class="text-lg sm:text-xl mb-8 max-w-2xl mx-auto">
+                We empower Indian enterprises to overcome logistical challenges through cutting-edge AI solutions.
+            </p>
+        </div>
+
+        <div class="grid md:grid-cols-2 gap-12 items-center mt-12">
+            <div class="text-center md:text-left">
+                <h3 class="text-2xl sm:text-3xl font-bold mb-4">Revolutionizing Logistics with AI Automation</h3>
+                <p class="mb-6 leading-relaxed">
+                    Our expertise in automated document processing and real-time data analytics transforms operations, ensuring unparalleled efficiency and accuracy. We address the critical need for streamlined paperwork and data insights in the fast-paced logistics sector.
+                </p>
+                <p class="mb-6 leading-relaxed">
+                    From invoice handling to contract management, our AI streamlines workflows, reduces errors, and drives significant cost savings. We provide a competitive edge by enhancing operational excellence and decision-making.
+                </p>
+                <a href="#contact" class="inline-block bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 px-8 rounded-lg transition duration-300 ease-in-out shadow-lg">
+                    Discover Our Solutions
+                </a>
+            </div>
+            <div class="relative flex justify-center items-center">
+                <!-- Placeholder for an image or illustration related to AI/logistics -->
+                <!-- As no specific image URLs were provided in website_metadata, this section remains visual-free as per instructions. -->
+                <div class="w-full h-64 sm:h-80 md:h-96 bg-neutral-200 dark:bg-neutral-800 rounded-lg flex items-center justify-center">
+                    <svg class="w-24 h-24 text-neutral-400 dark:text-neutral-600" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm-1-13h2v6h-2zm0 8h2v2h-2z"/>
+                    </svg>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+</element><element id="a9b0b253-36c3-408d-a451-ba6305c14faf" data-section-id="a9b0b253-36c3-408d-a451-ba6305c14faf">
+
+<div id="root">
+  <section id="services" class="py-16 sm:py-20 bg-neutral-900 text-neutral-50">
+    <div class="container mx-auto px-4">
+      <h2 class="text-4xl font-bold text-center mb-6 sm:mb-8">Services</h2>
+      <p class="text-lg text-center max-w-3xl mx-auto mb-12 text-neutral-300">
+        Empowering logistics with cutting-edge AI automation. Streamline operations, enhance accuracy, and drive growth.
+      </p>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <!-- Service Card 1: Automated Document Processing -->
+        <div class="bg-neutral-800 p-8 rounded-lg shadow-lg hover:shadow-xl transition-transform transform hover:-translate-y-1">
+          <div class="text-indigo-400 mb-4 flex justify-center">
+            <svg class="w-12 h-12" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path></svg>
+          </div>
+          <h3 class="text-2xl font-semibold text-center mb-4">Automated Document Processing</h3>
+          <p class="text-neutral-300 text-center">
+            Digitize and process invoices, contracts, and shipping manifests with AI. Reduce manual errors and accelerate workflows.
+          </p>
+        </div>
+
+        <!-- Service Card 2: Real-time Data Analytics -->
+        <div class="bg-neutral-800 p-8 rounded-lg shadow-lg hover:shadow-xl transition-transform transform hover:-translate-y-1">
+          <div class="text-indigo-400 mb-4 flex justify-center">
+            <svg class="w-12 h-12" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 12l3-3m0 0l3 3m-3-3v8m0-9a9 9 0 110 18 9 9 0 010-18z"></path></svg>
+          </div>
+          <h3 class="text-2xl font-semibold text-center mb-4">Real-time Data Analytics</h3>
+          <p class="text-neutral-300 text-center">
+            Gain instant insights into your logistics operations. Optimize routes, predict demand, and enhance decision-making.
+          </p>
+        </div>
+
+        <!-- Service Card 3: Predictive Maintenance -->
+        <div class="bg-neutral-800 p-8 rounded-lg shadow-lg hover:shadow-xl transition-transform transform hover:-translate-y-1">
+          <div class="text-indigo-400 mb-4 flex justify-center">
+            <svg class="w-12 h-12" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
+          </div>
+          <h3 class="text-2xl font-semibold text-center mb-4">Predictive Maintenance</h3>
+          <p class="text-neutral-300 text-center">
+            Anticipate equipment failures and schedule maintenance proactively. Minimize downtime and extend asset lifespan.
+          </p>
+        </div>
+
+        <!-- Service Card 4: AI-Powered Chatbots -->
+        <div class="bg-neutral-800 p-8 rounded-lg shadow-lg hover:shadow-xl transition-transform transform hover:-translate-y-1">
+          <div class="text-indigo-400 mb-4 flex justify-center">
+            <svg class="w-12 h-12" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 10h.01M12 10h.01M16 10h.01M9 16H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-5l-5 5v-5z"></path></svg>
+          </div>
+          <h3 class="text-2xl font-semibold text-center mb-4">AI-Powered Chatbots</h3>
+          <p class="text-neutral-300 text-center">
+            Automate customer support and internal queries. Provide instant responses and improve communication efficiency.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+</element><element id="5ae33b91-5311-4111-9e43-97cf019b4dd5" data-section-id="5ae33b91-5311-4111-9e43-97cf019b4dd5">
+
+<div id="root">
+  <section id="benefits" class="py-16 sm:py-20 bg-neutral-900 text-white">
+    <div class="container mx-auto px-4">
+      <h2 class="text-4xl font-bold text-center mb-12">Benefits</h2>
+      <p class="text-center text-lg mb-12 max-w-3xl mx-auto text-neutral-300">
+        Transform your logistics operations with AI. Experience unparalleled efficiency and accuracy.
+      </p>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <!-- Benefit 1: Increased Efficiency -->
+        <div class="bg-neutral-800 p-8 rounded-lg shadow-lg flex flex-col items-center text-center">
+          <div class="text-5xl text-blue-400 mb-4">
+            <i class="fas fa-tachometer-alt"></i>
+          </div>
+          <h3 class="text-2xl font-semibold mb-3">Increased Efficiency</h3>
+          <p class="text-neutral-300">Automate tedious tasks, freeing up your team for strategic work.</p>
+        </div>
+
+        <!-- Benefit 2: Reduced Errors -->
+        <div class="bg-neutral-800 p-8 rounded-lg shadow-lg flex flex-col items-center text-center">
+          <div class="text-5xl text-green-400 mb-4">
+            <i class="fas fa-check-circle"></i>
+          </div>
+          <h3 class="text-2xl font-semibold mb-3">Reduced Errors</h3>
+          <p class="text-neutral-300">AI-driven accuracy minimizes mistakes in document processing.</p>
+        </div>
+
+        <!-- Benefit 3: Cost Savings -->
+        <div class="bg-neutral-800 p-8 rounded-lg shadow-lg flex flex-col items-center text-center">
+          <div class="text-5xl text-purple-400 mb-4">
+            <i class="fas fa-dollar-sign"></i>
+          </div>
+          <h3 class="text-2xl font-semibold mb-3">Cost Savings</h3>
+          <p class="text-neutral-300">Optimize operations, leading to significant reductions in overheads.</p>
+        </div>
+
+        <!-- Benefit 4: Faster Processing -->
+        <div class="bg-neutral-800 p-8 rounded-lg shadow-lg flex flex-col items-center text-center">
+          <div class="text-5xl text-yellow-400 mb-4">
+            <i class="fas fa-clock"></i>
+          </div>
+          <h3 class="text-2xl font-semibold mb-3">Faster Processing</h3>
+          <p class="text-neutral-300">Real-time data analytics accelerates decision-making and workflows.</p>
+        </div>
+
+        <!-- Benefit 5: Enhanced Security -->
+        <div class="bg-neutral-800 p-8 rounded-lg shadow-lg flex flex-col items-center text-center">
+          <div class="text-5xl text-red-400 mb-4">
+            <i class="fas fa-lock"></i>
+          </div>
+          <h3 class="text-2xl font-semibold mb-3">Enhanced Security</h3>
+          <p class="text-neutral-300">Secure document handling protects sensitive logistical information.</p>
+        </div>
+
+        <!-- Benefit 6: Scalability -->
+        <div class="bg-neutral-800 p-8 rounded-lg shadow-lg flex flex-col items-center text-center">
+          <div class="text-5xl text-teal-400 mb-4">
+            <i class="fas fa-chart-line"></i>
+          </div>
+          <h3 class="text-2xl font-semibold mb-3">Scalability</h3>
+          <p class="text-neutral-300">Our solutions grow with your business, supporting unlimited expansion.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+</element><element id="b6300475-c01e-4738-a3ea-4bd7d1166222" data-section-id="b6300475-c01e-4738-a3ea-4bd7d1166222">
+
+<div id="root">
+  <section id="technology" class="py-16 sm:py-20 bg-white text-gray-900">
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-4xl sm:text-5xl font-extrabold text-center mb-6 sm:mb-8 leading-tight">Technology</h2>
+      <p class="text-lg sm:text-xl text-center max-w-3xl mx-auto mb-12 sm:mb-16 text-gray-600">
+        Leveraging cutting-edge AI and robust platforms to transform logistics operations.
+      </p>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 sm:gap-10">
+        <!-- Technology Feature 1: AI-Powered Document Processing -->
+        <div class="bg-gray-50 p-6 sm:p-8 rounded-lg shadow-md flex flex-col items-center text-center">
+          <div class="text-indigo-600 mb-4">
+            <svg class="w-12 h-12" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path></svg>
+          </div>
+          <h3 class="text-2xl font-bold mb-3 text-gray-800">AI Document Processing</h3>
+          <p class="text-gray-600">
+            Automate invoice, contract, and manifest data extraction. Reduce manual errors and processing time significantly.
+          </p>
+        </div>
+
+        <!-- Technology Feature 2: Machine Learning Algorithms -->
+        <div class="bg-gray-50 p-6 sm:p-8 rounded-lg shadow-md flex flex-col items-center text-center">
+          <div class="text-indigo-600 mb-4">
+            <svg class="w-12 h-12" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 3v2m6-2v2M9 19v2m6-2v2M5 7h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v14a2 2 0 002 2h14a2 2 0 002-2v-2M9 12H3m18 0h-6"></path></svg>
+          </div>
+          <h3 class="text-2xl font-bold mb-3 text-gray-800">Advanced ML Algorithms</h3>
+          <p class="text-gray-600">
+            Predictive analytics for route optimization and demand forecasting. Enhance decision-making with data-driven insights.
+          </p>
+        </div>
+
+        <!-- Technology Feature 3: Secure Cloud Infrastructure -->
+        <div class="bg-gray-50 p-6 sm:p-8 rounded-lg shadow-md flex flex-col items-center text-center">
+          <div class="text-indigo-600 mb-4">
+            <svg class="w-12 h-12" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 15a4 4 0 004 4h9a5 5 0 005-5V7a2 2 0 00-2-2H7a2 2 0 00-2 2v10z"></path></svg>
+          </div>
+          <h3 class="text-2xl font-bold mb-3 text-gray-800">Secure Cloud Platform</h3>
+          <p class="text-gray-600">
+            Scalable and secure cloud infrastructure ensures data integrity and 24/7 accessibility.
+          </p>
+        </div>
+
+        <!-- Technology Feature 4: Real-time Data Analytics -->
+        <div class="bg-gray-50 p-6 sm:p-8 rounded-lg shadow-md flex flex-col items-center text-center">
+          <div class="text-indigo-600 mb-4">
+            <svg class="w-12 h-12" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 12l3-3 3 3 4-4M18 14v4a2 2 0 01-2 2H6a2 2 0 01-2-2V7a2 2 0 012-2h4"></path></svg>
+          </div>
+          <h3 class="text-2xl font-bold mb-3 text-gray-800">Real-time Analytics</h3>
+          <p class="text-gray-600">
+            Gain instant insights into logistics performance. Monitor KPIs and identify bottlenecks proactively.
+          </p>
+        </div>
+
+        <!-- Technology Feature 5: API Integration Capabilities -->
+        <div class="bg-gray-50 p-6 sm:p-8 rounded-lg shadow-md flex flex-col items-center text-center">
+          <div class="text-indigo-600 mb-4">
+            <svg class="w-12 h-12" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 9l3 3-3 3m5 0h6M5 20h14a2 2 0 002-2V6a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path></svg>
+          </div>
+          <h3 class="text-2xl font-bold mb-3 text-gray-800">Seamless API Integration</h3>
+          <p class="text-gray-600">
+            Connect effortlessly with existing ERP, WMS, and TMS systems. Ensure smooth data flow across platforms.
+          </p>
+        </div>
+
+        <!-- Technology Feature 6: Robust Security Protocols -->
+        <div class="bg-gray-50 p-6 sm:p-8 rounded-lg shadow-md flex flex-col items-center text-center">
+          <div class="text-indigo-600 mb-4">
+            <svg class="w-12 h-12" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"></path></svg>
+          </div>
+          <h3 class="text-2xl font-bold mb-3 text-gray-800">Enterprise-Grade Security</h3>
+          <p class="text-gray-600">
+            Multi-layered security protocols protect sensitive logistics data. Ensure compliance with industry standards.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+</element><element id="9f4a6892-3e70-42be-958b-4f2306bbdbe1" data-section-id="9f4a6892-3e70-42be-958b-4f2306bbdbe1">
+
+<div id="root">
+  <section id="contact" class="py-16 sm:py-20 bg-white dark:bg-neutral-900 text-gray-800 dark:text-gray-200">
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-4xl font-bold text-center mb-12 sm:mb-16 text-gray-900 dark:text-white">Get in Touch</h2>
+      <p class="text-center text-lg mb-12 max-w-2xl mx-auto">
+        Ready to transform your logistics? Contact us today for a personalized consultation.
+      </p>
+
+      <div class="flex flex-col lg:flex-row gap-12 lg:gap-16">
+        <!-- Contact Form -->
+        <div class="lg:w-1/2 bg-gray-50 dark:bg-neutral-800 p-8 rounded-lg shadow-lg">
+          <h3 class="text-2xl font-semibold mb-6 text-gray-900 dark:text-white">Send Us a Message</h3>
+          <form class="space-y-6">
+            <div>
+              <label for="name" class="block text-sm font-medium text-gray-700 dark:text-gray-300">Name</label>
+              <input type="text" id="name" name="name" required
+                class="mt-1 block w-full p-3 border border-gray-300 dark:border-neutral-600 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500 bg-white dark:bg-neutral-700 text-gray-900 dark:text-gray-100">
+            </div>
+            <div>
+              <label for="email" class="block text-sm font-medium text-gray-700 dark:text-gray-300">Email</label>
+              <input type="email" id="email" name="email" required
+                class="mt-1 block w-full p-3 border border-gray-300 dark:border-neutral-600 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500 bg-white dark:bg-neutral-700 text-gray-900 dark:text-gray-100">
+            </div>
+            <div>
+              <label for="phone" class="block text-sm font-medium text-gray-700 dark:text-gray-300">Phone (Optional)</label>
+              <input type="tel" id="phone" name="phone"
+                class="mt-1 block w-full p-3 border border-gray-300 dark:border-neutral-600 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500 bg-white dark:bg-neutral-700 text-gray-900 dark:text-gray-100">
+            </div>
+            <div>
+              <label for="message" class="block text-sm font-medium text-gray-700 dark:text-gray-300">Message</label>
+              <textarea id="message" name="message" rows="4" required
+                class="mt-1 block w-full p-3 border border-gray-300 dark:border-neutral-600 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500 bg-white dark:bg-neutral-700 text-gray-900 dark:text-gray-100"></textarea>
+            </div>
+            <div>
+              <button type="submit"
+                class="w-full flex justify-center py-3 px-6 border border-transparent rounded-md shadow-sm text-lg font-medium text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 dark:bg-indigo-500 dark:hover:bg-indigo-600">
+                Submit
+              </button>
+            </div>
+          </form>
+        </div>
+
+        <!-- Contact Info & Map -->
+        <div class="lg:w-1/2 space-y-12">
+          <div class="bg-gray-50 dark:bg-neutral-800 p-8 rounded-lg shadow-lg">
+            <h3 class="text-2xl font-semibold mb-6 text-gray-900 dark:text-white">Our Location</h3>
+            <div class="aspect-w-16 aspect-h-9 mb-6 rounded-lg overflow-hidden">
+              <!-- Google Maps Embed Placeholder -->
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3502.0000000000005!2d77.20000000000000!3d28.613939999999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cfd5b32800001%3A0x46b2d6e5b0000000!2sConnaught%20Place%2C%20New%20Delhi%2C%20Delhi!5e0!3m2!1sen!2sin!4v1678888888888!5m2!1sen!2sin"
+                width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade" class="rounded-lg"></iframe>
+            </div>
+            <p class="text-gray-700 dark:text-gray-300 mb-2">
+              123 AI Solutions Ave, Tech City, New Delhi, India
+            </p>
+            <p class="text-gray-700 dark:text-gray-300 mb-2">
+              Email: info@packersandmovers.net
+            </p>
+            <p class="text-gray-700 dark:text-gray-300">
+              Phone: +91 98765 43210
+            </p>
+          </div>
+
+          <div class="bg-gray-50 dark:bg-neutral-800 p-8 rounded-lg shadow-lg text-center">
+            <h3 class="text-2xl font-semibold mb-6 text-gray-900 dark:text-white">Connect Instantly</h3>
+            <a href="https://wa.me/919876543210" target="_blank" rel="noopener noreferrer"
+              class="inline-flex items-center justify-center px-8 py-4 border border-transparent text-lg font-medium rounded-md shadow-sm text-white bg-green-500 hover:bg-green-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-green-500 dark:bg-green-600 dark:hover:bg-green-700">
+              <svg class="w-6 h-6 mr-3" fill="currentColor" viewBox="0 0 24 24">
+                <path
+                  d="M12.04 2C7.34 2 3.56 5.78 3.56 10.48c0 1.4.37 2.7.99 3.86L3 21.04l6.8-1.79c1.09.6 2.35.92 3.24.92h.01c4.7 0 8.48-3.78 8.48-8.48S16.74 2 12.04 2zm4.5 12.94c-.14.24-.3.26-.56.13-.26-.13-.96-.47-1.11-.52-.14-.05-.29-.01-.42.13-.13.14-.5.52-.64.68-.14.14-.29.16-.54.06-.25-.1-.84-.31-1.6-1-.59-.5-1-1.19-1.4-1.8-.4-.6-.04-.92.22-1.18.2-.2.45-.52.6-.68.14-.14.2-.24.2-.4-.01-.14-.56-1.34-.77-1.8-.2-.46-.4-.39-.56-.39-.14 0-.3.01-.44.01-.14.01-.38.05-.58.25-.2.2-.76.74-.76 1.8s.78 2.08.89 2.23c.11.14 1.52 2.32 3.68 3.23.5.2.88.32 1.18.42.47.14.6.1.82-.02.22-.12.96-.4 1.1-.64.14-.24.14-.44.1-.68-.04-.24-.15-.39-.3-.54z" />
+              </svg>
+              Chat on WhatsApp
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+</element><element id="202d2124-b66c-4902-ac52-8b0032e51e7a" data-section-id="202d2124-b66c-4902-ac52-8b0032e51e7a">
+
+<htmlCode>
+<div id="root">
+  <footer id="footer" class="bg-neutral-900 text-neutral-300 py-12">
+    <div class="container mx-auto px-4">
+      <div class="flex flex-col md:flex-row justify-between items-start md:items-center gap-8">
+        <!-- Company Info -->
+        <div class="flex-shrink-0 text-center md:text-left">
+          <h3 class="text-2xl font-bold text-white mb-2">Packers & Movers AI</h3>
+          <p class="text-sm max-w-xs">AI Automation Solutions for Logistics Efficiency.</p>
+          <p class="text-sm mt-2">&copy; 2023 Packers & Movers AI. All rights reserved.</p>
+        </div>
+
+        <!-- Quick Links -->
+        <div class="text-center md:text-left">
+          <h4 class="text-lg font-semibold text-white mb-4">Quick Links</h4>
+          <ul class="space-y-2">
+            <li><a href="#hero" class="hover:text-white transition-colors duration-300">Home</a></li>
+            <li><a href="#about" class="hover:text-white transition-colors duration-300">About Us</a></li>
+            <li><a href="#services" class="hover:text-white transition-colors duration-300">Services</a></li>
+            <li><a href="#testimonials" class="hover:text-white transition-colors duration-300">Testimonials</a></li>
+            <li><a href="#contact" class="hover:text-white transition-colors duration-300">Contact Us</a></li>
+          </ul>
+        </div>
+
+        <!-- Contact Info -->
+        <div class="text-center md:text-left">
+          <h4 class="text-lg font-semibold text-white mb-4">Contact Us</h4>
+          <p class="text-sm">123 AI Tech Park, Bengaluru, India</p>
+          <p class="text-sm mt-2">Email: info@packersandmovers.net</p>
+          <p class="text-sm">Phone: +91 98765 43210</p>
+          <a href="https://wa.me/919876543210" target="_blank" class="inline-flex items-center mt-4 px-4 py-2 bg-green-500 text-white rounded-md hover:bg-green-600 transition-colors duration-300">
+            <svg class="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M12.04 2C7.34 2 3.54 5.79 3.54 10.5C3.54 12.37 4.09 14.11 5.06 15.6L3.04 21.04L8.6 19.02C10.09 19.99 11.83 20.54 13.7 20.54C18.4 20.54 22.2 16.75 22.2 12.04C22.2 7.34 18.4 3.54 13.7 3.54L12.04 2ZM12.04 4.54C17.3 4.54 21.2 8.44 21.2 13.7C21.2 18.96 17.3 22.86 12.04 22.86C10.2 22.86 8.46 22.31 6.97 21.34L4.95 21.96L5.57 19.94C4.6 18.45 4.05 16.71 4.05 14.87C4.05 9.61 7.95 5.71 13.21 5.71L12.04 4.54ZM12.04 6.54C10.2 6.54 8.46 7.09 6.97 8.06L4.95 8.68L5.57 6.66C4.6 5.17 4.05 3.43 4.05 1.59C4.05 0.33 4.15 0.04 4.25 0.04C4.35 0.04 4.45 0.04 4.55 0.04C4.65 0.04 4.75 0.04 4.85 0.04C4.95 0.04 5.05 0.04 5.15 0.04C5.25 0.04 5.35 0.04 5.45 0.04C5.55 0.04 5.65 0.04 5.75 0.04C5.85 0.04 5.95 0.04 6.05 0.04C6.15 0.04 6.25 0.04 6.35 0.04C6.45 0.04 6.55 0.04 6.65 0.04C6.75 0.04 6.85 0.04 6.95 0.04C7.05 0.04 7.15 0.04 7.25 0.04C7.35 0.04 7.45 0.04 7.55 0.04C7.65 0.04 7.75 0.04 7.85 0.04C7.95 0.04 8.05 0.04 8.15 0.04C8.25 0.04 8.35 0.04 8.45 0.04C8.55 0.04 8.65 0.04 8.75 0.04C8.85 0.04 8.95 0.04 9.05 0.04C9.15 0.04 9.25 0.04 9.35 0.04C9.45 0.04 9.55 0.04 9.65 0.04C9.75 0.04 9.85 0.04 9.95 0.04C10.05 0.04 10.15 0.04 10.25 0.04C10.35 0.04 10.45 0.04 10.55 0.04C10.65 0.04 10.75 0.04 10.85 0.04C10.95 0.04 11.05 0.04 11.15 0.04C11.25 0.04 11.35 0.04 11.45 0.04C11.55 0.04 11.65 0.04 11.75 0.04C11.85 0.04 11.95 0.04 12.05 0.04C12.15 0.04 12.25 0.04 12.35 0.04C12.45 0.04 12.55 0.04 12.65 0.04C12.75 0.04 12.85 0.04 12.95 0.04C13.05 0.04 13.15 0.04 13.25 0.04C13.35 0.04 13.45 0.04 13.55 0.04C13.65 0.04 13.75 0.04 13.85 0.04C13.95 0.04 14.05 0.04 14.15 0.04C14.25 0.04 14.35 0.04 14.45 0.04C14.55 0.04 14.65 0.04 14.75 0.04C14.85 0.04 14.95 0.04 15.05 0.04C15.15 0.04 15.25 0.04 15.35 0.04C15.45 0.04 15.55 0.04 15.65 0.04C15.75 0.04 15.85 0.04 15.95 0.04C16.05 0.04 16.15 0.04 16.25 0.04C16.35 0.04 16.45 0.04 16.55 0.04C16.65 0.04 16.75 0.04 16.85 0.04C16.95 0.04 17.05 0.04 17.15 0.04C17.25 0.04 17.35 0.04 17.45 0.04C17.55 0.04 17.65 0.04 17.75 0.04C17.85 0.04 17.95 0.04 18.05 0.04C18.15 0.04 18.25 0.04 18.35 0.04C18.45 0.04 18.55 0.04 18.65 0.04C18.75 0.04 18.85 0.04 18.95 0.04C19.05 0.04 19.15 0.04 19.25 0.04C19.35 0.04 19.45 0.04 19.55 0.04C19.65 0.04 19.75 0.04 19.85 0.04C19.95 0.04 20.05 0.04 20.15 0.04C20.25 0.04 20.35 0.04 20.45 0.04C20.55 0.04 20.65 0.04 20.75 0.04C20.85 0.04 20.95 0.04 21.05 0.04C21.15 0.04 21.25 0.04 21.35 0.04C21.45 0.04 21.55 0.04 21.65 0.04C21.75 0.04 21.85 0.04 21.95 0.04C22.05 0.04 22.15 0.04 22.25 0.04C22.35 0.04 22.45 0.04 22.55 0.04C22.65 0.04 22.75 0.04 22.85 0.04C22.95 0.04 23.05 0.04 23.15 0.04C23.25 0.04 23.35 0.04 23.45 0.04C23.55 0.04 23.65 0.04 23.75 0.04C23.85 0.04 23.95 0.04 24.05 0.04C24.15 0.04 24.25 0.04 24.35 0.04C24.45 0.04 24.55 0.04 24.65 0.04C24.75 0.04 24.85 0.04 24.95 0.04C25.05 0.04 25.15 0.04 25.25 0.04C25.35 0.04 25.45 0.04 25.55 0.04C25.65 0.04 25.75 0.04 25.85 0.04C25.95 0.04 26.05 0.04 26.15 0.04C26.25 0.04 26.35 0.04 26.45 0.04C26.55 0.04 26.65 0.04 26.75 0.04C26.85 0.04 26.95 0.04 27.05 0.04C27.15 0.04 27.25 0.04 27.35 0.04C27.45 0.04 27.55 0.04 27.65 0.04C27.75 0.04 27.85 0.04 27.95 0.04C28.05 0.04 28.15 0.04 28.25 0.04C28.35 0.04 28.45 0.04 28.55 0.04C28.65 0.04 28.75 0.04 28.85 0.04C28.95 0.04 29.05 0.04 29.15 0.04C29.25 0.04 29.35 0.04 29.45 0.04C29.55 0.04 29.65 0.04 29.75 0.04C29.85 0.04 29.95 0.04 30.05 0.04C30.15 0.04 30.25 0.04 30.35 0.04C30.45 0.04 30.55 0.04 30.65 0.04C30.75 0.04 30.85 0.04 30.95 0.04C31.05 0.04 31.15 0.04 31.25 0.04C31.35 0.04 31.45 0.04 31.55 0.04C31.65 0.04 31.75 0.04 31.85 0.04C31.95 0.04 32.05 0.04 32.15 0.04C32.25 0.04 32.35 0.04 32.45 0.04C32.55 0.04 32.65 0.04 32.75 0.04C32.85 0.04 32.95 0.04 33.05 0.04C33.15 0.04 33.25 0.04 33.35 0.04C33.45 0.04 33.55 0.04 33.65 0.04C33.75 0.04 33.85 0.04 33.95 0.04C34.05 0.04 34.15 0.04 34.25 0.04C34.35 0.04 34.45 0.04 34.55 0.04C34.65 0.04 34.75 0.04 34.85 0.04C34.95 0.04 35.05 0.04 35.15 0.04C35.25 0.04 35.35 0.04 35.45 0.04C35.55 0.04 35.65 0.04 35.75 0.04C35.85 0.04 35.95 0.04 36.05 0.04C36.15 0.04 36.25 0.04 36.35 0.04C36.45 0.04 36.55 0.04 36.65 0.04C36.75 0.04 36.85 0.04 36.95 0.04C37.05 0.04 37.15 0.04 37.25 0.04C37.35 0.04 37.45 0.04 37.55 0.04C37.65 0.04 37.75 0.04 37.85 0.04C37.95 0.04 38.05 0.04 38.15 0.04C38.25 0.04 38.35 0.04 38.45 0.04C38.55 0.04 38.65 0.04 38.75 0.04C38.85 0.04 38.95 0.04 39.05 0.04C39.15 0.04 39.25 0.04 39.35 0.04C39.45 0.04 39.55 0.04 39.65 0.04C39.75 0.04 39.85 0.04 39.95 0.04C40.05 0.04 40.15 0.04 40.25 0.04C40.35 0.04 40.45 0.04 40.55 0.04C40.65 0.04 40.75 0.04 40.85 0.04C40.95 0.04 41.05 0.04 41.15 0.04C41.25 0.04 41.35 0.04 41.45 0.04C41.55 0.04 41.65 0.04 41.75 0.04C41.85 0.04 41.95 0.04 42.05 0.04C42.15 0.04 42.25 0.04 42.35 0.04C42.45 0.04 42.55 0.04 42.65 0.04C42.75 0.04 42.85 0.04 42.95 0.04C43.05 0.04 43.15 0.04 43.25 0.04C43.35 0.04 43.45 0.04 43.55 0.04C43.65 0.04 43.75 0.04 43.85 0.04C43.95 0.04 44.05 0.04 44.15 0.04C44.25 0.04 44.35 0.04 44.45 0.04C44.55 0.04 44.65 0.04 44.75 0.04C44.85 0.04 44.95 0.04 45.05 0.04C45.15 0.04 45.25 0.04 45.35 0.04C45.45 0.04 45.55 0.04 45.65 0.04C45.75 0.04 45.85 0.04 45.95 0.04C46.05 0.04 46.15 0.04 46.25 0.04C46.35 0.04 46.45 0.04 46.55 0.04C46.65 0.04 46.75 0.04 46.85 0.04C46.95 0.04 47.05 0.04 47.15 0.04C47.25 0.04 47.35 0.04 47.45 0.04C47.55 0.04 47.65 0.04 47.75 0.04C47.85 0.04 47.95 0.04 48.05 0.04C48.15 0.04 48.25 0.04 48.35 0.04C48.45 0.04 48.55 0.04 48.65 0.04C48.75 0.04 48.85 0.04 48.95 0.04C49.05 0.04 49.15 0.04 49.25 0.04C49.35 0.04 49.45 0.04 49.55 0.04C49.65 0.04 49.75 0.04 49.85 0.04C49.95 0.04 50.05 0.04 50.15 0.04C50.25 0.04 50.35 0.04 50.45 0.04C50.55 0.04 50.65 0.04 50.75 0.04C50.85 0.04 50.95 0.04 51.05 0.04C51.15 0.04 51.25 0.04 51.35 0.04C51.45 0.04 51.55 0.04 51.65 0.04C51.75 0.04 51.85 0.04 51.95 0.04C52.05 0.04 52.15 0.04 52.25 0.04C52.35 0.04 52.45 0.04 52.55 0.04C52.65 0.04 52.75 0.04 52.85 0.04C52.95 0.04 53.05 0.04 53.15 0.04C53.25 0.04 53.35 0.04 53.45 0.04C53.55 0.04 53.65 0.04 53.75 0.04C53.85 0.04 53.95 0.04 54.05 0.04C54.15 0.04 54.25 0.04 54.35 0.04C54.45 0.04 54.55 0.04 54.65 0.04C54.75 0.04 54.85 0.04 54.95 0.04C55.05 0.04 55.15 0.04 55.25 0.04C55.35 0.04 55.45 0.04 55.55 0.04C55.65 0.04 55.75 0.04 55.85 0.04C55.95 0.04 56.05 0.04 56.15 0.04C56.25 0.04 56.35 0.04 56.45 0.04C56.55 0.04 56.65 0.04 56.75 0.04C56.85 0.04 56.95 0.04 57.05 0.04C57.15 0.04 57.25 0.04 57.35 0.04C57.45 0.04 57.55 0.04 57.65 0.04C57.75 0.04 57.85 0.04 57.95 0.04C58.05 0.04 58.15 0.04 58.25 0.04C58.35 0.04 58.45 0.04 58.55 0.04C58.65 0.04 58.75 0.04 58.85 0.04C58.95 0.04 59.05 0.04 59.15 0.04C59.25 0.04 59.35 0.04 59.45 0.04C59.55 0.04 59.65 0.04 59.75 0.04C59.85 0.04 59.95 0.04 60.05 0.04C60.15 0.04 60.25 0.04 60.35 0.04C60.45 0.04 60.55 0.04 60.65 0.04C60.75 0.04 60.85 0.04 60.95 0.04C61.05 0.04 61.15 0.04 61.25 0.04C61.35 0.04 61.45 0.04 61.55 0.04C61.65 0.04 61.75 0.04 61.85 0.04C61.95 0.04 62.05 0.04 62.15 0.04C62.25 0.04 62.35 0.04 62.45 0.04C62.55 0.04 62.65 0.04 62.75 0.04C62.85 0.04 62.95 0.04 63.05 0.04C63.15 0.04 63.25 0.04 63.35 0.04C63.45 0.04 63.55 0.04 63.65 0.04C63.75 0.04 63.85 0.04 63.95 0.04C64.05 0.04 64.15 0.04 64.25 0.04C64.35 0.04 64.45 0.04 64.55 0.04C64.65 0.04 64.75 0.04 64.85 0.04C64.95 0.04 65.05 0.04 65.15 0.04C65.25 0.04 65.35 0.04 65.45 0.04C65.55 0.04 65.65 0.04 65.75 0.04C65.85 0.04 65.95 0.04 66.05 0.04C66.15 0.04 66.25 0.04 66.35 0.04C66.45 0.04 66.55 0.04 66.65 0.04C66.75 0.04 66.85 0.04 66.95 0.04C67.05 0.04 67.15 0.04 67.25 0.04C67.35 0.04 67.45 0.04 67.55 0.04C67.65 0.04 67.75 0.04 67.85 0.04C67.95 0.04 68.05 0.04 68.15 0.04C68.25 0.04 68.35 0.04 68.45 0.04C68.55 0.04 68.65 0.04 68.75 0.04C68.85 0.04 68.95 0.04 69.05 0.04C69.15 0.04 69.25 0.04 69.35 0.04C69.45 0.04 69.55 0.04 69.65 0.04C69.75 0.04 69.85 0.04 69.95 0.04C70.05 0.04 70.15 0.04 70.25 0.04C70.35 0.04 70.45 0.04 70.55 0.04C70.65 0.04 70.75 0.04 70.85 0.04C70.95 0.04 71.05 0.04 71.15 0.04C71.25 0.04 71.35 0.04 71.45 0.04C71.55 0.04 71.65 0.04 71.75 0.04C71.85 0.04 71.95 0.04 72.05 0.04C72.15 0.04 72.25 0.04 72.35 0.04C72.45 0.04 72.55 0.04 72.65 0.04C72.75 0.04 72.85 0.04 72.95 0.04C73.05 0.04 73.15 0.04 73.25 0.04C73.35 0.04 73.45 0.04 73.55 0.04C73.65 0.04 73.75 0.04 73.85 0.04C73.95 0.04 74.05 0.04 74.15 0.04C74.25 0.04 74.35 0.04 74.45 0.04C74.55 0.04 74.65 0.04 74.75 0.04C74.85 0.04 74.95 0.04 75.05 0.04C75.15 0.04 75.25 0.04 75.35 0.04C75.45 0.04 75.55 0.04 75.65 0.04C75.75 0.04 75.85 0.04 75.95 0.04C76.05 0.04 76.15 0.04 76.25 0.04C76.35 0.04 76.45 0.04 76.55 0.04C76.65 0.04 76.75 0.04 76.85 0.04C76.95 0.04 77.05 0.04 77.15 0.04C77.25 0.04 77.35 0.04 77.45 0.04C77.55 0.04 77.65 0.04 77.75 0.04C77.85 0.04 77.95 0.04 78.05 0.04C78.15 0.04 78.25 0.04 78.35 0.04C78.45 0.04 78.55 0.04 78.65 0.04C78.75 0.04 78.85 0.04 78.95 0.04C79.05 0.04 79.15 0.04 79.25 0.04C79.35 0.04 79.45 0.04 79.55 0.04C79.65 0.04 79.75 0.04 79.85 0.04C79.95 0.04 80.05 0.04 80.15 0.04C80.25 0.04 80.35 0.04 80.45 0.04C80.55 0.04 80.65 0.04 80.75 0.04C80.85 0.04 80.95 0.04 81.05 0.04C81.15 0.04 81.25 0.04 81.35 0.04C81.45 0.04 81.55 0.04 81.65 0.04C81.75 0.04 81.85 0.04 81.95 0.04C82.05 0.04 82.15 0.04 82.25 0.04C82.35 0.04 82.45 0.04 82.55 0.04C82.65 0.04 82.75 0.04 82.85 0.04C82.95 0.04 83.05 0.04 83.15 0.04C83.25 0.04 83.35 0.04 83.45 0.04C83.55 0.04 83.65 0.04 83.75 0.04C83.85 0.04 83.95 0.04 84.05 0.04C84.15 0.04 84.25 0.04 84.35 0.04C84.45 0.04 84.55 0.04 84.65 0.04C84.75 0.04 84.85 0.04 84.95 0.04C85.05 0.04 85.15 0.04 85.25 0.04C85.35 0.04 85.45 0.04 85.55 0.04C85.65 0.04 85.75 0.04 85.85 0.04C85.95 0.04 86.05 0.04 86.15 0.04C86.25 0.04 86.35 0.04 86.45 0.04C86.55 0.04 86.65 0.04 86.75 0.04C86.85 0.04 86.95 0.04 87.05 0.04C87.15 0.04 87.25 0.04 87.35 0.04C87.45 0.04 87.55 0.04 87.65 0.04C87.75 0.04 87.85 0.04 87.95 0.04C88.05 0.04 88.15 0.04 88.25 0.04C88.35 0.04 88.45 0.04 88.55 0.04C88.65 0.04 88.75 0.04 88.85 0.04C88.95 0.04 89.05 0.04 89.15 0.04C89.25 0.04 89.35 0.04 89.45 0.04C89.55 0.04 89.65 0.04 89.75 0.04C89.85 0.04 89.95 0.04 90.05 0.04C90.15 0.04 90.25 0.04 90.35 0.04C90.45 0.04 90.55 0.04 90.65 0.04C90.75 0.04 90.85 0.04 90.95 0.04C91.05 0.04 91.15 0.04 91.25 0.04C91.35 0.04 91.45 0.04 91.55 0.04C91.65 0.04 91.75 0.04 91.85 0.04C91.95 0.04 92.05 0.04 92.15 0.04C92.25 0.04 92.35 0.04 92.45 0.04C92.55 0.04 92.65 0.04 92.75 0.04C92.85 0.04 92.95 0.04 93.05 0.04C93.15 0.04 93.25 0.04 93.35 0.04C93.45 0.04 93.55 0.04 93.65 0.04C93.75 0.04 93.85 0.04 93.95 0.04C94.05 0.04 94.15 0.04 94.25 0.04C94.35 0.04 94.45 0.04 94.55 0.04C94.65 0.04 94.75 0.04 94.85 0.04C94.95 0.04 95.05 0.04 95.15 0.04C95.25 0.04 95.35 0.04 95.45 0.04C95.55 0.04 95.65 0.04 95.75 0.04C95.85 0.04 95.95 0.04 96.05 0.04C96.15 0.04 96.25 0.04 96.35 0.04C96.45 0.04 96.55 0.04 96.65 0.04C96.75 0.04 96.85 0.04 96.95 0.04C97.05 0.04 97.15 0.04 97.25 0.04C97.35 0.04 97.45 0.04 97.55 0.04C97.65 0.04 97.75 0.04 97.85 0.04C97.95 0.04 98.05 0.04 98.15 0.04C98.25 0.04 98.35 0.04 98.45 0.04C98.55 0.04 98.65 0.04 98.75 0.04C98.85 0.04 98.95 0.04 99.05 0.04C99.15 0.04 99.25 0.04 99.35 0.04C99.45 0.04 99.55 0.04 99.65 0.04C99.75 0.04 99.85 0.04 99.95 0.04C100.05 0.04 100.15 0.04 100.25 0.04C100.35 0.04 100.45 0.04 100.55 0.04C100.65 0.04 100.75 0.04 100.85 0.04C100.95 0.04 101.05 0.04 101.15 0.04C101.25 0.04 101.35 0.04 101.45 0.04C101.55 0.04 101.65 0.04 101.75 0.04C101.85 0.04 101.95 0.04 102.05 0.04C102.15 0.04 102.25 0.04 102.35 0.04C102.45 0.04 102.55 0.04 102.65 0.04C102.75 0.04 102.85 0.04 102.95 0.04C103.05 0.04 103.15 0.04 103.25 0.04C103.35 0.04 103.45 0.04 103.55 0.04C103.65 0.04 103.75 0.04 103.85 0.04C103.95 0.04 104.05 0.04 104.15 0.04C104.25 0.04 104.35 0.04 104.45 0.04C104.55 0.04 104.65 0.04 104.75 0.04C104.85 0.04 104.95 0.04 105.05 0.04C105.15 0.04 105.25 0.04 105.35 0.04C105.45 0.04 105.55 0.04 105.65 0.04C105.75 0.04 105.85 0.04 105.95 0.04C106.05 0.04 106.15 0.04 106.25 0.04C106.35 0.04 106.45 0.04 106.55 0.04C106.65 0.04 106.75 0.04 106.85 0.04C106.95 0.04 107.05 0.04 107.15 0.04C107.25 0.04 107.35 0.04 107.45 0.04C107.55 0.04 107.65 0.04 107.75 0.04C107.85 0.04 107.95 0.04 108.05 0.04C108.15 0.04 108.25 0.04 108.35 0.04C108.45 0.04 108.55 0.04 108.65 0.04C108.75 0.04 108.85 0.04 108.95 0.04C109.05 0.04 109.15 0.04 109.25 0.04C109.35 0.04 109.45 0.04 109.55 0.04C109.65 0.04 109.75 0.04 109.85 0.04C109.95 0.04 110.05 0.04 110.15 0.04C110.25 0.04 110.35 0.04 110.45 0.04C110.55 0.04 110.65 0.04 110.75 0.04C110.85 0.04 110.95 0.04 111.05 0.04C111.15 0.04 111.25 0.04 111.35 0.04C111.45 0.04 111.55 0.04 111.65 0.04C111.75 0.04 111.85 0.04 111.95 0.04C112.05 0.04 112.15 0.04 112.25 0.04C112.35 0.04 112.45 0.04 112.55 0.04C112.65 0.04 112.75 0.04 112.85 0.04C112.95 0.04 113.05 0.04 113.15 0.04C113.25 0.04 113.35 0.04 113.45 0.04C113.55 0.04 113.65 0.04 113.75 0.04C113.85 0.04 113.95 0.04 114.05 0.04C114.15 0.04 114.25 0.04 114.35 0.04C114.45 0.04 114.55 0.04 114.65 0.04C114.75 0.04 114.85 0.04 114.95 0.04C115.05 0.04 115.15 0.04 115.25 0.04C115.35 0.04 115.45 0.04 115.55 0.04C115.65 0.04 115.75 0.04 115.85 0.04C115.95 0.04 116.05 0.04 116.15 0.04C116.25 0.04 116.35 0.04 116.45 0.04C116.55 0.04 116.65 0.04 116.75 0.04C116.85 0.04 116.95 0.04 117.05 0.04C117.15 0.04 117.25 0.04 117.35 0.04C117.45 0.04 117.55 0.04 117.65 0.04C117.75 0.04 117.85 0.04 117.95 0.04C118.05 0.04 118.15 0.04 118.25 0.04C118.35 0.04 118.45 0.04 118.55 0.04C118.65 0.04 118.75 0.04 118.85 0.04C118.95 0.04 119.05 0.04 119.15 0.04C119.25 0.04 119.35 0.04 119.45 0.04C119.55 0.04 119.65 0.04 119.75 0.04C119.85 0.04 119.95 0.04 120.05 0.04C120.15 0.04 120.25 0.04 120.35 0.04C120.45 0.04 120.55 0.04 120.65 0.04C120.75 0.04 120.85 0.04 120.95 0.04C121.05 0.04 121.15 0.04 121.25 0.04C121.35 0.04 121.45 0.04 121.55 0.04C121.65 0.04 121.75 0.04 121.85 0.04C121.95 0.04 122.05 0.04 122.15 0.04C122.25 0.04 122.35 0.04 122.45 0.04C122.55 0.04 122.65 0.04 122.75 0.04C122.85 0.04 122.95 0.04 123.05 0.04C123.15 0.04 123.25 0.04 123.35 0.04C123.45 0.04 123.55 0.04 123.65 0.04C123.75 0.04 123.85 0.04 123.95 0.04C124.05 0.04 124.15 0.04 124.25 0.04C124.35 0.04 124.45 0.04 124.55 0.04C124.65 0.04 124.75 0.04 124.85 0.04C124.95 0.04 125.05 0.04 125.15 0.04C125.25 0.04 125.35 0.04 125.45 0.04C125.55 0.04 125.65 0.04 125.75 0.04C125.85 0.04 125.95 0.04 126.05 0.04C126.15 0.04 126.25 0.04 126.35 0.04C126.45 0.04 126.55 0.04 126.65 0.04C126.75 0.04 126.85 0.04 126.95 0.04C127.05 0.04 127.15 0.04 127.25 0.04C127.35 0.04 127.45 0.04 127.55 0.04C127.65 0.04 127.75 0.04 127.85 0.04C127.95 0.04 128.05 0.04 128.15 0.04C128.25 0.04 128.35 0.04 128.45 0.04C128.55 0.04 128.65 0.04 128.75 0.04C128.85 0.04 128.95 0.04 129.05 0.04C129.15 0.04 129.25 0.04 129.35 0.04C129.45 0.04 129.55 0.04 129.65 0.04C129.75 0.04 129.85 0.04 129.95 0.04C130.05 0.04 130.15 0.04 130.25 0.04C130.35 0.04 130.45 0.04 130.55 0.04C130.65 0.04 130.75 0.04 130.85 0.04C130.95 0.04 131.05 0.04 131.15 0.04C131.25 0.04 131.35 0.04 131.45 0.04C131.55 0.04 131.65 0.04 131.75 0.04C131.85 0.04 131.95 0.04 132.05 0.04C132.15 0.04 132.25 0.04 132.35 0.04C132.45 0.04 132.55 0.04 132.65 0.04C132.75 0.04 132.85 0.04 132.95 0.04C133.05 0.04 133.15 0.04 133.25 0.04C133.35 0.04 133.45 0.04 133.55 0.04C133.65 0.04 133.75 0.04 133.85 0.04C133.95 0.04 134.05 0.04 134.15 0.04C134.25 0.04 134.35 0.04 134.45 0.04C134.55 0.04 134.65 0.04 134.75 0.04C134.85 0.04 134.95 0.04 135.05 0.04C135.15 0.04 135.25 0.04 135.35 0.04C135.45 0.04 135.55 0.04 135.65 0.04C135.75 0.04 135.85 0.04 135.95 0.04C136.05 0.04 136.15 0.04 136.25 0.04C136.35 0.04 136.45 0.04 136.55 0.04C136.65 0.04 136.75 0.04 136.85 0.04C136.95 0.04 137.05 0.04 137.15 0.04C137.25 0.04 137.35 0.04 137.45 0.04C137.55 0.04 137.65 0.04 137.75 0.04C137.85 0.04 137.95 0.04 138.05 0.04C138.15 0.04 138.25 0.04 138.35 0.04C138.45 0.04 138.55 0.04 138.65 0.04C138.75 0.04 138.85 0.04 138.95 0.04C139.05 0.04 139.15 0.04 139.25 0.04C139.35 0.04 139.45 0.04 139.55 0.04C139.65 0.04 139.75 0.04 139.85 0.04C139.95 0.04 140.05 0.04 140.15 0.04C140.25 0.04 140.35 0.04 140.45 0.04C140.55 0.04 140.65 0.04 140.75 0.04C140.85 0.04 140.95 0.04 141.05 0.04C141.15 0.04 141.25 0.04 141.35 0.04C141.45 0.04 141.55 0.04 141.65 0.04C141.75 0.04 141.85 0.04 141.95 0.04C142.05 0.04 142.15 0.04 142.25 0.04C142.35 0.04 142.45 0.04 142.55 0.04C142.65 0.04 142.75 0.04 142.85 0.04C142.95 0.04 143.05 0.04 143.15 0.04C143.25 0.04 143.35 0.04 143.45 0.04C143.55 0.04 143.65 0.04 143.75 0.04C143.85 0.04 143.95 0.04 144.05 0.04C144.15 0.04 144.25 0.04 144.35 0.04C144.45 0.04 144.55 0.04 144.65 0.04C144.75 0.04 144.85 0.04 144.95 0.04C145.05 0.04 145.15 0.04 145.25 0.04C145.35 0.04 145.45 0.04 145.55 0.04C145.65 0.04 145.75 0.04 145.85 0.04C145.95 0.04 146.05 0.04 146.15 0.04C146.25 0.04 146.35 0.04 146.45 0.04C146.55 0.04 146.65 0.04 146.75 0.04C146.85 0.04 146.95 0.04 147.05 0.04C147.15 0.04 147.25 0.04 147.35 0.04C147.45 0.04 147.55 0.04 147.65 0.04C147.75 0.04 147.85 0.04 147.95 0.04C148.05 0.04 148.15 0.04 148.25 0.04C148.35 0.04 148.45 0.04 148.55 0.04C148.65 0.04 148.75 0.04 148.85 0.04C148.95 0.04 149.05 0.04 149.15 0.04C149.25 0.04 149.35 0.04 149.45 0.04C149.55 0.04 149.65 0.04 149.75 0.04C149.85 0.04 149.95 0.04 150.05 0.04C150.15 0.04 150.25 0.04 150.35 0.04C150.45 0.04 150.55 0.04 150.65 0.04C150.75 0.04 150.85 0.04 150.95 0.04C151.05 0.04 151.15 0.04 151.25 0.04C151.35 0.04 151.45 0.04 151.55 0.04C151.65 0.04 151.75 0.04 151.85 0.04C151.95 0.04 152.05 0.04 152.15 0.04C152.25 0.04 152.35 0.04 152.45 0.04C152.55 0.04 152.65 0.04 152.75 0.04C152.85 0.04 152.95 0.04 153.05 0.04C153.15 0.04 153.25 0.04 153.35 0.04C153.45 0.04 153.55 0.04 153.65 0.04C153.75 0.04 153.85 0.04 153.95 0.04C154.05 0.04 154.15 0.04 154.25 0.04C154.35 0.04 154.45 0.04 154.55 0.04C154.65 0.04 154.75 0.04 154.85 0.04C154.95 0.04 155.05 0.04 155.15 0.04C155.25 0.04 155.35 0.04 155.45 0.04C155.55 0.04 155.65 0.04 155.75 0.04C155.85 0.04 155.95 0.04 156.05 0.04C156.15 0.04 156.25 0.04 156.35 0.04C156.45 0.04 156.55 0.04 156.65 0.04C156.75 0.04 156.85 0.04 156.95 0.04C157.05 0.04 157.15 0.04 157.25 0.04C157.35 0.04 157.45 0.04 157.55 0.04C157.65 0.04 157.75 0.04 157.85 0.04C157.95 0.04 158.05 0.04 158.15 0.04C158.25 0.04 158.35 0.04 158.45 0.04C158.55 0.04 158.65 0.04 158.75 0.04C158.85 0.04 158.95 0.04 159.05 0.04C159.15 0.04 159.25 0.04 159.35 0.04C159.45 0.04 159.55 0.04 159.65 0.04C159.75 0.04 159.85 0.04 159.95 0.04C160.05 0.04 160.15 0.04 160.25 0.04C160.35 0.04 160.45 0.04 160.55 0.04C160.65 0.04 160.75 0.04 160.85 0.04C160.95 0.04 161.05 0.04 161.15 0.04C161.25 0.04 161.35 0.04 161.45 0.04C161.55 0.04 161.65 0.04 161.75 0.04C161.85 0.04 161.95 0.04 162.05 0.04C162.15 0.04 162.25 0.04 162.35 0.04C162.45 0.04 162.55 0.04 162.65 0.04C162.75 0.04 162.85 0.04 162.95 0.04C163.05 0.04 163.15 0.04 163.25 0.04C163.35 0.04 163.45 0.04 163.55 0.04C163.65 0.04 163.75 0.04 163.85 0.04C163.95 0.04 164.05 0.04 164.15 0.04C164.25 0.04 164.35 0.04 164.45 0.04C164.55 0.04 164.65 0.04 164.75 0.04C164.85 0.04 164.95 0.04 165.05 0.04C165.15 0.04 165.25 0.04 165.35 0.04C165.45 0.04 165.55 0.04 165.65 0.04C165.75 0.04 165.85 0.04 165.95 0.04C166.05 0.04 166.15 0.04 166.25 0.04C166.35 0.04 166.45 0.04 166.55 0.04C166.65 0.04 166.75 0.04 166.85 0.04C166.95 0.04 167.05 0.04 167.15 0.04C167.25 0.04 167.35 0.04 167.45 0.04C167.55 0.04 167.65 0.04 167.75 0.04C167.85 0.04 167.95 0.04 168.05 0.04C168.15 0.04 168.25 0.04 168.35 0.04C168.45 0.04 168.55 0.04 168.65 0.04C168.75 0.04 168.85 0.04 168.95 0.04C169.05 0.04 169.15 0.04 169.25 0.04C169.35 0.04 169.45 0.04 169.55 0.04C169.65 0.04 169.75 0.04 169.85 0.04C169.95 0.04 170.05 0.04 170.15 0.04C170.25 0.04 170.35 0.04 170.45 0.04C170.55 0.04 170.65 0.04 170.75 0.04C170.85 0.04 170.95 0.04 171.05 0.04C171.15 0.04 171.25 0.04 171.35 0.04C171.45 0.04 171.55 0.04 171.65 0.04C171.75 0.04 171.85 0.04 171.95 0.04C172.05 0.04 172.15 0.04 172.25 0.04C172.35 0.04 172.45 0.04 172.55 0.04C172.65 0.04 172.75 0.04 172.85 0.04C172.95 0.04 173.05 0.04 173.15 0.04C173.25 0.04 173.35 0.04 173.45 0.04C173.55 0.04 173.65 0.04 173.75 0.04C173.85 0.04 173.95 0.04 174.05 0.04C174.15 0.04 174.25 0.04 174.35 0.04C174.45 0.04 174.55 0.04 174.65 0.04C174.75 0.04 174.85 0.04 174.95 0.04C175.05 0.04 175.15 0.04 175.25 0.04C175.35 0.04 175.45 0.04 175.55 0.04C175.65 0.04 175.75 0.04 175.85 0.04C175.95 0.04 176.05 0.04 176.15 0.04C176.25 0.04 176.35 0.04 176.45 0.04C176.55 0.04 176.65 0.04 176.75 0.04C176.85 0.04 176.95 0.04 177.05 0.04C177.15 0.04 177.25 0.04 177.35 0.04C177.45 0.04 177.55 0.04 177.65 0.04C177.75 0.04 177.85 0.04 177.95 0.04C178.05 0.04 178.15 0.04 178.25 0.04C178.35 0.04 178.45 0.04 178.55 0.04C178.65 0.04 178.75 0.04 178.85 0.04C178.95 0.04 179.05 0.04 179.15 0.04C179.25 0.04 179.35 0.04 179.45 0.04C179.55 0.04 179.65 0.04 179.75 0.04C179.85 0.04 179.95 0.04 180.05 0.04C180.15 0.04 180.25 0.04 180.35 0.04C180.45 0.04 180.55 0.04 180.65 0.04C180.75 0.04 180.85 0.04 180.95 0.04C181.05 0.04 181.15 0.04 181.25 0.04C181.35 0.04 181.45 0.04 181.55 0.04C181.65 0.04 181.75 0.04 181.85 0.04C181.95 0.04 182.05 0.04 182.15 0.04C182.25 0.04 182.35 0.04 182.45 0.04C182.55 0.04 182.65 0.04 182.75 0.04C182.85 0.04 182.95 0.04 183.05 0.04C183.15 0.04 183.25 0.04 183.35 0.04C183.45 0.04 183.55 0.04 183.65 0.04C183.75 0.04 183.85 0.04 183.95 0.04C184.05 0.04 184.15 0.04 184.25 0.04C184.35 0.04 184.45 0.04 184.55 0.04C184.65 0.04 184.75 0.04 184.85 0.04C184.95 0.04 185.05 0.04 185.15 0.04C185.25 0.04 185.35 0.04 185.45 0.04C185.55 0.04 185.65 0.04 185.75 0.04C185.85 0.04 185.95 0.04 186.05 0.04C186.15 0.04 186.25 0.04 186.35 0.04C186.45 0.04 186.55 0.04 186.65 0.04C186.75 0.04 186.85 0.04 186.95 0.04C187.05 0.04 187.15 0.04 187.25 0.04C187.35 0.04 187.45 0.04 187.55 0.04C187.65 0.04 187.75 0.04 187.85 0.04C187.95 0.04 188.05 0.04 188.15 0.04C188.25 0.04 188.35 0.04 188.45 0.04C188.55 0.04 188.65 0.04 188.75 0.04C188.85 0.04 188.95 0.04 189.05 0.04C189.15 0.04 189.25 0.04 189.35 0.04C189.45 0.04 189.55 0.04 189.65 0.04C189.75 0.04 189.85 0.04 189.95 0.04C190.05 0.04 190.15 0.04 190.25 0.04C190.35 0.04 190.45 0.04 190.55 0.04C190.65 0.04 190.75 0.04 190.85 0.04C190.95 0.04 191.05 0.04 191.15 0.04C191.25 0.04 191.35 0.04 191.45 0.04C191.55 0.04 191.65 0.04 191.75 0.04C191.85 0.04 191.95 0.04 192.05 0.04C192.15 0.04 192.25 0.04 192.35 0.04C192.45 0.04 192.55 0.04 192.65 0.04C192.75 0.04 192.85 0.04 192.95 0.04C193.05 0.04 193.15 0.04 193.25 0.04C193.35 0.04 193.45 0.04 193.55 0.04C193.65 0.04 193.75 0.04 193.85 0.04C193.95 0.04 194.05 0.04 194.15 0.04C194.25 0.04 194.35 0.04 194.45 0.04C194.55 0.04 194.65 0.04 194.75 0.04C194.85 0.04 194.95 0.04 195.05 0.04C195.15 0.04 195.25 0.04 195.35 0.04C195.45 0.04 195.55 0.04 195.65 0.04C195.75 0.04 195.85 0.04 195.95 0.04C196.05 0.04 196.15 0.04 196.25 0.04C196.35 0.04 196.45 0.04 196.55 0.04C196.65 0.04 196.75 0.04 196.85 0.04C196.95 0.04 197.05 0.04 197.15 0.04C197.25 0.04 197.35 0.04 197.45 0.04C197.55 0.04 197.65 0.04 197.75 0.04C197.85 0.04 197.95 0.04 198.05 0.04C198.15 0.04 198.25 0.04 198.35 0.04C198.45 0.04 198.55 0.04 198.65 0.04C198.75 0.04 198.85 0.04 198.95 0.04C199.05 0.04 199.15 0.04 199.25 0.04C199.35 0.04 199.45 0.04 199.55 0.04C199.65 0.04 199.75 0.04 199.85 0.04C199.95 0.04 200.05 0.04 200.15 0.04C200.25 0.04 200.35 0.04 200.45 0.04C200.55 0.04 200.65 0.04 200.75 0.04C200.85 0.04 200.95 0.04 201.05 0.04C201.15 0.04 201.25 0.04 201.35 0.04C201.45 0.04 201.55 0.04 201.65 0.04C201.75 0.04 201.85 0.04 201.95 0.04C202.05 0.04 202.15 0.04 202.25 0.04C202.35 0.04 202.45 0.04 202.55 0.04C202.65 0.04 202.75 0.04 202.85 0.04C202.95 0.04 203.05 0.04 203.15 0.04C203.25 0.04 203.35 0.04 203.45 0.04C203.55 0.04 203.65 0.04 203.75 0.04C203.85 0.04 203.95 0.04 204.05 0.04C204.15 0.04 204.25 0.04 204.35 0.04C204.45 0.04 204.55 0.04 204.65 0.04C204.75 0.04 204.85 0.04 204.95 0.04C205.05 0.04 205.15 0.04 205.25 0.04C205.35 0.04 205.45 0.04 205.55 0.04C205.65 0.04 205.75 0.04 205.85 0.04C205.95 0.04 206.05 0.04 206.15 0.04C206.25 0.04 206.35 0.04 206.45 0.04C206.55 0.04 206.65 0.04 206.75 0.04C206.85 0.04 206.95 0.04 207.05 0.04C207.15 0.04 207.25 0.04 207.35 0.04C207.45 0.04 207.55 0.04 207.65 0.04C207.75 0.04 207.85 0.04 207.95 0.04C208.05 0.04 208.15 0.04 208.25 0.04C208.35 0.04 208.45 0.04 208.55 0.04C208.65 0.04 208.75 0.04 208.85 0.04C208.95 0.04 209.05 0.04 209.15 0.04C209.25 0.04 209.35 0.04 209.45 0.04C209.55 0.04 209.65 0.04 209.75 0.04C209.85 0.04 209.95 0.04 210.05 0.04C210.15 0.04 210.25 0.04 210.35 0.04C210.45 0.04 210.55 0.04 210.65 0.04C210.75 0.04 210.85 0.04 210.95 0.04C211.05 0.04 211.15 0.04 211.25 0.04C211.35 0.04 211.45 0.04 211.55 0.04C211.65 0.04 211.75 0.04 211.85 0.04C211.95 0.04 212.05 0.04 212.15 0.04C212.25 0.04 212.35 0.04 212.45 0.04C212.55 0.04 212.65 0.04 212.75 0.04C212.85 0.04 212.95 0.04 213.05 0.04C213.15 0.04 213.25 0.04 213.35 0.04C213.45 0.04 213.55 0.04 213.65 0.04C213.75 0.04 213.85 0.04 213.95 0.04C214.05 0.04 214.15 0.04 214.25 0.04C214.35 0.04 214.45 0.04 214.55 0.04C214.65 0.04 214.75 0.04 214.85 0.04C214.95 0.04 215.05 0.04 215.15 0.04C215.25 0.04 215.35 0.04 215.45 0.04C215.55 0.04 215.65 0.04 215.75 0.04C215.85 0.04 215.95 0.04 216.05 0.04C216.15 0.04 216.25 0.04 216.35 0.04C216.45 0.04 216.55 0.04 216.65 0.04C216.75 0.04 216.85 0.04 216.95 0.04C217.05 0.04 217.15 0.04 217.25 0.04C217.35 0.04 217.45 0.04 217.55 0.04C217.65 0.04 217.75 0.04 217.85 0.04C217.95 0.04 218.05 0.04 218.15 0.04C218.25 0.04 218.35 0.04 218.45 0.04C218.55 0.04 218.65 0.04 218.75 0.04C218.85 0.04 218.95 0.04 219.05 0.04C219.15 0.04 219.25 0.04 219.35 0.04C219.45 0.04 219.55 0.04 219.65 0.04C219.75 0.04 219.85 0.04 219.95 0.04C220.05 0.04 220.15 0.04 220.25 0.04C220.35 0.04 220.45 0.04 220.55 0.04C220.65 0.04 220.75 0.04 220.85 0.04C220.95 0.04 221.05 0.04 221.15 0.04C221.25 0.04 221.35 0.04 221.45 0.04C221.55 0.04 221.65 0.04 221.75 0.04C221.85 0.04 221.95 0.04 222.05 0.04C222.15 0.04 222.25 0.04 222.35 0.04C222.45 0.04 222.55 0.04 222.65 0.04C222.75 0.04 222.85 0.04 222.95 0.04C223.05 0.04 223.15 0.04 223.25 0.04C223.35 0.04 223.45 0.04 223.55 0.04C223.65 0.04 223.75 0.04 223.85 0.04C223.95 0.04 224.05 0.04 224.15 0.04C224.25 0.04 224.35 0.04 224.45 0.04C224.55 0.04 224.65 0.04 224.75 0.04C224.85 0.04 224.95 0.04 225.05 0.04C225.15 0.04 225.25 0.04 225.35 0.04C225.45 0.04 225.55 0.04 225.65 0.04C225.75 0.04 225.85 0.04 225.95 0.04C226.05 0.04 226.15 0.04 226.25 0.04C226.35 0.04 226.45 0.04 226.55 0.04C226.65 0.04 226.75 0.04 226.85 0.04C226.95 0.04 227.05 0.04 227.15 0.04C227.25 0.04 227.35 0.04 227.45 0.04C227.55 0.04 227.65 0.04 227.75 0.04C227.85 0.04 227.95 0.04 228.05 0.04C228.15 0.04 228.25 0.04 228.35 0.04C228.45 0.04 228.55 0.04 228.65 0.04C228.75 0.04 228.85 0.04 228.95 0.04C229.05 0.04 229.15 0.04 229.25 0.04C229.35 0.04 229.45 0.04 229.55 0.04C229.65 0.04 229.75 0.04 229.85 0.04C229.95 0.04 230.05 0.04 230.15 0.04C230.25 0.04 230.35 0.04 230.45 0.04C230.55 0.04 230.65 0.04 230.75 0.04C230.85 0.04 230.95 0.04 231.05 0.04C231.15 0.04 231.25 0.04 231.35 0.04C231.45 0.04 231.55 0.04 231.65 0.04C231.75 0.04 231.85 0.04 231.95 0.04C232.05 0.04 232.15 0.04 232.25 0.04C232.35 0.04 232.45 0.04 232.55 0.04C232.65 0.04 232.75 0.04 232.85 0.04C232.95 0.04 233.05 0.04 233.15 0.04C233.25 0.04 233.35 0.04 233.45 0.04C233.55 0.04 233.65 0.04 233.75 0.04C233.85 0.04 233.95 0.04 234.05 0.04C234.15 0.04 234.25 0.04 234.35 0.04C234.45 0.04 234.55 0.04 234.65 0.04C234.75 0.04 234.85 0.04 234.95 0.04C235.05 0.04 235.15 0.04 235.25 0.04C235.35 0.04 235.45 0.04 235.55 0.04C235.65 0.04 235.75 0.04 235.85 0.04C235.95 0.04 236.05 0.04 236.15 0.04C236.25 0.04 236.35 0.04 236.45 0.04C236.55 0.04 236.65 0.04 236.75 0.04C236.85 0.04 236.95 0.04 237.05 0.04C237.15 0.04 237.25 0.04 237.35 0.04C237.45 0.04 237.55 0.04 237.65 0.04C237.75 0.04 237.85 0.04 237.95 0.04C238.05 0.04 238.15 0.04 238.25 0.04C238.35 0.04 238.45 0.04 238.55 0.04C238.65 0.04 238.75 0.04 238.85 0.04C238.95 0.04 239.05 0.04 239.15 0.04C239.25 0.04 239.35 0.04 239.45 0.04C239.55 0.04 239.65 0.04 239.75 0.04C239.85 0.04 239.95 0.04 240.05 0.04C240.15 0.04 240.25 0.04 240.35 0.04C240.45 0.04 240.55 0.04 240.65 0.04C240.75 0.04 240.85 0.04 240.95 0.04C241.05 0.04 241.15 0.04 241.25 0.04C241.35 0.04 241.45 0.04 241.55 0.04C241.65 0.04 241.75 0.04 241.85 0.04C241.95 0.04 242.05 0.04 242.15 0.04C242.25 0.04 242.35 0.04 242.45 0.04C242.55 0.04 242.65 0.04 242.75 0.04C242.85 0.04 242.95 0.04 243.05 0.04C243.15 0.04 243.25 0.04 243.35 0.04C243.45 0.04 243.55 0.04 243.65 0.04C243.75 0.04 243.85 0.04 243.95 0.04C244.05 0.04 244.15 0.04 244.25 0.04C244.35 0.04 244.45 0.04 244.55 0.04C244.65 0.04 244.75 0.04 244.85 0.04C244.95 0.04 245.05 0.04 245.15 0.04C245.25 0.04 245.35 0.04 245.45 0.04C245.55 0.04 245.65 0.04 245.75 0.04C245.85 0.04 245.95 0.04 246.05 0.04C246.15 0.04 246.25 0.04 246.35 0.04C246.45 0.04 246.55 0.04 246.65 0.04C246.75 0.04 246.85 0.04 246.95 0.04C247.05 0.04 247.15 0.04 247.25 0.04C247.35 0.04 247.45 0.04 247.55 0.04C247.65 0.04 247.75 0.04 247.85 0.04C247.95 0.04 248.05 0.04 248.15 0.04C248.25 0.04 248.35 0.04 248.45 0.04C248.55 0.04 248.65 0.04 248.75 0.04C248.85 0.04 248.95 0.04 249.05 0.04C249.15 0.04 249.25 0.04 249.35 0.04C249.45 0.04 249.55 0.04 249.65 0.04C249.75 0.04 249.85 0.04 249.95 0.04C250.05 0.04 250.15 0.04 250.25 0.04C250.35 0.04 250.45 0.04 250.55 0.04C250.65 0.04 250.75 0.04 250.85 0.04C250.95 0.04 251.05 0.04 251.15 0.04C251.25 0.04 251.35 0.04 251.45 0.04C251.55 0.04 251.65 0.04 251.75 0.04C251.85 0.04 251.95 0.04 252.05 0.04C252.15 0.04 252.25 0.04 252.35 0.04C252.45 0.04 252.55 0.04 252.65 0.04C252.75 0.04 252.85 0.04 252.95 0.04C253.05 0.04 253.15 0.04 253.25 0.04C253.35 0.04 253.45 0.04 253.55 0.04C253.65 0.04 253.75 0.04 253.85 0.04C253.95 0.04 254.05 0.04 254.15 0.04C254.25 0.04 254.35 0.04 254.45 0.04C254.55 0.04 254.65 0.04 254.75 0.04C254.85 0.04 254.95 0.04 255.05 0.04C255.15 0.04 255.25 0.04 255.35 0.04C255.45 0.04 255.55 0.04 255.65 0.04C255.75 0.04 255.85 0.04 255.95 0.04C256.05 0.04 256.15 0.04 256.25 0.04C256.35 0.04 256.45 0.04 256.55 0.04C256.65 0.04 256.75 0.04 256.85 0.04C256.95 0.04 257.05 0.04 257.15 0.04C257.25 0.04 257.35 0.04 257.45 0.04C257.55 0.04 257.65 0.04 257.75 0.04C257.85 0.04 257.95 0.04 258.05 0.04C258.15 0.04 258.25 0.04 258.35 0.04C258.45 0.04 258.55 0.04 258.65 0.04C258.75 0.04 258.85 0.04 258.95 0.04C259.05 0.04 259.15 0.04 259.25 0.04C259.35 0.04 259.45 0.04 259.55 0.04C259.65 0.04 259.75 0.04 259.85 0.04C259.95 0.04 260.05 0.04 260.15 0.04C260.25 0.04 260.35 0.04 260.45 0.04C260.55 0.04 260.65 0.04 260.75 0.04C260.85 0.04 260.95 0.04 261.05 0.04C261.15 0.04 261.25 0.04 261.35 0.04C261.45 0.04 261.55 0.04 261.65 0.04C261.75 0.04 261.85 0.04 261.95 0.04C262.05 0.04 262.15 0.04 262.25 0.04C262.35 0.04 262.45 0.04 262.55 0.04C262.65 0.04 262.75 0.04 262.85 0.04C262.95 0.04 263.05 0.04 263.15 0.04C263.25 0.04 263.35 0.04 263.45 0.04C263.55 0.04 263.65 0.04 263.75 0.04C263.85 0.04 263.95 0.04 264.05 0.04C264.15 0.04 264.25 0.04 264.35 0.04C264.45 0.04 264.55 0.04 264.65 0.04C264.75 0.04 264.85 0.04 264.95 0.04C265.05 0.04 265.15 0.04 265.25 0.04C265.35 0.04 265.45 0.04 265.55 0.04C265.65 0.04 265.75 0.04 265.85 0.04C265.95 0.04 266.05 0.04 266.15 0.04C266.25 0.04 266.35 0.04 266.45 0.04C266.55 0.04 266.65 0.04 266.75 0.04C266.85 0.04 266.95 0.04 267.05 0.04C267.15 0.04 267.25 0.04 267.35 0.04C267.45 0.04 267.55 0.04 267.65 0.04C267.75 0.04 267.85 0.04 267.95 0.04C268.05 0.04 268.15 0.04 268.25 0.04C268.35 0.04 268.45 0.04 268.55 0.04C268.65 0.04 268.75 0.04 268.85 0.04C268.95 0.04 269.05 0.04 269.15 0.04C269.25 0.04 269.35 0.04 269.45 0.04C269.55 0.04 269.65 0.04 269.75 0.04C269.85 0.04 269.95 0.04 270.05 0.04C270.15 0.04 270.25 0.04 270.35 0.04C270.45 0.04 270.55 0.04 270.65 0.04C270.75 0.04 270.85 0.04 270.95 0.04C271.05 0.04 271.15 0.04 271.25 0.04C271.35 0.04 271.45 0.04 271.55 0.04C271.65 0.04 271.75 0.04 271.85 0.04C271.95 0.04 272.05 0.04 272.15 0.04C272.25 0.04 272.35 0.04 272.45 0.04C272.55 0.04 272.65 0.04 272.75 0.04C272.85 0.04 272.95 0.04 273.05 0.04C273.15 0.04 273.25 0.04 273.35 0.04C273.45 0.04 273.55 0.04 273.65 0.04C273.75 0.04 273.85 0.04 273.95 0.04C274.05 0.04 274.15 0.04 274.25 0.04C274.35 0.04 274.45 0.04 274.55 0.04C274.65 0.04 274.75 0.04 274.85 0.04C274.95 0.04 275.05 0.04 275.15 0.04C275.25 0.04 275.35 0.04 275.45 0.04C275.55 0.04 275.65 0.04 275.75 0.04C275.85 0.04 275.95 0.04 276.05 0.04C276.15 0.04 276.25 0.04 276.35 0.04C276.45 0.04 276.55 0.04 276.65 0.04C276.75 0.04 276.85 0.04 276.95 0.04C277.05 0.04 277.15 0.04 277.25 0.04C277.35 0.04 277.45 0.04 277.55 0.04C277.65 0.04 277.75 0.04 277.85 0.04C277.95 0.04 278.05 0.04 278.15 0.04C278.25 0.04 278.35 0.04 278.45 0.04C278.55 0.04 278.65 0.04 278.75 0.04C278.85 0.04 278.95 0.04 279.05 0.04C279.15 0.04 279.25 0.04 279.35 0.04C279.45 0.04 279.55 0.04 279.65 0.04C279.75 0.04 279.85 0.04 279.95 0.04C280.05 0.04 280.15 0.04 280.25 0.04C280.35 0.04 280.45 0.04 280.55 0.04C280.65 0.04 280.75 0.04 280.85 0.04C280.95 0.04 281.05 0.04 281.15 0.04C281.25 0.04 281.35 0.04 281.45 0.04C281.55 0.04 281.65 0.04 281.75 0.04C281.85 0.04 281.95 0.04 282.05 0.04C282.15 0.04 282.25 0.04 282.35 0.04C282.45 0.04 282.55 0.04 282.65 0.04C282.75 0.04 282.85 0.04 282.95 0.04C283.05 0.04 283.15 0.04 283.25 0.04C283.35 0.04 283.45 0.04 283.55 0.04C283.65 0.04 283.75 0.04 283.85 0.04C283.95 0.04 284.05 0.04 284.15 0.04C284.25 0.04 284.35 0.04 284.45 0.04C284.55 0.04 284.65 0.04 284.75 0.04C284.85 0.04 284.95 0.04 285.05 0.04C285.15 0.04 285.25 0.04 285.35 0.04C285.45 0.04 285.55 0.04 285.65 0.04C285.75 0.04 285.85 0.04 285.95 0.04C286.05 0.04 286.15 0.04 286.25 0.04C286.35 0.04 286.45 0.04 286.55 0.04C286.65 0.04 286.75 0.04 286.85 0.04C286.95 0.04 287.05 0.04 287.15 0.04C287.25 0.04 287.35 0.04 287.45 0.04C287.55 0.04 287.65 0.04 287.75 0.04C287.85 0.04 287.95 0.04 288.05 0.04C288.15 0.04 288.25 0.04 288.35 0.04C288.45 0.04 288.55 0.04 288.65 0.04C288.75 0.04 288.85 0.04 288.95 0.04C289.05 0.04 289.15 0.04 289.25 0.04C289.35 0.04 289.45 0.04 289.55 0.04C289.65 0.04 289.75 0.04 289.85 0.04C289.95 0.04 290.05 0.04 290.15 0.04C290.25 0.04 290.35 0.04 290.45 0.04C290.55 0.04 290.65 0.04 290.75 0.04C290.85 0.04 290.95 0.04 291.05 0.04C291.15 0.04 291.25 0.04 291.35 0.04C291.45 0.04 291.55 0.04 291.65 0.04C291.75 0.04 291.85 0.04 291.95 0.04C292.05 0.04 292.15 0.04 292.25 0.04C292.35 0.04 292.45 0.04 292.55 0.04C292.65 0.04 292.75 0.04 292.85 0.04C292.95 0.04 293.05 0.04 293.15 0.04C293.25 0.04 293.35 0.04 293.45 0.04C293.55 0.04 293.65 0.04 293.75 0.04C293.85 0.04 293.95 0.04 294.05 0.04C294.15 0.04 294.25 0.04 294.35 0.04C294.45 0.04 294.55 0.04 294.65 0.04C294.75 0.04 294.85 0.04 294.95 0.04C295.05 0.04 295.15 0.04 295.25 0.04C295.35 0.04 295.45 0.04 295.55 0.04C295.65 0.04 295.75 0.04 295.85 0.04C295.95 0.04 296.05 0.04 296.15 0.04C296.25 0.04 296.35 0.04 296.45 0.04C296.55 0.04 296.65 0.04 296.75 0.04C296.85 0.04 296.95 0.04 297.05 0.04C297.15 0.04 297.25 0.04 297.35 0.04C297.45 0.04 297.55 0.04 297.65 0.04C297.75 0.04 297.85 0.04 297.95 0.04C298.05 0.04 298.15 0.04 298.25 0.04C298.35 0.04 298.45 0.04 298.55 0.04C298.65 0.04 298.75 0.04 298.85 0.04C298.95 0.04 299.05 0.04 299.15 0.04C299.25 0.04 299.35 0.04 299.45 0.04C299.55 0.04 299.65 0.04 299.75 0.04C299.85 0.04 299.95 0.04 300.05 0.04C300.15 0.04 300.25 0.04 300.35 0.04C300.45 0.04 300.55 0.04 300.65 0.04C300.75 0.04 300.85 0.04 300.95 0.04C301.05 0.04 301.15 0.04 301.25 0.04C301.35 0.04 301.45 0.04 301.55 0.04C301.65 0.04 301.75 0.04 301.85 0.04C301.95 0.04 302.05 0.04 302.15 0.04C302.25 0.04 302.35 0.04 302.45 0.04C302.55 0.04 302.65 0.04 302.75 0.04C302.85 0.04 302.95 0.04 303.05 0.04C303.15 0.04 303.25 0.04 303.35 0.04C303.45 0.04 303.55 0.04 303.65 0.04C303.75 0.04 303.85 0.04 303.95 0.04C304.05 0.04 304.15 0.04 304.25 0.04C304.35 0.04 304.45 0.04 304.55 0.04C304.65 0.04 304.75 0.04 304.85 0.04C304.95 0.04 305.05 0.04 305.15 0.04C305.25 0.04 305.35 0.04 305.45 0.04C305.55 0.04 305.65 0.04 305.75 0.04C305.85 0.04 305.95 0.04 306.05 0.04C306.15 0.04 306.25 0.04 306.35 0.04C306.45 0.04 306.55 0.04 306.65 0.04C306.75 0.04 306.85 0.04 306.95 0.04C307.05 0.04 307.15 0.04 307.25 0.04C307.35 0.04 307.45 0.04 307.55 0.04C307.65 0.04 307.75 0.04 307.85 0.04C307.95 0.04 308.05 0.04 308.15 0.04C308.25 0.04 308.35 0.04 308.45 0.04C308.55 0.04 308.65 0.04 308.75 0.04C308.85 0.04 308.95 0.04 309.05 0.04C309.15 0.04 309.25 0.04 309.35 0.04C309.45 0.04 309.55 0.04 309.65 0.04C309.75 0.04 309.85 0.04 309.95 0.04C310.05 0.04 310.15 0.04 310.25 0.04C310.35 0.04 310.45 0.04 310.55 0.04C310.65 0.04 310.75 0.04 310.85 0.04C310.95 0.04 311.05 0.04 311.15 0.04C311.25 0.04 311.35 0.04 311.45 0.04C311.55 0.04 311.65 0.04 311.75 0.04C311.85 0.04 311.95 0.04 312.05 0.04C312.15 0.04 312.25 0.04 312.35 0.04C312.45 0.04 312.55 0.04 312.65 0.04C312.75 0.04 312.85 0.04 312.95 0.04C313.05 0.04 313.15 0.04 313.25 0.04C313.35 0.04 313.45 0.04 313.55 0.04C313.65 0.04 313.75 0.04 313.85 0.04C313.95 0.04 314.05 0.04 314.15 0.04C314.25 0.04 314.35 0.04 314.45 0.04C314.55 0.04 314.65 0.04 314.75 0.04C314.85 0.04 314.95 0.04 315.05 0.04C315.15 0.04 315.25 0.04 315.35 0.04C315.45 0.04 315.55 0.04 315.65 0.04C315.75 0.04 315.85 0.04 315.95 0.04C316.05 0.04 316.15 0.04 316.25 0.04C316.35 0.04 316.45 0.04 316.55 0.04C316.65 0.04 316.75 0.04 316.85 0.04C316.95 0.04 317.05 0.04 317.15 0.04C317.25 0.04 317.35 0.04 317.45 0.04C317.55 0.04 317.65 0.04 317.75 0.04C317.85 0.04 317.95 0.04 318.05 0.04C318.15 0.04 318.25 0.04 318.35 0.04C318.45 0.04 318.55 0.04 318.65 0.04C318.75 0.04 318.85 0.04 318.95 0.04C319.05 0.04 319.15 0.04 319.25 0.04C319.35 0.04 319.45 0.04 319.55 0.04C319.65 0.04 319.75 0.04 319.85 0.04C319.95 0.04 320.05 0.04 320.15 0.04C320.25 0.04 320.35 0.04 320.45 0.04C320.55 0.04 320.65 0.04 320.75 0.04C320.85 0.04 320.95 0.04 321.05 0.04C321.15 0.04 321.25 0.04 321.35 0.04C321.45 0.04 321.55 0.04 321.65 0.04C321.75 0.04 321.85 0.04 321.95 0.04C322.05 0.04 322.15 0.04 322.25 0.04C322.35 0.04 322.45 0.04 322.55 0.04C322.65 0.04 322.75 0.04 322.85 0.04C322.95 0.04 323.05 0.04 323.15 0.04C323.25 0.04 323.35 0.04 323.45 0.04C323.55 0.04 323.65 0.04 323.75 0.04C323.85 0.04 323.95 0.04 324.05 0.04C324.15 0.04 324.25 0.04 324.35 0.04C324.45 0.04 324.55 0.04 324.65 0.04C324.75 0.04 324.85 0.04 324.95 0.04C325.05 0.04 325.15 0.04 325.25 0.04C325.35 0.04 325.45 0.04 325.55 0.04C325.65 0.04 325.75 0.04 325.85 0.04C325.95 0.04 326.05 0.04 326.15 0.04C326.25 0.04 326.35 0.04 326.45 0.04C326.55 0.04 326.65 0.04 326.75 0.04C326.85 0.04 326.95 0.04 327.05 0.04C327.15 0.04 327.25 0.04 327.35 0.04C327.45 0.04 327.55 0.04 327.65 0.04C327.75 0.04 327.85 0.04 327.95 0.04C328.05 0.04 328.15 0.04 328.25 0.04C328.35 0.04 328.45 0.04 328.55 0.04C328.65 0.04 328.75 0.04 328.85 0.04C328.95 0.04 329.05 0.04 329.15 0.04C329.25 0.04 329.35 0.04 329.45 0.04C329.55 0.04 329.65 0.04 329.75 0.04C329.85 0.04 329.95 0.04 330.05 0.04C330.15 0.04 330.25 0.04 330.35 0.04C330.45 0.04 330.55 0.04 330.65 0.04C330.75 0.04 330.85 0.04 330.95 0.04C331.05 0.04 331.15 0.04 331.25 0.04C331.35 0.04 331.45 0.04 331.55 0.04C331.65 0.04 331.75 0.04 331.85 0.04C331.95 0.04 332.05 0.04 332.15 0.04C332.25 0.04 332.35 0.04 332.45 0.04C332.55 0.04 332.65 0.04 332.75 0.04C332.85 0.04 332.95 0.04 333.05 0.04C333.15 0.04 333.25 0.04 333.35 0.04C333.45 0.04 333.55 0.04 333.65 0.04C333.75 0.04 333.85 0.04 333.95 0.04C334.05 0.04 334.15 0.04 334.25 0.04C334.35 0.04 334.45 0.04 334.55 0.04C334.65 0.04 334.75 0.04 334.85 0.04C334.95 0.04 335.05 0.04 335.15 0.04C335.25 0.04 335.35 0.04 335.45 0.04C335.55 0.04 335.65 0.04 335.75 0.04C335.85 0.04 335.95 0.04 336.05 0.04C336.15 0.04 336.25 0.04 336.35 0.04C336.45 0.04 336.55 0.04 336.65 0.04C336.75 0.04 336.85 0.04 336.95 0.04C337.05 0.04 337.15 0.04 337.25 0.04C337.35 0.04 337.45 0.04 337.55 0.04C337.65 0.04 337.75 0.04 337.85 0.04C337.95 0.04 338.05 0.04 338.15 0.04C338.25 0.04 338.35 0.04 338.45 0.04C338.55 0.04 338.65 0.04 338.75 0.04C338.85 0.04 338.95 0.04 339.05 0.04C339.15 0.04 339.25 0.04 339.35 0.04C339.45 0.04 339.55 0.04 339.65 0.04C339.75 0.04 339.85 0.04 339.95 0.04C340.05 0.04 340.15 0.04 340.25 0.04C340.35 0.04 340.45 0.04 340.55 0.04C340.65 0.04 340.75 0.04 340.85 0.04C340.95 0.04 341.05 0.04 341.15 0.04C341.25 0.04 341.35 0.04 341.45 0.04C341.55 0.04 341.65 0.04 341.75 0.04C341.85 0.04 341.95 0.04 342.05 0.04C342.15 0.04 342.25 0.04 342.35 0.04C342.45 0.04 342.55 0.04 342.65 0.04C342.75 0.04 342.85 0.04 342.95 0.04C343.05 0.04 343.15 0.04 343.25 0.04C343.35 0.04 343.45 0.04 343.55 0.04C343.65 0.04 343.75 0.04 343.85 0.04C343.95 0.04 344.05 0.04 344.15 0.04C344.25 0.04 344.35 0.04 344.45 0.04C344.55 0.04 344.65 0.04 344.75 0.04C344.85 0.04 344.95 0.04 345.05 0.04C345.15 0.04 345.25 0.04 345.35 0.04C345.45 0.04 345.55 0.04 345.65 0.04C345.75 0.04 345.85 0.04 345.95 0.04C346.05 0.04 346.15 0.04 346.25 0.04C346.35 0.04 346.45 0.04 346.55 0.04C346.65 0.04 346.75 0.04 346.85 0.04C346.95 0.04 347.05 0.04 347.15 0.04C347.25 0.04 347.35 0.04 347.45 0.04C347.55 0.04 347.65 0.04 347.75 0.04C347.85 0.04 347.95 0.04 348.05 0.04C348.15 0.04 348.25 0.04 348.35 0.04C348.45 0.04 348.55 0.04 348.65 0.04C348.75 0.04 348.85 0.04 348.95 0.04C349.05 0.04 349.15 0.04 349.25 0.04C349.35 0.04 349.45 0.04 349.55 0.04C349.65 0.04 349.75 0.04 349.85 0.04C349.95 0.04 350.05 0.04 350.15 0.04C350.25 0.04 350.35 0.04 350.45 0.04C350.55 0.04 350.65 0.04 350.75 0.04C350.85 0.04 350.95 0.04 351.05 0.04C351.15 0.04 351.25 0.04 351.35 0.04C351.45 0.04 351.55 0.04 351.65 0.04C351.75 0.04 351.85 0.04 351.95 0.04C352.05 0.04 352.15 0.04 352.25 0.04C352.35 0.04 352.45 0.04 352.55 0.04C352.65 0.04 352.75 0.04 352.85 0.04C352.95 0.04 353.05 0.04 353.15 0.04C353.25 0.04 353.35 0.04 353.45 0.04C353.55 0.04 353.65 0.04 353.75 0.04C353.85 0.04 353.95 0.04 354.05 0.04C354.15 0.04 354.25 0.04 354.35 0.04C354.45 0.04 354.55 0.04 354.65 0.04C354.75 0.04 354.85 0.04 354.95 0.04C355.05 0.04 355.15 0.04 355.25 0.04C355.35 0.04 355.45 0.04 355.55 0.04C355.65 0.04 355.75 0.04 355.85 0.04C355.95 0.04 356.05 0.04 356.15 0.04C356.25 0.04 356.35 0.04 356.45 0.04C356.55 0.04 356.65 0.04 356.75 0.04C356.85 0.04 356.95 0.04 357.05 0.04C357.15 0.04 357.25 0.04 357.35 0.04C357.45 0.04 357.55 0.04 357.65 0.04C357.75 0.04 357.85 0.04 357.95 0.04C358.05 0.04 358.15 0.04 358.25 0.04C358.35 0.04 358.45 0.04 358.55 0.04C358.65 0.04 358.75 0.04 358.85 0.04C358.95 0.04 359.05 0.04 359.15 0.04C359.25 0.04 359.35 0.04 359.45 0.04C359.55 0.04 359.65 0.04 359.75 0.04C359.85 0.04 359.95 0.04 360.05 0.04C360.15 0.04 360.25 0.04 360.35 0.04C360.45 0.04 360.55 0.04 360.65 0.04C360.75 0.04 360.85 0.04 360.95 0.04C361.05 0.04 361.15 0.04 361.25 0.04C361.35 0.04 361.45 0.04 361.55 0.04C361.65 0.04 361.75 0.04 361.85 0.04C361.95 0.04 362.05 0.04 362.15 0.04C362.25 0.04 362.35 0.04 362.45 0.04C362.55 0.04 362.65 0.04 362.75 0.04C362.85 0.04 362.95 0.04 363.05 0.04C363.15 0.04 363.25 0.04 363.35 0.04C363.45 0.04 363.55 0.04 363.65 0.04C363.75 0.04 363.85 0.04 363.95 0.04C364.05 0.04 364.15 0.04 364.25 0.04C364.35 0.04 364.45 0.04 364.55 0.04C364.65 0.04 364.75 0.04 364.85 0.04C364.95 0.04 365.05 0.04 365.15 0.04C365.25 0.04 365.35 0.04 365.45 0.04C365.55 0.04 365.65 0.04 365.75 0.04C365.85 0.04 365.95 0.04 366.05 0.04C366.15 0.04 366.25 0.04 366.35 0.04C366.45 0.04 366.55 0.04 366.65 0.04C366.75 0.04 366.85 0.04 366.95 0.04C367.05 0.04 367.15 0.04 367.25 0.04C367.35 0.04 367.45 0.04 367.55 0.04C367.65 0.04 367.75 0.04 367.85 0.04C367.95 0.04 368.05 0.04 368.15 0.04C368.25 0.04 368.35 0.04 368.45 0.04C368.55 0.04 368.65 0.04 368.75 0.04C368.85 0.04 368.95 0.04 369.05 0.04C369.15 0.04 369.25 0.04 369.35 0.04C369.45 0.04 369.55 0.04 369.65 0.04C369.75 0.04 369.85 0.04 369.95 0.04C370.05 0.04 370.15 0.04 370.25 0.04C370.35 0.04 370.45 0.04 370.55 0.04C370.65 0.04 370.75 0.04 370.85 0.04C370.95 0.04 371.05 0.04 371.15 0.04C371.25 0.04 371.35 0.04 371.45 0.04C371.55 0.04 371.65 0.04 371.75 0.04C371.85 0.04 371.95 0.04 372.05 0.04C372.15 0.04 372.25 0.04 372.35 0.04C372.45 0.04 372.55 0.04 372.65 0.04C372.75 0.04 372.85 0.04 372.95 0.04C373.05 0.04 373.15 0.04 373.25 0.04C373.35 0.04 373.45 0.04 373.55 0.04C373.65 0.04 373.75 0.04 373.85 0.04C373.95 0.04 374.05 0.04 374.15 0.04C374.25 0.04 374.35 0.04 374.45 0.04C374.55 0.04 374.65 0.04 374.75 0.04C374.85 0.04 374.95 0.04 375.05 0.04C375.15 0.04 375.25 0.04 375.35 0.04C375.45 0.04 375.55 0.04 375.65 0.04C375.75 0.04 375.85 0.04 375.95 0.04C376.05 0.04 376.15 0.04 376.25 0.04C376.35 0.04 376.45 0.04 376.55 0.04C376.65 0.04 376.75 0.04 376.85 0.04C376.95 0.04 377.05 0.04 377.15 0.04C377.25 0.04 377.35 0.04 377.45 0.04C377.55 0.04 377.65 0.04 377.75 0.04C377.85 0.04 377.95 0.04 378.05 0.04C378.15 0.04 378.25 0.04 378.35 0.04C378.45 0.04 378.55 0.04 378.65 0.04C378.75 0.04 378.85 0.04 378.95 0.04C379.05 0.04 379.15 0.04 379.25 0.04C379.35 0.04 379.45 0.04 379.55 0.04C379.65 0.04 379.75 0.04 379.85 0.04C379.95 0.04 380.05 0.04 380.15 0.04C380.25 0.04 380.35 0.04 380.45 0.04C380.55 0.04 380.65 0.04 380.75 0.04C380.85 0.04 380.95 0.04 381.05 0.04C381.15 0.04 381.25 0.04 381.35 0.04C381.45 0.04 381.55 0.04 381.65 0.04C381.75 0.04 381.85 0.04 381.95 0.04C382.05 0.04 382.15 0.04 382.25 0.04C382.35 0.04 382.45 0.04 382.55 0.04C382.65 0.04 382.75 0.04 382.85 0.04C382.95 0.04 383.05 0.04 383.15 0.04C383.25 0.04 383.35 0.04 383.45 0.04C383.55 0.04 383.65 0.04 383.75 0.04C383.85 0.04 383.95 0.04 384.05 0.04C384.15 0.04 384.25 0.04 384.35 0.04C384.45 0.04 384.55 0.04 384.65 0.04C384.75 0.04 384.85 0.04 384.95 0.04C385.05 0.04 385.15 0.04 385.25 0.04C385.35 0.04 385.45 0.04 385.55 0.04C385.65 0.04 385.75 0.04 385.85 0.04C385.95 0.04 386.05 0.04 386.15 0.04C386.25 0.04 386.35 0.04 386.45 0.04C386.55 0.04 386.65 0.04 386.75 0.04C386.85 0.04 386.95 0.04 387.05 0.04C387.15 0.04 387.25 0.04 387.35 0.04C387.45 0.04 387.55 0.04 387.65 0.04C387.75 0.04 387.85 0.04 387.95 0.04C388.05 0.04 388.15 0.04 388.25 0.04C388.35 0.04 388.45 0.04 388.55 0.04C388.65 0.04 388.75 0.04 388.85 0.04C388.95 0.04 389.05 0.04 389.15 0.04C389.25 0.04 389.35 0.04 389.45 0.04C389.55 0.04 389.65 0.04 389.75 0.04C389.85 0.04 389.95 0.04 390.05 0.04C390.15 0.04 390.25 0.04 390.35 0.04C390.45 0.04 390.55 0.04 390.65 0.04C390.75 0.04 390.85 0.04 390.95 0.04C391.05 0.04 391.15 0.04 391.25 0.04C391.35 0.04 391.45 0.04 391.55 0.04C391.65 0.04 391.75 0.04 391.85 0.04C391.95 0.04 392.05 0.04 392.15 0.04C392.25 0.04 392.35 0.04 392.45 0.04C392.55 0.04 392.65 0.04 392.75 0.04C392.85 0.04 392.95 0.04 393.05 0.04C393.15 0.04 393.25 0.04 393.35 0.04C393.45 0.04 393.55 0.04 393.65 0.04C393.75 0.04 393.85 0.04 393.95 0.04C394.05 0.04 394.15 0.04 394.25 0.04C394.35 0.04 394.45 0.04 394.55 0.04C394.65 0.04 394.75 0.04 394.85 0.04C394.95 0.04 395.05 0.04 395.15 0.04C395.25 0.04 395.35 0.04 395.45 0.04C395.55 0.04 395.65 0.04 395.75 0.04C395.85 0.04 395.95 0.04 396.05 0.04C396.15 0.04 396.25 0.04 396.35 0.04C396.45 0.04 396.55 0.04 396.65 0.04C396.75 0.04 396.85 0.04 396.95 0.04C397.05 0.04 397.15 0.04 397.25 0.04C397.35 0.04 397.45 0.04 397.55 0.04C397.65 0.04 397.75 0.04 397.85 0.04C397.95 0.04 398.05 0.04 398.15 0.04C398.25 0.04 398.35 0.04 398.45 0.04C398.55 0.04 398.65 0.04 398.75 0.04C398.85 0.04 398.95 0.04 399.05 0.04C399.15 0.04 399.25 0.04 399.35 0.04C399.45 0.04 399.55 0.04 399.65 0.04C399.75 0.04 399.85 0.04 399.95 0.04C400.05 0.04 400.15 0.04 400.25 0.04C400.35 0.04 400.45 0.04 400.55 0.04C400.65 0.04 400.75 0.04 400.85 0.04C400.95 0.04 401.05 0.04 401.15 0.04C401.25 0.04 401.35 0.04 401.45 0.04C401.55 0.04 401.65 0.04 401.75 0.04C401.85 0.04 401.95 0.04 402.05 0.04C402.15 0.04 402.25 0.04 402.35 0.04C402.45 0.04 402.55 0.04 402.65 0.04C402.75 0.04 402.85 0.04 402.95 0.04C403.05 0.04 403.15 0.04 403.25 0.04C403.35 0.04 403.45 0.04 403.55 0.04C403.65 0.04 403.75 0.04 403.85 0.04C403.95 0.04 404.05 0.04 404.15 0.04C404.25 0.04 404.35 0.04 404.45 0.04C404.55 0.04 404.65 0.04 404.75 0.04C404.85 0.04 404.95 0.04 405.05 0.04C405.15 0.04 405.25 0.04 405.35 0.04C405.45 0.04 405.55 0.04 405.65 0.04C405.75 0.04 405.85 0.04 405.95 0.04C406.05 0.04 406.15 0.04 406.25 0.04C406.35 0.04 406.45 0.04 406.55 0.04C406.65 0.04 406.75 0.04 406.85 0.04C406.95 0.04 407.05 0.04 407.15 0.04C407.25 0.04 407.35 0.04 407.45 0.04C407.55 0.04 407.65 0.04 407.75 0.04C407.85 0.04 407.95 0.04 408.05 0.04C408.15 0.04 408.25 0.04 408.35 0.04C408.45 0.04 408.55 0.04 408.65 0.04C408.75 0.04 408.85 0.04 408.95 0.04C409.05 0.04 409.15 0.04 409.25 0.04C409.35 0.04 409.45 0.04 409.55 0.04C409.65 0.04 409.75 0.04 409.85 0.04C409.95 0.04 410.05 0.04 410.15 0.04C410.25 0.04 410.35 0.04 410.45 0.04C410.55 0.0
+</element></div>
+        </mountpoint>
+      </main>
+
+      <!-- Core functionality scripts -->
+      <script>
+        // Initialize interactive elements
+        document.addEventListener('DOMContentLoaded', function() {
+          // Add interactive behaviors
+          const interactiveElements = document.querySelectorAll('.interactive-element');
+          interactiveElements.forEach(element => {
+            element.addEventListener('mouseenter', () => {
+              element.classList.add('hover');
+            });
+            element.addEventListener('mouseleave', () => {
+              element.classList.remove('hover');
+            });
+          });
+
+          // Initialize any dynamic content
+          const dynamicContent = document.querySelectorAll('[data-dynamic]');
+          dynamicContent.forEach(content => {
+            // Add fade-in animation
+            content.classList.add('fade-in');
+          });
+        });
+
+        // Handle navigation
+        function handleNavigation(event) {
+          const link = event.currentTarget;
+          if (link.hasAttribute('data-nav')) {
+            event.preventDefault();
+            const target = link.getAttribute('data-nav');
+            document.querySelector(target).scrollIntoView({ behavior: 'smooth' });
+          }
+        }
+
+        // Initialize navigation
+        document.querySelectorAll('[data-nav]').forEach(link => {
+          link.addEventListener('click', handleNavigation);
+        });
+      </script>
+
+      <!-- Body Scripts -->
+      <script id="body-scripts">
+        // This script tag will be replaced with actual scripts.body content
+        if (window.scripts && window.scripts.body) {
+          document.getElementById('body-scripts').outerHTML = window.scripts.body;
+        }
+      </script>
+   </body>
+</html>

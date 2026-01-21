@@ -1,0 +1,79 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 0 0% 20%;
+    --card: 0 0% 100%;
+    --card-foreground: 0 0% 20%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 0 0% 20%;
+    --primary: 222.2 47.4% 11.2%;
+    --primary-foreground: 210 40% 98%;
+    --secondary: 210 40% 96%;
+    --secondary-foreground: 222.2 47.4% 11.2%;
+    --muted: 210 40% 96%;
+    --muted-foreground: 215.4 16.3% 46.9%;
+    --accent: 210 40% 96%;
+    --accent-foreground: 222.2 47.4% 11.2%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+    --border: 214.3 31.8% 91.4%;
+    --input: 214.3 31.8% 91.4%;
+    --ring: 222.2 84% 4.9%;
+    --radius: 0.5rem;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-dark-gray;
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.gradient-bg {
+  background: linear-gradient(135deg, #a74c1e 0%, #f39c12 100%);
+}
+
+.service-card {
+  transition: all 0.3s ease;
+  border: 1px solid #e5e7eb;
+}
+
+.service-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 15px rgba(74, 90, 116, 0.2), /* Deep Blue shadow */ 0 8px 25px rgba(243, 156, 18, 0.15), /* Bright Orange shadow */
+    0 12px 35px rgba(167, 76, 30, 0.1); /* Deep Copper shadow */
+  border-color: #4a5a74;
+}
+
+.deep-blue-section {
+  background: linear-gradient(135deg, #4a5a74 0%, #5a6b85 100%);
+}
+
+.link-hover {
+  transition: color 0.3s ease;
+}
+
+.link-hover:hover {
+  color: #f39c12;
+}
+
+.btn-deep-blue {
+  background-color: #4a5a74;
+  transition: all 0.3s ease;
+}
+
+.btn-deep-blue:hover {
+  background-color: #f39c12;
+  transform: translateY(-2px);
+}

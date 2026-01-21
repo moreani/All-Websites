@@ -1,0 +1,96 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* User's New Color Scheme: Bright Blue, Gold, Coral */
+    --primary: 210 100% 50%; /* #007BFF (Bright Blue) */
+    --primary-foreground: 0 0% 100%; /* #FFFFFF (White text on primary) */
+
+    /* shadcn's secondary - typically a muted gray */
+    --secondary: 210 17% 95%; /* Light gray, e.g. hsl(0, 0%, 96.1%) from original #F5F5F5 */
+    --secondary-foreground: 0 0% 20%; /* #333333 (Dark text on shadcn's secondary) */
+
+    --accent: 7 100% 69%; /* #FF6F61 (Coral - User's original accent) */
+    --accent-foreground: 0 0% 100%; /* #FFFFFF (White text on Coral) */
+
+    --background: 0 0% 96.1%; /* #F5F5F5 (User's original background-light) */
+    --foreground: 0 0% 20%; /* #333333 (User's original text-dark) */
+
+    --card: 0 0% 100%; /* #FFFFFF (User's original background-white) */
+    --card-foreground: 0 0% 20%; /* #333333 (Dark text for card content) */
+
+    --popover: 0 0% 100%; /* #FFFFFF */
+    --popover-foreground: 0 0% 20%; /* #333333 */
+
+    --destructive: 0 84.2% 60.2%; /* Default destructive red */
+    --destructive-foreground: 0 0% 100%; /* White text on destructive */
+
+    --border: 0 0% 87.8%; /* #E0E0E0 (User's specified border-color or similar light gray) */
+    --input: 0 0% 87.8%;
+    --ring: 210 100% 50%; /* #007BFF (User's primary for focus rings) */
+
+    --radius: 0.5rem;
+
+    /* Sidebar specific colors (can be adjusted if a sidebar is added) */
+    --sidebar-background: 0 0% 98%;
+    --sidebar-foreground: 0 0% 20%;
+    --sidebar-primary: 210 100% 50%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 7 100% 69%;
+    --sidebar-accent-foreground: 0 0% 100%;
+    --sidebar-border: 0 0% 87.8%;
+    --sidebar-ring: 210 100% 50%;
+  }
+
+  .dark {
+    /* Example Dark Mode (adjust as needed for Bright Blue theme) */
+    --primary: 210 100% 50%; /* Bright Blue can work in dark mode too */
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 0 0% 15%;
+    --secondary-foreground: 0 0% 90%;
+
+    --accent: 7 100% 69%; /* Coral can work in dark mode too */
+    --accent-foreground: 0 0% 100%;
+
+    --background: 0 0% 10%; /* Dark background e.g. #1A1A1A */
+    --foreground: 0 0% 90%; /* Light text e.g. #E6E6E6 */
+
+    --card: 0 0% 13%; /* Darker card background e.g. #212121 */
+    --card-foreground: 0 0% 90%;
+
+    --popover: 0 0% 13%;
+    --popover-foreground: 0 0% 90%;
+
+    --destructive: 0 70% 50%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 0 0% 20%; /* Darker border */
+    --input: 0 0% 20%;
+    --ring: 210 100% 50%; /* Bright Blue for focus */
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    /* bg-background and text-foreground are applied in layout.tsx */
+    @apply font-body;
+  }
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply font-heading font-semibold;
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}

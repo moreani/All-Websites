@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --primary-color: #1E40AF;     /* Deep Blue - Tech Authority */
+  --accent-color: #06B6D4;      /* Cyan - Innovation */
+  --neutral-light: #F5F5F5;     /* Light Gray */
+  --neutral-white: #FFFFFF;     /* Pure White */
+  --text-dark: #1F2937;         /* Dark Gray */
+  --text-medium: #6B7280;       /* Medium Gray */
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  color: var(--text-dark);
+}
+
+code, pre {
+  font-family: 'JetBrains Mono', monospace;
+}
+
+/* Custom styles */
+.bg-primary {
+  background-color: var(--primary-color);
+}
+
+.bg-accent {
+  background-color: var(--accent-color);
+}
+
+.text-primary {
+  color: var(--primary-color);
+}
+
+.text-accent {
+  color: var(--accent-color);
+}
+
+.text-text-dark {
+  color: var(--text-dark);
+}
+
+.text-text-medium {
+  color: var(--text-medium);
+}
+
+/* Custom animations */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.animate-fadeIn {
+  animation: fadeIn 0.5s ease-out forwards;
+}

@@ -1,0 +1,1838 @@
+
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+      <meta name="description" content="Revolutionize your interior design experience with HomeFurnishTech's AI-powered tools. Smart room planning, style recommendations, budget optimization, and VR design solutions for modern homes in India.">
+      <meta name="theme-color" content="#ffffff">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="robots" content="">
+
+      <!-- Alpine.js - Load first -->
+      <script defer src="https://cdnjs.cloudflare.com/ajax/libs/alpinejs/3.13.3/cdn.min.js"></script>
+      
+      <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+      <title>HomeFurnishTech - AI-Powered Interior Design Tools | Transform Your Space</title>
+      <!-- SEO Description -->
+      <meta name="description" content="Revolutionize your interior design experience with HomeFurnishTech&#x27;s AI-powered tools. Smart room planning, style recommendations, budget optimization, and VR design solutions for modern homes in India.">
+
+      <!-- Performance optimization: Preload critical resources -->
+      <link rel="preload" href="https://cdn.tailwindcss.com" as="script">
+      
+      <!-- Core CSS and Scripts -->
+      <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+      <script src="https://cdn.tailwindcss.com"></script>
+      <script defer src="https://cdnjs.cloudflare.com/ajax/libs/apexcharts/3.45.1/apexcharts.min.js"></script>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+      
+      <!-- Project-specific styles -->
+      <style>
+        /* Base styles */
+        :root {
+          --primary-color: #E57C44;
+          --secondary-color: #4A90E2;
+          --accent-color: ;
+        }
+
+        /* Strict no-scrollbar rules */
+        * {
+          -ms-overflow-style: none !important;  /* IE and Edge */
+          scrollbar-width: none !important;     /* Firefox */
+        }
+        *::-webkit-scrollbar {
+          display: none !important;             /* Chrome, Safari and Opera */
+        }
+
+        /* Typography */
+        h1, h2, h3, h4, h5, h6 {
+          font-family: Roboto, Inter, system-ui, sans-serif;
+        }
+        body {
+          font-family: Lato, Inter, system-ui, sans-serif;
+        }
+
+        /* Interactive elements */
+        .interactive-element {
+          transition: all 0.3s ease;
+        }
+        .interactive-element:hover {
+          transform: translateY(-2px);
+        }
+
+        /* Custom scrollbar */
+        ::-webkit-scrollbar {
+          width: 8px;
+          height: 8px;
+        }
+        ::-webkit-scrollbar-track {
+          background: #f1f1f1;
+        }
+        ::-webkit-scrollbar-thumb {
+          background: #888;
+          border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+          background: #555;
+        }
+
+        /* Animations */
+        @keyframes fadeIn {
+          from { opacity: 0; }
+          to { opacity: 1; }
+        }
+        .fade-in {
+          animation: fadeIn 0.5s ease-in-out;
+        }
+      </style>
+
+      <!-- Dynamic Meta Tags -->
+      <meta name="description" content="">
+      <meta name="keywords" content="">
+      <meta name="robots" content="">
+      <meta property="og:title" content="">
+      <meta property="og:description" content="">
+      <meta property="og:image" content="">
+      <meta property="og:type" content="website">
+      <meta property="og:locale" content="en_US">
+      <meta property="og:site_name" content="HomeFurnishTech">
+      
+      <!-- Favicon -->
+      <link rel="icon" type="image/x-icon" href="">
+
+      <!-- Header Scripts -->
+      <script id="header-scripts">
+        // This script tag will be replaced with actual scripts.head content
+        if (window.scripts && window.scripts.head) {
+          document.getElementById('header-scripts').outerHTML = window.scripts.head;
+        }
+      </script>
+
+      <!-- Project Configuration -->
+      <script>
+        window.projectConfig = {
+          name: 'HomeFurnishTech',
+          type: '',
+          settings: {
+            colors: {
+              primary: '#E57C44',
+              secondary: '#4A90E2',
+              accent: ''
+            },
+            fonts: {
+              primary: 'Roboto',
+              secondary: 'Lato'
+            }
+          }
+        };
+      </script>
+   </head>
+   <body class="antialiased text-gray-800 min-h-screen flex flex-col">
+      <!-- Skip to main content link for accessibility -->
+      <a href="#main-content" 
+         class="sr-only focus:not-sr-only focus:absolute focus:top-0 focus:left-0 focus:z-50 focus:p-4 focus:bg-white focus:text-black">
+         Skip to main content
+      </a>
+
+      <!-- Main content area -->
+      <main id="main-content" class="flex-1 relative h-full">
+        <mountpoint>
+          <div id="RolloutPageContent"><element id="1923887d-5f76-4750-b9e7-7313d2227b2b" data-section-id="1923887d-5f76-4750-b9e7-7313d2227b2b">
+
+<div id="root">
+  <header id="header" class="bg-white shadow-sm border-b border-gray-200 sticky top-0 z-50">
+    <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex justify-between items-center h-16">
+        <!-- Logo -->
+        <div class="flex-shrink-0">
+          <span class="font-Roboto text-2xl font-bold text-gray-900">HomeFurnishTech</span>
+        </div>
+
+        <!-- Desktop Navigation -->
+        <div class="hidden md:flex space-x-8">
+            <a href="#hero" class="font-Roboto text-gray-700 hover:text-primary transition-colors duration-300 px-3 py-2 text-sm font-medium">Home</a>
+            <a href="#about" class="font-Roboto text-gray-700 hover:text-primary transition-colors duration-300 px-3 py-2 text-sm font-medium">About</a>
+            <a href="#services" class="font-Roboto text-gray-700 hover:text-primary transition-colors duration-300 px-3 py-2 text-sm font-medium">Services</a>
+            <a href="#contact" class="font-Roboto text-gray-700 hover:text-primary transition-colors duration-300 px-3 py-2 text-sm font-medium">Contact</a>
+        </div>
+
+        <!-- Contact Info -->
+        <div class="hidden lg:flex items-center space-x-4">
+          <a href="tel:+918369848475" class="text-gray-600 hover:text-primary transition-colors duration-300">
+            <span class="sr-only">Phone</span>
+            📞
+          </a>
+          <a href="mailto:info@homefurnishing.co.in" class="text-gray-600 hover:text-primary transition-colors duration-300">
+            <span class="sr-only">Email</span>
+            ✉️
+          </a>
+        </div>
+
+        <!-- Mobile menu button -->
+        <div class="md:hidden">
+          <button type="button" id="mobile-menu-button" class="text-gray-700 hover:text-primary focus:outline-none focus:text-primary transition-colors duration-300" aria-controls="mobile-menu" aria-expanded="false">
+            <span class="sr-only">Open main menu</span>
+            <div class="w-6 h-6 flex flex-col justify-center items-center">
+              <span class="block w-5 h-0.5 bg-current transform transition-transform duration-300" id="hamburger-line-1"></span>
+              <span class="block w-5 h-0.5 bg-current mt-1 transform transition-transform duration-300" id="hamburger-line-2"></span>
+              <span class="block w-5 h-0.5 bg-current mt-1 transform transition-transform duration-300" id="hamburger-line-3"></span>
+            </div>
+          </button>
+        </div>
+      </div>
+
+      <!-- Mobile Navigation Menu -->
+      <div id="mobile-menu" class="md:hidden hidden border-t border-gray-200 pt-4 pb-3">
+        <div class="flex flex-col space-y-3">
+            <a href="#hero" class="font-Roboto text-gray-700 hover:text-primary transition-colors duration-300 px-3 py-2 text-base font-medium">Home</a>
+            <a href="#about" class="font-Roboto text-gray-700 hover:text-primary transition-colors duration-300 px-3 py-2 text-base font-medium">About</a>
+            <a href="#services" class="font-Roboto text-gray-700 hover:text-primary transition-colors duration-300 px-3 py-2 text-base font-medium">Services</a>
+            <a href="#contact" class="font-Roboto text-gray-700 hover:text-primary transition-colors duration-300 px-3 py-2 text-base font-medium">Contact</a>
+          <div class="flex items-center space-x-4 px-3 py-2 border-t border-gray-200 mt-3 pt-3">
+            <a href="tel:+918369848475" class="text-gray-600 hover:text-primary transition-colors duration-300 flex items-center space-x-2">
+              <span>📞</span>
+              <span class="text-sm">+91 8369848475</span>
+            </a>
+            <a href="mailto:info@homefurnishing.co.in" class="text-gray-600 hover:text-primary transition-colors duration-300 flex items-center space-x-2">
+              <span>✉️</span>
+              <span class="text-sm">Email</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <script>
+      // Mobile menu toggle functionality
+      document.addEventListener('DOMContentLoaded', function() {
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const hamburgerLine1 = document.getElementById('hamburger-line-1');
+        const hamburgerLine2 = document.getElementById('hamburger-line-2');
+        const hamburgerLine3 = document.getElementById('hamburger-line-3');
+        
+        let isMenuOpen = false;
+
+        mobileMenuButton.addEventListener('click', function() {
+          isMenuOpen = !isMenuOpen;
+          
+          if (isMenuOpen) {
+            // Show menu
+            mobileMenu.classList.remove('hidden');
+            mobileMenuButton.setAttribute('aria-expanded', 'true');
+            
+            // Animate hamburger to X
+            hamburgerLine1.style.transform = 'rotate(45deg) translate(5px, 5px)';
+            hamburgerLine2.style.opacity = '0';
+            hamburgerLine3.style.transform = 'rotate(-45deg) translate(7px, -6px)';
+          } else {
+            // Hide menu
+            mobileMenu.classList.add('hidden');
+            mobileMenuButton.setAttribute('aria-expanded', 'false');
+            
+            // Animate X back to hamburger
+            hamburgerLine1.style.transform = 'rotate(0) translate(0, 0)';
+            hamburgerLine2.style.opacity = '1';
+            hamburgerLine3.style.transform = 'rotate(0) translate(0, 0)';
+          }
+        });
+
+        // Close mobile menu when clicking on a link
+        const mobileMenuLinks = mobileMenu.querySelectorAll('a');
+        mobileMenuLinks.forEach(link => {
+          link.addEventListener('click', function() {
+            isMenuOpen = false;
+            mobileMenu.classList.add('hidden');
+            mobileMenuButton.setAttribute('aria-expanded', 'false');
+            
+            // Reset hamburger animation
+            hamburgerLine1.style.transform = 'rotate(0) translate(0, 0)';
+            hamburgerLine2.style.opacity = '1';
+            hamburgerLine3.style.transform = 'rotate(0) translate(0, 0)';
+          });
+        });
+
+        // Close mobile menu when clicking outside
+        document.addEventListener('click', function(event) {
+          if (isMenuOpen && !mobileMenuButton.contains(event.target) && !mobileMenu.contains(event.target)) {
+            isMenuOpen = false;
+            mobileMenu.classList.add('hidden');
+            mobileMenuButton.setAttribute('aria-expanded', 'false');
+            
+            // Reset hamburger animation
+            hamburgerLine1.style.transform = 'rotate(0) translate(0, 0)';
+            hamburgerLine2.style.opacity = '1';
+            hamburgerLine3.style.transform = 'rotate(0) translate(0, 0)';
+          }
+        });
+
+        // Close mobile menu on escape key
+        document.addEventListener('keydown', function(event) {
+          if (event.key === 'Escape' && isMenuOpen) {
+            isMenuOpen = false;
+            mobileMenu.classList.add('hidden');
+            mobileMenuButton.setAttribute('aria-expanded', 'false');
+            
+            // Reset hamburger animation
+            hamburgerLine1.style.transform = 'rotate(0) translate(0, 0)';
+            hamburgerLine2.style.opacity = '1';
+            hamburgerLine3.style.transform = 'rotate(0) translate(0, 0)';
+          }
+        });
+      });
+    </script>
+  </header>
+</div>
+</element><element id="798fcb91-42a9-455e-8c36-38835decd6a2" data-section-id="798fcb91-42a9-455e-8c36-38835decd6a2">
+
+<div id="root">
+  <section id="hero" class="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-to-br from-neutral-900 via-neutral-800 to-neutral-900">
+    <!-- Background Image -->
+    <div class="absolute inset-0 z-0">
+      <img 
+        src="https://images.unsplash.com/photo-1712145176765-cc1a308331e4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w2MzQ2fDB8MXxzZWFyY2h8MXx8bW9kZXJuJTI1MjBsaXZpbmclMjUyMHJvb20lMjUyMGJyaWdodCUyNTIwY29udGVtcG9yYXJ5JTI1MjBsdXh1cnl8ZW58MXwwfHx8MTc1MDMyMzM4MHww&ixlib=rb-4.1.0&q=80&w=1080"
+        alt="Modern luxury living room with contemporary design"
+        class="w-full h-full object-cover opacity-20"
+        loading="eager"
+      />
+      <div class="absolute inset-0 bg-gradient-to-r from-neutral-900/80 via-neutral-800/60 to-neutral-900/80"></div>
+    </div>
+
+    <!-- Animated Background Elements -->
+    <div class="absolute inset-0 z-10">
+      <div class="absolute top-20 left-10 w-32 h-32 bg-orange-500/10 rounded-full blur-xl animate-pulse"></div>
+      <div class="absolute bottom-20 right-10 w-40 h-40 bg-blue-500/10 rounded-full blur-xl animate-pulse delay-1000"></div>
+      <div class="absolute top-1/2 left-1/4 w-24 h-24 bg-orange-400/5 rounded-full blur-lg animate-bounce delay-500"></div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="relative z-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <div class="space-y-8 animate-fade-in">
+        <!-- Main Headline -->
+        <h1 class="font-Roboto text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-white leading-tight">
+          Transform Your Space with
+          <span class="text-transparent bg-clip-text bg-gradient-to-r from-orange-400 to-orange-600 animate-pulse">
+            AI-Powered Design
+          </span>
+        </h1>
+
+        <!-- Sub-headline -->
+        <p class="font-Lora text-lg sm:text-xl md:text-2xl text-gray-300 max-w-4xl mx-auto leading-relaxed">
+          Explore cutting-edge solutions to bring your interior dreams to life, faster and smarter than ever before.
+        </p>
+
+        <!-- Feature Highlights -->
+        <div class="flex flex-wrap justify-center gap-4 sm:gap-6 text-sm sm:text-base text-gray-400">
+          <div class="flex items-center space-x-2">
+            <span class="w-2 h-2 bg-orange-500 rounded-full animate-pulse"></span>
+            <span>3D Visualization</span>
+          </div>
+          <div class="flex items-center space-x-2">
+            <span class="w-2 h-2 bg-blue-500 rounded-full animate-pulse delay-300"></span>
+            <span>AI Recommendations</span>
+          </div>
+          <div class="flex items-center space-x-2">
+            <span class="w-2 h-2 bg-orange-500 rounded-full animate-pulse delay-700"></span>
+            <span>Budget Optimization</span>
+          </div>
+        </div>
+
+        <!-- CTA Button -->
+        <div class="pt-8">
+          <a 
+            href="#services" 
+            class="inline-flex items-center px-8 py-4 bg-gradient-to-r from-orange-500 to-orange-600 text-white font-Roboto font-semibold text-lg rounded-full hover:from-orange-600 hover:to-orange-700 transform hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl"
+          >
+            Get Started
+            <span class="ml-2 animate-bounce">→</span>
+          </a>
+        </div>
+
+        <!-- Trust Indicators -->
+        <div class="pt-12 flex flex-col sm:flex-row justify-center items-center gap-8 text-gray-400">
+          <div class="text-center">
+            <div class="text-2xl font-bold text-white">1000+</div>
+            <div class="text-sm">Happy Customers</div>
+          </div>
+          <div class="hidden sm:block w-px h-8 bg-gray-600"></div>
+          <div class="text-center">
+            <div class="text-2xl font-bold text-white">50+</div>
+            <div class="text-sm">Design Styles</div>
+          </div>
+          <div class="hidden sm:block w-px h-8 bg-gray-600"></div>
+          <div class="text-center">
+            <div class="text-2xl font-bold text-white">24/7</div>
+            <div class="text-sm">AI Support</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Scroll Indicator -->
+    <div class="absolute bottom-8 left-1/2 transform -translate-x-1/2 z-20">
+      <div class="animate-bounce">
+        <div class="w-6 h-10 border-2 border-gray-400 rounded-full flex justify-center">
+          <div class="w-1 h-3 bg-gray-400 rounded-full mt-2 animate-pulse"></div>
+        </div>
+      </div>
+    </div>
+
+    <style>
+      @keyframes fade-in {
+        from {
+          opacity: 0;
+          transform: translateY(30px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+      
+      .animate-fade-in {
+        animation: fade-in 1s ease-out;
+      }
+    </style>
+
+    <script>
+      // Smooth scrolling for CTA button
+      document.addEventListener('DOMContentLoaded', function() {
+        const ctaButton = document.querySelector('a[href="#services"]');
+        
+        ctaButton.addEventListener('click', function(e) {
+          e.preventDefault();
+          const targetSection = document.querySelector('#services');
+          if (targetSection) {
+            targetSection.scrollIntoView({
+              behavior: 'smooth',
+              block: 'start'
+            });
+          }
+        });
+
+        // Parallax effect for background elements
+        window.addEventListener('scroll', function() {
+          const scrolled = window.pageYOffset;
+          const parallaxElements = document.querySelectorAll('.absolute.inset-0 > div');
+          
+          parallaxElements.forEach((element, index) => {
+            const speed = 0.5 + (index * 0.1);
+            element.style.transform = `translateY(${scrolled * speed}px)`;
+          });
+        });
+
+        // Add entrance animation delay for elements
+        const animatedElements = document.querySelectorAll('.animate-pulse, .animate-bounce');
+        animatedElements.forEach((element, index) => {
+          element.style.animationDelay = `${index * 200}ms`;
+        });
+      });
+    </script>
+  </section>
+</div>
+</element><element id="28411bed-b585-409d-9f8f-b15a6e317363" data-section-id="28411bed-b585-409d-9f8f-b15a6e317363">
+
+<div id="root">
+  <section id="about" class="py-20 bg-gray-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <!-- Section Header -->
+      <div class="text-center mb-16">
+        <h2 class="font-Roboto text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
+          About
+        </h2>
+        <div class="w-24 h-1 bg-gradient-to-r from-orange-500 to-orange-600 mx-auto mb-8"></div>
+      </div>
+
+      <!-- Main Content Grid -->
+      <div class="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center mb-16">
+        <!-- Left Content -->
+        <div class="space-y-8">
+          <div class="space-y-6">
+            <p class="font-Lora text-lg text-gray-700 leading-relaxed">
+              At HomeFurnishTech, we believe that everyone deserves a beautifully designed home. Our AI-driven tools simplify the intricate process of interior design.
+            </p>
+            <p class="font-Lora text-lg text-gray-700 leading-relaxed">
+              Leveraging advanced algorithms and machine learning, our solutions provide personalized recommendations tailored to your unique style and preferences.
+            </p>
+            <p class="font-Lora text-lg text-gray-700 leading-relaxed">
+              Whether you're updating a single room or overhauling an entire home, we eliminate guesswork and inspire creativity.
+            </p>
+          </div>
+
+          <!-- Key Features -->
+          <div class="grid sm:grid-cols-2 gap-6">
+            <div class="flex items-start space-x-3">
+              <div class="w-2 h-2 bg-orange-500 rounded-full mt-3 flex-shrink-0"></div>
+              <div>
+                <h4 class="font-Roboto font-semibold text-gray-900 mb-1">AI-Powered</h4>
+                <p class="font-Lora text-sm text-gray-600">Advanced algorithms for smart recommendations</p>
+              </div>
+            </div>
+            <div class="flex items-start space-x-3">
+              <div class="w-2 h-2 bg-blue-500 rounded-full mt-3 flex-shrink-0"></div>
+              <div>
+                <h4 class="font-Roboto font-semibold text-gray-900 mb-1">3D Visualization</h4>
+                <p class="font-Lora text-sm text-gray-600">Rich, accurate space representations</p>
+              </div>
+            </div>
+            <div class="flex items-start space-x-3">
+              <div class="w-2 h-2 bg-orange-500 rounded-full mt-3 flex-shrink-0"></div>
+              <div>
+                <h4 class="font-Roboto font-semibold text-gray-900 mb-1">Personalized</h4>
+                <p class="font-Lora text-sm text-gray-600">Tailored to your unique style</p>
+              </div>
+            </div>
+            <div class="flex items-start space-x-3">
+              <div class="w-2 h-2 bg-blue-500 rounded-full mt-3 flex-shrink-0"></div>
+              <div>
+                <h4 class="font-Roboto font-semibold text-gray-900 mb-1">User-Friendly</h4>
+                <p class="font-Lora text-sm text-gray-600">Intuitive design process</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Image -->
+        <div class="relative">
+          <div class="relative overflow-hidden rounded-2xl shadow-xl">
+            <img 
+              src="https://images.unsplash.com/photo-1744526313269-6b56ac9f9d46?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w2MzQ2fDB8MXxzZWFyY2h8MXx8aW50ZXJpb3IlMjUyMGRlc2lnbiUyNTIwbW9kZXJuJTI1MjBzb3BoaXN0aWNhdGVkJTI1MjB0ZWNobm9sb2d5fGVufDF8MHx8fDE3NTAzMjM0MzF8MA&ixlib=rb-4.1.0&q=80&w=1080"
+              alt="Modern sophisticated interior design technology"
+              class="w-full h-96 object-cover transform hover:scale-105 transition-transform duration-700"
+              loading="lazy"
+            />
+            <div class="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
+          </div>
+          <!-- Floating Stats Card -->
+          <div class="absolute -bottom-6 -left-6 bg-white rounded-xl shadow-lg p-6 border border-gray-100">
+            <div class="text-center">
+              <div class="text-2xl font-bold text-orange-500 font-Roboto">1000+</div>
+              <div class="text-sm text-gray-600 font-Lora">Happy Customers</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Technology Showcase -->
+      <div class="bg-white rounded-2xl shadow-lg p-8 lg:p-12 border border-gray-100">
+        <div class="grid lg:grid-cols-2 gap-12 items-center">
+          <!-- Technology Image -->
+          <div class="order-2 lg:order-1">
+            <div class="relative overflow-hidden rounded-xl">
+              <img 
+                src="https://images.unsplash.com/photo-1700700736068-95430239551b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w2MzQ2fDB8MXxzZWFyY2h8Mnx8aW50ZXJpb3IlMjUyMGRlc2lnbiUyNTIwbW9kZXJuJTI1MjBzb3BoaXN0aWNhdGVkJTI1MjB0ZWNobm9sb2d5fGVufDF8MHx8fDE3NTAzMjM0MzF8MA&ixlib=rb-4.1.0&q=80&w=1080"
+                alt="3D design technology and modern interior visualization"
+                class="w-full h-80 object-cover transform hover:scale-105 transition-transform duration-700"
+                loading="lazy"
+              />
+            </div>
+          </div>
+
+          <!-- Technology Content -->
+          <div class="order-1 lg:order-2 space-y-6">
+            <div>
+              <h3 class="font-Roboto text-2xl lg:text-3xl font-bold text-gray-900 mb-4">
+                Cutting-Edge Technology
+              </h3>
+              <p class="font-Lora text-lg text-gray-700 leading-relaxed mb-6">
+                Our platform combines artificial intelligence with advanced 3D rendering to deliver unprecedented accuracy in interior design visualization.
+              </p>
+            </div>
+
+            <!-- Technology Stats -->
+            <div class="grid grid-cols-2 gap-6">
+              <div class="text-center p-4 bg-gray-50 rounded-lg">
+                <div class="text-xl font-bold text-orange-500 font-Roboto">50+</div>
+                <div class="text-sm text-gray-600 font-Lora">Design Styles</div>
+              </div>
+              <div class="text-center p-4 bg-gray-50 rounded-lg">
+                <div class="text-xl font-bold text-blue-500 font-Roboto">24/7</div>
+                <div class="text-sm text-gray-600 font-Lora">AI Support</div>
+              </div>
+            </div>
+
+            <!-- CTA Button -->
+            <div class="pt-4">
+              <a 
+                href="#services" 
+                class="inline-flex items-center px-6 py-3 bg-gradient-to-r from-orange-500 to-orange-600 text-white font-Roboto font-semibold rounded-lg hover:from-orange-600 hover:to-orange-700 transform hover:scale-105 transition-all duration-300 shadow-md hover:shadow-lg"
+              >
+                Explore Our Services
+                <span class="ml-2">→</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      // Intersection Observer for animations
+      document.addEventListener('DOMContentLoaded', function() {
+        const observerOptions = {
+          threshold: 0.1,
+          rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver(function(entries) {
+          entries.forEach(entry => {
+            if (entry.isIntersecting) {
+              entry.target.style.opacity = '1';
+              entry.target.style.transform = 'translateY(0)';
+            }
+          });
+        }, observerOptions);
+
+        // Animate elements on scroll
+        const animateElements = document.querySelectorAll('#about .space-y-8, #about .grid, #about .bg-white');
+        animateElements.forEach(el => {
+          el.style.opacity = '0';
+          el.style.transform = 'translateY(30px)';
+          el.style.transition = 'opacity 0.8s ease-out, transform 0.8s ease-out';
+          observer.observe(el);
+        });
+
+        // Smooth scroll for CTA button
+        const ctaButton = document.querySelector('#about a[href="#services"]');
+        if (ctaButton) {
+          ctaButton.addEventListener('click', function(e) {
+            e.preventDefault();
+            const targetSection = document.querySelector('#services');
+            if (targetSection) {
+              targetSection.scrollIntoView({
+                behavior: 'smooth',
+                block: 'start'
+              });
+            }
+          });
+        }
+
+        // Counter animation for stats
+        function animateCounter(element, target) {
+          let current = 0;
+          const increment = target / 50;
+          const timer = setInterval(() => {
+            current += increment;
+            if (current >= target) {
+              current = target;
+              clearInterval(timer);
+            }
+            element.textContent = Math.floor(current) + (target >= 1000 ? '+' : '');
+          }, 30);
+        }
+
+        // Trigger counter animations when stats come into view
+        const statsObserver = new IntersectionObserver(function(entries) {
+          entries.forEach(entry => {
+            if (entry.isIntersecting) {
+              const statNumber = entry.target.querySelector('.text-2xl, .text-xl');
+              if (statNumber && !statNumber.classList.contains('animated')) {
+                statNumber.classList.add('animated');
+                const text = statNumber.textContent;
+                const number = parseInt(text.replace(/\D/g, ''));
+                animateCounter(statNumber, number);
+              }
+            }
+          });
+        }, { threshold: 0.5 });
+
+        const statCards = document.querySelectorAll('#about .text-center');
+        statCards.forEach(card => statsObserver.observe(card));
+      });
+    </script>
+  </section>
+</div>
+</element><element id="9aab3777-2ceb-4e8f-b46d-aca4d427a0b7" data-section-id="9aab3777-2ceb-4e8f-b46d-aca4d427a0b7">
+
+<div id="root">
+  <section id="services" class="py-20 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <!-- Section Header -->
+      <div class="text-center mb-16">
+        <h2 class="font-Roboto text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
+          Services
+        </h2>
+        <div class="w-24 h-1 bg-gradient-to-r from-orange-500 to-orange-600 mx-auto mb-8"></div>
+        <p class="font-Lora text-lg text-gray-600 max-w-3xl mx-auto">
+          Discover our comprehensive suite of AI-powered tools designed to transform your interior design experience.
+        </p>
+      </div>
+
+      <!-- Services Grid -->
+      <div class="grid lg:grid-cols-2 gap-12 mb-16">
+        <!-- Service 1: Smart Room Planner -->
+        <div class="bg-gray-50 rounded-2xl p-8 border border-gray-100 hover:shadow-lg transition-shadow duration-300">
+          <div class="mb-6">
+            <img 
+              src="https://images.unsplash.com/photo-1701170645257-8345722edf47?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w2MzQ2fDB8MXxzZWFyY2h8MXx8c21hcnQlMjUyMHJvb20lMjUyMHBsYW5uaW5nJTI1MjBtb2Rlcm4lMjUyMHZpc3VhbGl6YXRpb258ZW58MXwwfHx8MTc1MDMyMzUwNHww&ixlib=rb-4.1.0&q=80&w=1080"
+              alt="Smart room planning with modern 3D visualization"
+              class="w-full h-48 object-cover rounded-xl mb-6"
+              loading="lazy"
+            />
+          </div>
+          <h3 class="font-Roboto text-2xl font-bold text-gray-900 mb-4">Smart Room Planner</h3>
+          <p class="font-Lora text-gray-700 mb-6 leading-relaxed">
+            A drag-and-drop interface allows users to visualize furniture placement and room layout in 3D, making redecoration and planning intuitive.
+          </p>
+          <ul class="space-y-2 mb-6">
+            <li class="flex items-center text-sm text-gray-600">
+              <span class="w-2 h-2 bg-orange-500 rounded-full mr-3"></span>
+              3D Room Visualization
+            </li>
+            <li class="flex items-center text-sm text-gray-600">
+              <span class="w-2 h-2 bg-orange-500 rounded-full mr-3"></span>
+              Drag & Drop Interface
+            </li>
+            <li class="flex items-center text-sm text-gray-600">
+              <span class="w-2 h-2 bg-orange-500 rounded-full mr-3"></span>
+              Real-time Layout Updates
+            </li>
+          </ul>
+          <button class="service-modal-btn w-full bg-gradient-to-r from-orange-500 to-orange-600 text-white font-Roboto font-semibold py-3 rounded-lg hover:from-orange-600 hover:to-orange-700 transition-all duration-300" data-service="smart-planner">
+            Learn More
+          </button>
+        </div>
+
+        <!-- Service 2: Style Recommendations -->
+        <div class="bg-gray-50 rounded-2xl p-8 border border-gray-100 hover:shadow-lg transition-shadow duration-300">
+          <div class="mb-6">
+            <img 
+              src="https://images.unsplash.com/photo-1701170643159-718e371a211d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w2MzQ2fDB8MXxzZWFyY2h8Mnx8c21hcnQlMjUyMHJvb20lMjUyMHBsYW5uaW5nJTI1MjBtb2Rlcm4lMjUyMHZpc3VhbGl6YXRpb258ZW58MXwwfHx8MTc1MDMyMzUwNHww&ixlib=rb-4.1.0&q=80&w=1080"
+              alt="AI-powered style recommendations and design visualization"
+              class="w-full h-48 object-cover rounded-xl mb-6"
+              loading="lazy"
+            />
+          </div>
+          <h3 class="font-Roboto text-2xl font-bold text-gray-900 mb-4">Style Recommendations</h3>
+          <p class="font-Lora text-gray-700 mb-6 leading-relaxed">
+            Harness AI to receive furniture and decor suggestions based on your tastes. Whether you prefer modern, traditional, or eclectic designs.
+          </p>
+          <ul class="space-y-2 mb-6">
+            <li class="flex items-center text-sm text-gray-600">
+              <span class="w-2 h-2 bg-blue-500 rounded-full mr-3"></span>
+              AI-Powered Suggestions
+            </li>
+            <li class="flex items-center text-sm text-gray-600">
+              <span class="w-2 h-2 bg-blue-500 rounded-full mr-3"></span>
+              Personalized Recommendations
+            </li>
+            <li class="flex items-center text-sm text-gray-600">
+              <span class="w-2 h-2 bg-blue-500 rounded-full mr-3"></span>
+              Multiple Design Styles
+            </li>
+          </ul>
+          <button class="service-modal-btn w-full bg-gradient-to-r from-blue-500 to-blue-600 text-white font-Roboto font-semibold py-3 rounded-lg hover:from-blue-600 hover:to-blue-700 transition-all duration-300" data-service="style-recommendations">
+            Learn More
+          </button>
+        </div>
+
+        <!-- Service 3: Budget Optimization -->
+        <div class="bg-gray-50 rounded-2xl p-8 border border-gray-100 hover:shadow-lg transition-shadow duration-300">
+          <div class="mb-6">
+            <img 
+              src="https://images.unsplash.com/photo-1700700736068-95430239551b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w2MzQ2fDB8MXxzZWFyY2h8M3x8c21hcnQlMjUyMHJvb20lMjUyMHBsYW5uaW5nJTI1MjBtb2Rlcm4lMjUyMHZpc3VhbGl6YXRpb258ZW58MXwwfHx8MTc1MDMyMzUwNHww&ixlib=rb-4.1.0&q=80&w=1080"
+              alt="Budget optimization tools for interior design"
+              class="w-full h-48 object-cover rounded-xl mb-6"
+              loading="lazy"
+            />
+          </div>
+          <h3 class="font-Roboto text-2xl font-bold text-gray-900 mb-4">Budget Optimization</h3>
+          <p class="font-Lora text-gray-700 mb-6 leading-relaxed">
+            Our tools help you estimate costs, compare prices, and find the best deals, ensuring you create your dream space without overspending.
+          </p>
+          <ul class="space-y-2 mb-6">
+            <li class="flex items-center text-sm text-gray-600">
+              <span class="w-2 h-2 bg-green-500 rounded-full mr-3"></span>
+              Cost Estimation Tools
+            </li>
+            <li class="flex items-center text-sm text-gray-600">
+              <span class="w-2 h-2 bg-green-500 rounded-full mr-3"></span>
+              Price Comparison
+            </li>
+            <li class="flex items-center text-sm text-gray-600">
+              <span class="w-2 h-2 bg-green-500 rounded-full mr-3"></span>
+              Deal Finder
+            </li>
+          </ul>
+          <button class="service-modal-btn w-full bg-gradient-to-r from-green-500 to-green-600 text-white font-Roboto font-semibold py-3 rounded-lg hover:from-green-600 hover:to-green-700 transition-all duration-300" data-service="budget-optimization">
+            Learn More
+          </button>
+        </div>
+
+        <!-- Service 4: Virtual Reality Design -->
+        <div class="bg-gray-50 rounded-2xl p-8 border border-gray-100 hover:shadow-lg transition-shadow duration-300">
+          <div class="mb-6">
+            <img 
+              src="https://images.unsplash.com/photo-1727988358508-c0ab923f204a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w2MzQ2fDB8MXxzZWFyY2h8NHx8c21hcnQlMjUyMHJvb20lMjUyMHBsYW5uaW5nJTI1MjBtb2Rlcm4lMjUyMHZpc3VhbGl6YXRpb258ZW58MXwwfHx8MTc1MDMyMzUwNHww&ixlib=rb-4.1.0&q=80&w=1080"
+              alt="Virtual reality design experience with 3D visualization"
+              class="w-full h-48 object-cover rounded-xl mb-6"
+              loading="lazy"
+            />
+          </div>
+          <h3 class="font-Roboto text-2xl font-bold text-gray-900 mb-4">Virtual Reality Design</h3>
+          <p class="font-Lora text-gray-700 mb-6 leading-relaxed">
+            Experience your home like never before with our virtual reality offerings that let you walk through your designs before making decisions.
+          </p>
+          <ul class="space-y-2 mb-6">
+            <li class="flex items-center text-sm text-gray-600">
+              <span class="w-2 h-2 bg-purple-500 rounded-full mr-3"></span>
+              Immersive VR Experience
+            </li>
+            <li class="flex items-center text-sm text-gray-600">
+              <span class="w-2 h-2 bg-purple-500 rounded-full mr-3"></span>
+              Virtual Walkthrough
+            </li>
+            <li class="flex items-center text-sm text-gray-600">
+              <span class="w-2 h-2 bg-purple-500 rounded-full mr-3"></span>
+              Real-scale Visualization
+            </li>
+          </ul>
+          <button class="service-modal-btn w-full bg-gradient-to-r from-purple-500 to-purple-600 text-white font-Roboto font-semibold py-3 rounded-lg hover:from-purple-600 hover:to-purple-700 transition-all duration-300" data-service="vr-design">
+            Learn More
+          </button>
+        </div>
+      </div>
+
+      <!-- Sustainable Choices Section -->
+      <div class="bg-gradient-to-r from-green-50 to-blue-50 rounded-2xl p-8 lg:p-12 border border-gray-100">
+        <div class="grid lg:grid-cols-2 gap-8 items-center">
+          <div>
+            <h3 class="font-Roboto text-2xl lg:text-3xl font-bold text-gray-900 mb-4">Sustainable Choices</h3>
+            <p class="font-Lora text-lg text-gray-700 mb-6 leading-relaxed">
+              We promote eco-friendly furnishings and provide options that balance style with environmental responsibility.
+            </p>
+            <ul class="space-y-3 mb-6">
+              <li class="flex items-center text-gray-700">
+                <span class="w-2 h-2 bg-green-500 rounded-full mr-3"></span>
+                Eco-friendly Material Suggestions
+              </li>
+              <li class="flex items-center text-gray-700">
+                <span class="w-2 h-2 bg-green-500 rounded-full mr-3"></span>
+                Sustainable Brand Partnerships
+              </li>
+              <li class="flex items-center text-gray-700">
+                <span class="w-2 h-2 bg-green-500 rounded-full mr-3"></span>
+                Environmental Impact Tracking
+              </li>
+            </ul>
+            <button class="service-modal-btn bg-gradient-to-r from-green-500 to-green-600 text-white font-Roboto font-semibold px-6 py-3 rounded-lg hover:from-green-600 hover:to-green-700 transition-all duration-300" data-service="sustainable-choices">
+              Explore Sustainable Options
+            </button>
+          </div>
+          <div>
+            <img 
+              src="https://images.unsplash.com/photo-1727988358513-2dd5d706ddfe?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w2MzQ2fDB8MXxzZWFyY2h8NXx8c21hcnQlMjUyMHJvb20lMjUyMHBsYW5uaW5nJTI1MjBtb2Rlcm4lMjUyMHZpc3VhbGl6YXRpb258ZW58MXwwfHx8MTc1MDMyMzUwNHww&ixlib=rb-4.1.0&q=80&w=1080"
+              alt="Sustainable design choices with eco-friendly materials"
+              class="w-full h-80 object-cover rounded-xl shadow-lg"
+              loading="lazy"
+            />
+          </div>
+        </div>
+      </div>
+
+      <!-- CTA Section -->
+      <div class="text-center mt-16">
+        <h3 class="font-Roboto text-2xl font-bold text-gray-900 mb-4">Ready to Transform Your Space?</h3>
+        <p class="font-Lora text-lg text-gray-600 mb-8 max-w-2xl mx-auto">
+          Start your interior design journey today with our comprehensive AI-powered tools.
+        </p>
+        <a 
+          href="#contact" 
+          class="inline-flex items-center px-8 py-4 bg-gradient-to-r from-orange-500 to-orange-600 text-white font-Roboto font-semibold text-lg rounded-full hover:from-orange-600 hover:to-orange-700 transform hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl"
+        >
+          Get Started Today
+          <span class="ml-2">→</span>
+        </a>
+      </div>
+    </div>
+
+    <!-- Service Modal -->
+    <div id="service-modal" class="fixed inset-0 bg-black bg-opacity-50 z-50 hidden items-center justify-center p-4" aria-modal="true" aria-hidden="true">
+      <div class="bg-white rounded-2xl max-w-2xl w-full max-h-[90vh] overflow-y-auto transform transition-all duration-300 scale-95 opacity-0" id="modal-content">
+        <div class="p-6 border-b border-gray-200 flex justify-between items-center">
+          <h3 id="modal-title" class="font-Roboto text-2xl font-bold text-gray-900"></h3>
+          <button id="modal-close" class="text-gray-400 hover:text-gray-600 transition-colors duration-200 text-2xl" aria-label="Close modal">
+            &times;
+          </button>
+        </div>
+        <div class="p-6">
+          <div id="modal-body" class="space-y-4">
+            <!-- Modal content will be populated by JavaScript -->
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        const modal = document.getElementById('service-modal');
+        const modalContent = document.getElementById('modal-content');
+        const modalTitle = document.getElementById('modal-title');
+        const modalBody = document.getElementById('modal-body');
+        const modalClose = document.getElementById('modal-close');
+        const serviceButtons = document.querySelectorAll('.service-modal-btn');
+
+        const serviceData = {
+          'smart-planner': {
+            title: 'Smart Room Planner',
+            content: `
+              <div class="space-y-6">
+                <p class="font-Lora text-gray-700 leading-relaxed">
+                  Our Smart Room Planner revolutionizes how you design your living spaces. With intuitive drag-and-drop functionality, you can experiment with different layouts and furniture arrangements in real-time.
+                </p>
+                <div class="grid md:grid-cols-2 gap-4">
+                  <div class="bg-gray-50 p-4 rounded-lg">
+                    <h4 class="font-Roboto font-semibold text-gray-900 mb-2">Key Features</h4>
+                    <ul class="space-y-2 text-sm text-gray-600">
+                      <li>• 3D room visualization</li>
+                      <li>• Furniture library with 1000+ items</li>
+                      <li>• Measurement tools</li>
+                      <li>• Export to PDF/3D formats</li>
+                    </ul>
+                  </div>
+                  <div class="bg-gray-50 p-4 rounded-lg">
+                    <h4 class="font-Roboto font-semibold text-gray-900 mb-2">Benefits</h4>
+                    <ul class="space-y-2 text-sm text-gray-600">
+                      <li>• Save time and money</li>
+                      <li>• Visualize before purchasing</li>
+                      <li>• Avoid costly mistakes</li>
+                      <li>• Professional results</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            `
+          },
+          'style-recommendations': {
+            title: 'AI Style Recommendations',
+            content: `
+              <div class="space-y-6">
+                <p class="font-Lora text-gray-700 leading-relaxed">
+                  Our AI-powered style recommendation engine learns your preferences and suggests furniture, colors, and decor that match your unique taste and lifestyle.
+                </p>
+                <div class="grid md:grid-cols-2 gap-4">
+                  <div class="bg-gray-50 p-4 rounded-lg">
+                    <h4 class="font-Roboto font-semibold text-gray-900 mb-2">AI Capabilities</h4>
+                    <ul class="space-y-2 text-sm text-gray-600">
+                      <li>• Style preference analysis</li>
+                      <li>• Color palette generation</li>
+                      <li>• Trend forecasting</li>
+                      <li>• Personalized suggestions</li>
+                    </ul>
+                  </div>
+                  <div class="bg-gray-50 p-4 rounded-lg">
+                    <h4 class="font-Roboto font-semibold text-gray-900 mb-2">Design Styles</h4>
+                    <ul class="space-y-2 text-sm text-gray-600">
+                      <li>• Modern & Contemporary</li>
+                      <li>• Traditional & Classic</li>
+                      <li>• Scandinavian & Minimalist</li>
+                      <li>• Bohemian & Eclectic</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            `
+          },
+          'budget-optimization': {
+            title: 'Budget Optimization Tools',
+            content: `
+              <div class="space-y-6">
+                <p class="font-Lora text-gray-700 leading-relaxed">
+                  Make informed decisions with our comprehensive budget optimization tools. Compare prices, find deals, and stay within your budget while achieving your dream design.
+                </p>
+                <div class="grid md:grid-cols-2 gap-4">
+                  <div class="bg-gray-50 p-4 rounded-lg">
+                    <h4 class="font-Roboto font-semibold text-gray-900 mb-2">Cost Management</h4>
+                    <ul class="space-y-2 text-sm text-gray-600">
+                      <li>• Real-time cost tracking</li>
+                      <li>• Budget alerts & notifications</li>
+                      <li>• Alternative suggestions</li>
+                      <li>• ROI calculations</li>
+                    </ul>
+                  </div>
+                  <div class="bg-gray-50 p-4 rounded-lg">
+                    <h4 class="font-Roboto font-semibold text-gray-900 mb-2">Smart Shopping</h4>
+                    <ul class="space-y-2 text-sm text-gray-600">
+                      <li>• Price comparison across stores</li>
+                      <li>• Deal alerts & discounts</li>
+                      <li>• Seasonal pricing insights</li>
+                      <li>• Bulk purchase optimization</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            `
+          },
+          'vr-design': {
+            title: 'Virtual Reality Design Experience',
+            content: `
+              <div class="space-y-6">
+                <p class="font-Lora text-gray-700 leading-relaxed">
+                  Step into your future home with our cutting-edge VR technology. Experience your designs in immersive virtual reality before making any commitments.
+                </p>
+                <div class="grid md:grid-cols-2 gap-4">
+                  <div class="bg-gray-50 p-4 rounded-lg">
+                    <h4 class="font-Roboto font-semibold text-gray-900 mb-2">VR Features</h4>
+                    <ul class="space-y-2 text-sm text-gray-600">
+                      <li>• Immersive 360° experience</li>
+                      <li>• Real-scale visualization</li>
+                      <li>• Interactive object manipulation</li>
+                      <li>• Lighting simulation</li>
+                    </ul>
+                  </div>
+                  <div class="bg-gray-50 p-4 rounded-lg">
+                    <h4 class="font-Roboto font-semibold text-gray-900 mb-2">Compatibility</h4>
+                    <ul class="space-y-2 text-sm text-gray-600">
+                      <li>• Oculus Rift & Quest</li>
+                      <li>• HTC Vive</li>
+                      <li>• Mobile VR headsets</li>
+                      <li>• Web-based VR viewer</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            `
+          },
+          'sustainable-choices': {
+            title: 'Sustainable Design Choices',
+            content: `
+              <div class="space-y-6">
+                <p class="font-Lora text-gray-700 leading-relaxed">
+                  Create beautiful spaces while caring for the environment. Our sustainable design options help you make eco-conscious choices without compromising on style.
+                </p>
+                <div class="grid md:grid-cols-2 gap-4">
+                  <div class="bg-gray-50 p-4 rounded-lg">
+                    <h4 class="font-Roboto font-semibold text-gray-900 mb-2">Eco-Friendly Materials</h4>
+                    <ul class="space-y-2 text-sm text-gray-600">
+                      <li>• Recycled & upcycled furniture</li>
+                      <li>• Sustainable wood sources</li>
+                      <li>• Non-toxic finishes</li>
+                      <li>• Organic textiles</li>
+                    </ul>
+                  </div>
+                  <div class="bg-gray-50 p-4 rounded-lg">
+                    <h4 class="font-Roboto font-semibold text-gray-900 mb-2">Environmental Impact</h4>
+                    <ul class="space-y-2 text-sm text-gray-600">
+                      <li>• Carbon footprint tracking</li>
+                      <li>• Energy efficiency ratings</li>
+                      <li>• Waste reduction strategies</li>
+                      <li>• Local sourcing options</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            `
+          }
+        };
+
+        // Open modal
+        serviceButtons.forEach(button => {
+          button.addEventListener('click', function() {
+            const serviceType = this.getAttribute('data-service');
+            const service = serviceData[serviceType];
+            
+            if (service) {
+              modalTitle.textContent = service.title;
+              modalBody.innerHTML = service.content;
+              
+              modal.classList.remove('hidden');
+              modal.classList.add('flex');
+              document.body.style.overflow = 'hidden';
+              
+              // Animate modal in
+              setTimeout(() => {
+                modalContent.style.transform = 'scale(1)';
+                modalContent.style.opacity = '1';
+              }, 10);
+              
+              // Focus trap
+              modalClose.focus();
+            }
+          });
+        });
+
+        // Close modal function
+        function closeModal() {
+          modalContent.style.transform = 'scale(0.95)';
+          modalContent.style.opacity = '0';
+          
+          setTimeout(() => {
+            modal.classList.add('hidden');
+            modal.classList.remove('flex');
+            document.body.style.overflow = '';
+          }, 300);
+        }
+
+        // Close modal events
+        modalClose.addEventListener('click', closeModal);
+        
+        modal.addEventListener('click', function(e) {
+          if (e.target === modal) {
+            closeModal();
+          }
+        });
+
+        // ESC key to close modal
+        document.addEventListener('keydown', function(e) {
+          if (e.key === 'Escape' && !modal.classList.contains('hidden')) {
+            closeModal();
+          }
+        });
+
+        // Smooth scroll for CTA button
+        const ctaButton = document.querySelector('a[href="#contact"]');
+        if (ctaButton) {
+          ctaButton.addEventListener('click', function(e) {
+            e.preventDefault();
+            const targetSection = document.querySelector('#contact');
+            if (targetSection) {
+              targetSection.scrollIntoView({
+                behavior: 'smooth',
+                block: 'start'
+              });
+            }
+          });
+        }
+
+        // Intersection Observer for animations
+        const observerOptions = {
+          threshold: 0.1,
+          rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver(function(entries) {
+          entries.forEach(entry => {
+            if (entry.isIntersecting) {
+              entry.target.style.opacity = '1';
+              entry.target.style.transform = 'translateY(0)';
+            }
+          });
+        }, observerOptions);
+
+        // Animate service cards on scroll
+        const serviceCards = document.querySelectorAll('#services .bg-gray-50, #services .bg-gradient-to-r');
+        serviceCards.forEach((card, index) => {
+          card.style.opacity = '0';
+          card.style.transform = 'translateY(30px)';
+          card.style.transition = `opacity 0.8s ease-out ${index * 0.1}s, transform 0.8s ease-out ${index * 0.1}s`;
+          observer.observe(card);
+        });
+      });
+    </script>
+  </section>
+</div>
+</element><element id="ee798613-68f6-465c-9476-b05e5613d2d5" data-section-id="ee798613-68f6-465c-9476-b05e5613d2d5">
+
+<div id="root">
+  <section id="contact" class="py-20 bg-gray-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <!-- Section Header -->
+      <div class="text-center mb-16">
+        <h2 class="font-Roboto text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
+          Contact
+        </h2>
+        <div class="w-24 h-1 bg-gradient-to-r from-orange-500 to-orange-600 mx-auto mb-8"></div>
+        <p class="font-Lora text-lg text-gray-600 max-w-3xl mx-auto">
+          We're here to help you create your perfect living space!
+        </p>
+      </div>
+
+      <!-- Contact Content Grid -->
+      <div class="grid lg:grid-cols-2 gap-12 mb-16">
+        <!-- Contact Form -->
+        <div class="bg-white rounded-2xl shadow-lg p-8 border border-gray-100">
+          <h3 class="font-Roboto text-2xl font-bold text-gray-900 mb-6">Get in Touch</h3>
+          <form id="contact-form" class="space-y-6">
+            <div>
+              <label for="name" class="block font-Roboto text-sm font-medium text-gray-700 mb-2">Name</label>
+              <input 
+                type="text" 
+                id="name" 
+                name="name" 
+                required
+                class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-orange-500 focus:border-orange-500 transition-colors duration-300"
+                placeholder="Your full name"
+              />
+            </div>
+            <div>
+              <label for="email" class="block font-Roboto text-sm font-medium text-gray-700 mb-2">Email</label>
+              <input 
+                type="email" 
+                id="email" 
+                name="email" 
+                required
+                class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-orange-500 focus:border-orange-500 transition-colors duration-300"
+                placeholder="your.email@example.com"
+              />
+            </div>
+            <div>
+              <label for="message" class="block font-Roboto text-sm font-medium text-gray-700 mb-2">Message</label>
+              <textarea 
+                id="message" 
+                name="message" 
+                rows="5" 
+                required
+                class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-orange-500 focus:border-orange-500 transition-colors duration-300 resize-vertical"
+                placeholder="Tell us about your project..."
+              ></textarea>
+            </div>
+            <button 
+              type="submit" 
+              class="w-full bg-gradient-to-r from-orange-500 to-orange-600 text-white font-Roboto font-semibold py-3 px-6 rounded-lg hover:from-orange-600 hover:to-orange-700 transform hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl"
+            >
+              Send Message
+            </button>
+          </form>
+        </div>
+
+        <!-- Contact Information -->
+        <div class="space-y-8">
+          <!-- Contact Details -->
+          <div class="bg-white rounded-2xl shadow-lg p-8 border border-gray-100">
+            <h3 class="font-Roboto text-2xl font-bold text-gray-900 mb-6">Contact Information</h3>
+            <div class="space-y-4">
+              <div class="flex items-start space-x-4">
+                <div class="w-6 h-6 bg-orange-500 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                  <span class="text-white text-xs">📍</span>
+                </div>
+                <div>
+                  <h4 class="font-Roboto font-semibold text-gray-900 mb-1">Address</h4>
+                  <p class="font-Lora text-gray-600 text-sm leading-relaxed">
+                    701, Stellar Tower, Chembur East, Sion Opposite,<br>
+                    Diamond Garden, Basant Garden, Chembur,<br>
+                    Mumbai, Maharashtra 400071
+                  </p>
+                </div>
+              </div>
+              <div class="flex items-start space-x-4">
+                <div class="w-6 h-6 bg-blue-500 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                  <span class="text-white text-xs">📞</span>
+                </div>
+                <div>
+                  <h4 class="font-Roboto font-semibold text-gray-900 mb-1">Phone</h4>
+                  <a href="tel:+918369848475" class="font-Lora text-blue-600 hover:text-blue-700 transition-colors duration-300">
+                    +91 8369848475
+                  </a>
+                </div>
+              </div>
+              <div class="flex items-start space-x-4">
+                <div class="w-6 h-6 bg-green-500 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                  <span class="text-white text-xs">✉️</span>
+                </div>
+                <div>
+                  <h4 class="font-Roboto font-semibold text-gray-900 mb-1">Email</h4>
+                  <a href="mailto:info@homefurnishing.co.in" class="font-Lora text-green-600 hover:text-green-700 transition-colors duration-300">
+                    info@homefurnishing.co.in
+                  </a>
+                </div>
+              </div>
+              <div class="flex items-start space-x-4">
+                <div class="w-6 h-6 bg-purple-500 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                  <span class="text-white text-xs">🌐</span>
+                </div>
+                <div>
+                  <h4 class="font-Roboto font-semibold text-gray-900 mb-1">Website</h4>
+                  <a href="https://homefurnishing.co.in" class="font-Lora text-purple-600 hover:text-purple-700 transition-colors duration-300">
+                    homefurnishing.co.in
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- WhatsApp Button -->
+          <div class="bg-gradient-to-r from-green-500 to-green-600 rounded-2xl p-8 text-white">
+            <h3 class="font-Roboto text-xl font-bold mb-4">Quick Chat</h3>
+            <p class="font-Lora mb-6 opacity-90">
+              Need instant help? Chat with us on WhatsApp for immediate assistance.
+            </p>
+            <a 
+              href="https://wa.me/918369848475?text=Hi%20HomeFurnishTech,%20I'm%20interested%20in%20your%20AI-powered%20interior%20design%20services." 
+              target="_blank"
+              class="inline-flex items-center bg-white text-green-600 font-Roboto font-semibold px-6 py-3 rounded-lg hover:bg-gray-50 transform hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl"
+            >
+              <span class="mr-2">💬</span>
+              Chat with Us
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Google Maps -->
+      <div class="bg-white rounded-2xl shadow-lg overflow-hidden border border-gray-100">
+        <div class="p-6 border-b border-gray-200">
+          <h3 class="font-Roboto text-2xl font-bold text-gray-900">Find Us</h3>
+          <p class="font-Lora text-gray-600 mt-2">Visit our office in Mumbai for personalized consultations.</p>
+        </div>
+        <div class="h-96">
+          <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3771.0234567890123!2d72.8856!3d19.0176!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTnCsDAxJzAzLjQiTiA3MsKwNTMnMDguMiJF!5e0!3m2!1sen!2sin!4v1234567890123!5m2!1sen!2sin"
+            width="100%" 
+            height="100%" 
+            style="border:0;" 
+            allowfullscreen="" 
+            loading="lazy" 
+            referrerpolicy="no-referrer-when-downgrade"
+            title="HomeFurnishTech Office Location"
+          ></iframe>
+        </div>
+      </div>
+
+      <!-- Business Hours -->
+      <div class="mt-12 bg-white rounded-2xl shadow-lg p-8 border border-gray-100">
+        <div class="text-center">
+          <h3 class="font-Roboto text-2xl font-bold text-gray-900 mb-6">Business Hours</h3>
+          <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+            <div class="text-center">
+              <div class="font-Roboto font-semibold text-gray-900 mb-2">Monday - Friday</div>
+              <div class="font-Lora text-gray-600">9:00 AM - 7:00 PM</div>
+            </div>
+            <div class="text-center">
+              <div class="font-Roboto font-semibold text-gray-900 mb-2">Saturday</div>
+              <div class="font-Lora text-gray-600">10:00 AM - 6:00 PM</div>
+            </div>
+            <div class="text-center">
+              <div class="font-Roboto font-semibold text-gray-900 mb-2">Sunday</div>
+              <div class="font-Lora text-gray-600">11:00 AM - 4:00 PM</div>
+            </div>
+            <div class="text-center">
+              <div class="font-Roboto font-semibold text-gray-900 mb-2">Response Time</div>
+              <div class="font-Lora text-gray-600">Within 2 hours</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Success Modal -->
+    <div id="success-modal" class="fixed inset-0 bg-black bg-opacity-50 z-50 hidden items-center justify-center p-4" aria-modal="true" aria-hidden="true">
+      <div class="bg-white rounded-2xl max-w-md w-full p-8 transform transition-all duration-300 scale-95 opacity-0" id="success-modal-content">
+        <div class="text-center">
+          <div class="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
+            <span class="text-green-600 text-2xl">✓</span>
+          </div>
+          <h3 class="font-Roboto text-xl font-bold text-gray-900 mb-2">Message Sent Successfully!</h3>
+          <p class="font-Lora text-gray-600 mb-6">
+            Thank you for contacting us. We'll get back to you within 2 hours.
+          </p>
+          <button 
+            id="success-modal-close" 
+            class="bg-gradient-to-r from-orange-500 to-orange-600 text-white font-Roboto font-semibold px-6 py-3 rounded-lg hover:from-orange-600 hover:to-orange-700 transition-all duration-300"
+          >
+            Close
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        const contactForm = document.getElementById('contact-form');
+        const successModal = document.getElementById('success-modal');
+        const successModalContent = document.getElementById('success-modal-content');
+        const successModalClose = document.getElementById('success-modal-close');
+
+        // Form submission
+        contactForm.addEventListener('submit', function(e) {
+          e.preventDefault();
+          
+          // Get form data
+          const formData = new FormData(contactForm);
+          const name = formData.get('name');
+          const email = formData.get('email');
+          const message = formData.get('message');
+
+          // Basic validation
+          if (!name || !email || !message) {
+            alert('Please fill in all fields.');
+            return;
+          }
+
+          // Email validation
+          const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+          if (!emailRegex.test(email)) {
+            alert('Please enter a valid email address.');
+            return;
+          }
+
+          // Simulate form submission
+          const submitButton = contactForm.querySelector('button[type="submit"]');
+          const originalText = submitButton.textContent;
+          submitButton.textContent = 'Sending...';
+          submitButton.disabled = true;
+
+          // Simulate API call delay
+          setTimeout(() => {
+            // Reset form
+            contactForm.reset();
+            
+            // Reset button
+            submitButton.textContent = originalText;
+            submitButton.disabled = false;
+            
+            // Show success modal
+            showSuccessModal();
+          }, 1500);
+        });
+
+        // Show success modal
+        function showSuccessModal() {
+          successModal.classList.remove('hidden');
+          successModal.classList.add('flex');
+          document.body.style.overflow = 'hidden';
+          
+          setTimeout(() => {
+            successModalContent.style.transform = 'scale(1)';
+            successModalContent.style.opacity = '1';
+          }, 10);
+          
+          successModalClose.focus();
+        }
+
+        // Close success modal
+        function closeSuccessModal() {
+          successModalContent.style.transform = 'scale(0.95)';
+          successModalContent.style.opacity = '0';
+          
+          setTimeout(() => {
+            successModal.classList.add('hidden');
+            successModal.classList.remove('flex');
+            document.body.style.overflow = '';
+          }, 300);
+        }
+
+        // Success modal close events
+        successModalClose.addEventListener('click', closeSuccessModal);
+        
+        successModal.addEventListener('click', function(e) {
+          if (e.target === successModal) {
+            closeSuccessModal();
+          }
+        });
+
+        // ESC key to close modal
+        document.addEventListener('keydown', function(e) {
+          if (e.key === 'Escape' && !successModal.classList.contains('hidden')) {
+            closeSuccessModal();
+          }
+        });
+
+        // Form field animations
+        const formInputs = document.querySelectorAll('#contact-form input, #contact-form textarea');
+        formInputs.forEach(input => {
+          input.addEventListener('focus', function() {
+            this.parentElement.classList.add('focused');
+          });
+          
+          input.addEventListener('blur', function() {
+            if (!this.value) {
+              this.parentElement.classList.remove('focused');
+            }
+          });
+        });
+
+        // Intersection Observer for animations
+        const observerOptions = {
+          threshold: 0.1,
+          rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver(function(entries) {
+          entries.forEach(entry => {
+            if (entry.isIntersecting) {
+              entry.target.style.opacity = '1';
+              entry.target.style.transform = 'translateY(0)';
+            }
+          });
+        }, observerOptions);
+
+        // Animate contact sections on scroll
+        const contactSections = document.querySelectorAll('#contact .bg-white, #contact .bg-gradient-to-r');
+        contactSections.forEach((section, index) => {
+          section.style.opacity = '0';
+          section.style.transform = 'translateY(30px)';
+          section.style.transition = `opacity 0.8s ease-out ${index * 0.1}s, transform 0.8s ease-out ${index * 0.1}s`;
+          observer.observe(section);
+        });
+
+        // Phone number formatting
+        const phoneLinks = document.querySelectorAll('a[href^="tel:"]');
+        phoneLinks.forEach(link => {
+          link.addEventListener('click', function(e) {
+            // Track phone click for analytics
+            console.log('Phone number clicked:', this.href);
+          });
+        });
+
+        // Email link tracking
+        const emailLinks = document.querySelectorAll('a[href^="mailto:"]');
+        emailLinks.forEach(link => {
+          link.addEventListener('click', function(e) {
+            // Track email click for analytics
+            console.log('Email clicked:', this.href);
+          });
+        });
+
+        // WhatsApp link tracking
+        const whatsappLink = document.querySelector('a[href^="https://wa.me/"]');
+        if (whatsappLink) {
+          whatsappLink.addEventListener('click', function(e) {
+            // Track WhatsApp click for analytics
+            console.log('WhatsApp clicked:', this.href);
+          });
+        }
+      });
+    </script>
+  </section>
+</div>
+</element><element id="587393e3-3680-463c-a292-b0d1dc1988d7" data-section-id="587393e3-3680-463c-a292-b0d1dc1988d7">
+
+<div id="root">
+  <footer id="footer" class="bg-neutral-900 text-white py-16">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <!-- Main Footer Content -->
+      <div class="grid lg:grid-cols-4 md:grid-cols-2 gap-8 mb-12">
+        <!-- Brand Section -->
+        <div class="lg:col-span-2">
+          <div class="flex items-center space-x-4 mb-6">
+            <img 
+              src="https://images.unsplash.com/photo-1701170645257-8345722edf47?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w2MzQ2fDB8MXxzZWFyY2h8MXx8bWluaW1hbGlzdCUyNTIwYnJhbmQlMjUyMGxvZ28lMjUyMG1vZGVybiUyNTIwdmVjdG9yfGVufDF8MHx8fDE3NTAzMjM3MjN8MA&ixlib=rb-4.1.0&q=80&w=1080"
+              alt="HomeFurnishTech Brand Logo"
+              class="w-12 h-12 object-cover rounded-lg"
+              loading="lazy"
+            />
+            <div>
+              <h3 class="font-Roboto text-2xl font-bold">HomeFurnishTech</h3>
+              <p class="font-Lora text-gray-400 text-sm">Revolutionizing Your Interior Design Experience</p>
+            </div>
+          </div>
+          <p class="font-Lora text-gray-300 leading-relaxed mb-6 max-w-md">
+            Transform your living spaces with our AI-powered design tools. Create beautiful, functional homes that reflect your unique style.
+          </p>
+          <div class="flex space-x-4">
+            <a href="tel:+918369848475" class="bg-orange-500 hover:bg-orange-600 p-3 rounded-lg transition-colors duration-300">
+              <span class="text-white">📞</span>
+            </a>
+            <a href="mailto:info@homefurnishing.co.in" class="bg-blue-500 hover:bg-blue-600 p-3 rounded-lg transition-colors duration-300">
+              <span class="text-white">✉️</span>
+            </a>
+            <a href="https://wa.me/918369848475" target="_blank" class="bg-green-500 hover:bg-green-600 p-3 rounded-lg transition-colors duration-300">
+              <span class="text-white">💬</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Quick Links -->
+        <div>
+          <h4 class="font-Roboto text-lg font-semibold mb-6">Quick Links</h4>
+          <ul class="space-y-3">
+              <li>
+                <a href="#hero" class="font-Lora text-gray-300 hover:text-orange-400 transition-colors duration-300">Home</a>
+              </li>
+              <li>
+                <a href="#about" class="font-Lora text-gray-300 hover:text-orange-400 transition-colors duration-300">About Us</a>
+              </li>
+              <li>
+                <a href="#services" class="font-Lora text-gray-300 hover:text-orange-400 transition-colors duration-300">Our Services</a>
+              </li>
+              <li>
+                <a href="#contact" class="font-Lora text-gray-300 hover:text-orange-400 transition-colors duration-300">Contact</a>
+              </li>
+              <li>
+                <a href="#privacy" class="font-Lora text-gray-300 hover:text-orange-400 transition-colors duration-300">Privacy Policy</a>
+              </li>
+              <li>
+                <a href="#terms" class="font-Lora text-gray-300 hover:text-orange-400 transition-colors duration-300">Terms of Service</a>
+              </li>
+          </ul>
+        </div>
+
+        <!-- Contact Info -->
+        <div>
+          <h4 class="font-Roboto text-lg font-semibold mb-6">Contact Info</h4>
+          <div class="space-y-4">
+            <div class="flex items-start space-x-3">
+              <span class="text-orange-400 mt-1">📍</span>
+              <div>
+                <p class="font-Lora text-gray-300 text-sm leading-relaxed">
+                  701, Stellar Tower, Chembur East<br>
+                  Mumbai, Maharashtra 400071
+                </p>
+              </div>
+            </div>
+            <div class="flex items-center space-x-3">
+              <span class="text-blue-400">📞</span>
+              <a href="tel:+918369848475" class="font-Lora text-gray-300 hover:text-blue-400 transition-colors duration-300 text-sm">
+                +91 8369848475
+              </a>
+            </div>
+            <div class="flex items-center space-x-3">
+              <span class="text-green-400">✉️</span>
+              <a href="mailto:info@homefurnishing.co.in" class="font-Lora text-gray-300 hover:text-green-400 transition-colors duration-300 text-sm">
+                info@homefurnishing.co.in
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Services Highlight -->
+      <div class="border-t border-gray-700 pt-12 mb-12">
+        <div class="text-center mb-8">
+          <h4 class="font-Roboto text-xl font-semibold mb-4">Our Services</h4>
+          <div class="flex items-center justify-center mb-6">
+            <img 
+              src="https://images.unsplash.com/photo-1638281269990-8fbe0db9375e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w2MzQ2fDB8MXxzZWFyY2h8Mnx8bWluaW1hbGlzdCUyNTIwYnJhbmQlMjUyMGxvZ28lMjUyMG1vZGVybiUyNTIwdmVjdG9yfGVufDF8MHx8fDE3NTAzMjM3MjN8MA&ixlib=rb-4.1.0&q=80&w=1080"
+              alt="Premium design services icon"
+              class="w-16 h-16 object-cover rounded-full opacity-80"
+              loading="lazy"
+            />
+          </div>
+        </div>
+        <div class="grid md:grid-cols-5 gap-6 text-center">
+          <div class="space-y-2">
+            <div class="w-2 h-2 bg-orange-500 rounded-full mx-auto"></div>
+            <p class="font-Lora text-gray-300 text-sm">Smart Room Planner</p>
+          </div>
+          <div class="space-y-2">
+            <div class="w-2 h-2 bg-blue-500 rounded-full mx-auto"></div>
+            <p class="font-Lora text-gray-300 text-sm">Style Recommendations</p>
+          </div>
+          <div class="space-y-2">
+            <div class="w-2 h-2 bg-green-500 rounded-full mx-auto"></div>
+            <p class="font-Lora text-gray-300 text-sm">Budget Optimization</p>
+          </div>
+          <div class="space-y-2">
+            <div class="w-2 h-2 bg-purple-500 rounded-full mx-auto"></div>
+            <p class="font-Lora text-gray-300 text-sm">Virtual Reality Design</p>
+          </div>
+          <div class="space-y-2">
+            <div class="w-2 h-2 bg-yellow-500 rounded-full mx-auto"></div>
+            <p class="font-Lora text-gray-300 text-sm">Sustainable Choices</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Newsletter Signup -->
+      <div class="bg-gradient-to-r from-orange-500/10 to-blue-500/10 rounded-2xl p-8 mb-12 border border-gray-700">
+        <div class="text-center">
+          <h4 class="font-Roboto text-xl font-semibold mb-4">Stay Updated</h4>
+          <p class="font-Lora text-gray-300 mb-6 max-w-md mx-auto">
+            Get the latest design trends and AI-powered interior tips delivered to your inbox.
+          </p>
+          <form class="flex flex-col sm:flex-row gap-4 max-w-md mx-auto">
+            <input 
+              type="email" 
+              placeholder="Enter your email"
+              class="flex-1 px-4 py-3 bg-neutral-800 border border-gray-600 rounded-lg text-white placeholder-gray-400 focus:ring-2 focus:ring-orange-500 focus:border-orange-500 transition-colors duration-300"
+              required
+            />
+            <button 
+              type="submit"
+              class="bg-gradient-to-r from-orange-500 to-orange-600 text-white font-Roboto font-semibold px-6 py-3 rounded-lg hover:from-orange-600 hover:to-orange-700 transition-all duration-300"
+            >
+              Subscribe
+            </button>
+          </form>
+        </div>
+      </div>
+
+      <!-- Bottom Footer -->
+      <div class="border-t border-gray-700 pt-8">
+        <div class="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
+          <div class="text-center md:text-left">
+            <p class="font-Lora text-gray-400 text-sm">
+              © 2024 HomeFurnishTech. All rights reserved.
+            </p>
+            <p class="font-Lora text-gray-500 text-xs mt-1">
+              Owned by <a href="https://scalium.in" target="_blank" class="text-orange-400 hover:text-orange-300 transition-colors duration-300">Scalium.in</a>
+            </p>
+          </div>
+          
+          <div class="flex items-center space-x-6">
+            <a href="#privacy" class="font-Lora text-gray-400 hover:text-orange-400 transition-colors duration-300 text-sm">Privacy Policy</a>
+            <a href="#terms" class="font-Lora text-gray-400 hover:text-orange-400 transition-colors duration-300 text-sm">Terms of Service</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Back to Top Button -->
+      <div class="fixed bottom-8 right-8 z-40">
+        <button 
+          id="back-to-top"
+          class="bg-orange-500 hover:bg-orange-600 text-white p-3 rounded-full shadow-lg hover:shadow-xl transform hover:scale-110 transition-all duration-300 opacity-0 invisible"
+          aria-label="Back to top"
+        >
+          <span class="block w-4 h-4 text-center">↑</span>
+        </button>
+      </div>
+    </div>
+
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        // Newsletter form submission
+        const newsletterForm = document.querySelector('footer form');
+        if (newsletterForm) {
+          newsletterForm.addEventListener('submit', function(e) {
+            e.preventDefault();
+            const email = this.querySelector('input[type="email"]').value;
+            
+            if (email) {
+              // Simulate subscription
+              const button = this.querySelector('button');
+              const originalText = button.textContent;
+              button.textContent = 'Subscribing...';
+              button.disabled = true;
+              
+              setTimeout(() => {
+                button.textContent = 'Subscribed!';
+                this.querySelector('input[type="email"]').value = '';
+                
+                setTimeout(() => {
+                  button.textContent = originalText;
+                  button.disabled = false;
+                }, 2000);
+              }, 1500);
+            }
+          });
+        }
+
+        // Back to top functionality
+        const backToTopButton = document.getElementById('back-to-top');
+        
+        // Show/hide back to top button
+        window.addEventListener('scroll', function() {
+          if (window.pageYOffset > 300) {
+            backToTopButton.style.opacity = '1';
+            backToTopButton.style.visibility = 'visible';
+          } else {
+            backToTopButton.style.opacity = '0';
+            backToTopButton.style.visibility = 'hidden';
+          }
+        });
+
+        // Back to top click
+        backToTopButton.addEventListener('click', function() {
+          window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+          });
+        });
+
+        // Smooth scroll for footer navigation links
+        const footerLinks = document.querySelectorAll('footer a[href^="#"]');
+        footerLinks.forEach(link => {
+          link.addEventListener('click', function(e) {
+            e.preventDefault();
+            const targetId = this.getAttribute('href');
+            const targetSection = document.querySelector(targetId);
+            
+            if (targetSection) {
+              targetSection.scrollIntoView({
+                behavior: 'smooth',
+                block: 'start'
+              });
+            }
+          });
+        });
+
+        // Contact link tracking
+        const contactLinks = document.querySelectorAll('footer a[href^="tel:"], footer a[href^="mailto:"], footer a[href^="https://wa.me/"]');
+        contactLinks.forEach(link => {
+          link.addEventListener('click', function() {
+            console.log('Footer contact clicked:', this.href);
+          });
+        });
+
+        // Intersection Observer for footer animations
+        const observerOptions = {
+          threshold: 0.1,
+          rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver(function(entries) {
+          entries.forEach(entry => {
+            if (entry.isIntersecting) {
+              entry.target.style.opacity = '1';
+              entry.target.style.transform = 'translateY(0)';
+            }
+          });
+        }, observerOptions);
+
+        // Animate footer sections
+        const footerSections = document.querySelectorAll('footer .grid > div, footer .bg-gradient-to-r');
+        footerSections.forEach((section, index) => {
+          section.style.opacity = '0';
+          section.style.transform = 'translateY(20px)';
+          section.style.transition = `opacity 0.6s ease-out ${index * 0.1}s, transform 0.6s ease-out ${index * 0.1}s`;
+          observer.observe(section);
+        });
+
+        // Service dots animation
+        const serviceDots = document.querySelectorAll('footer .w-2.h-2.rounded-full');
+        serviceDots.forEach((dot, index) => {
+          setTimeout(() => {
+            dot.style.animation = 'pulse 2s infinite';
+          }, index * 200);
+        });
+      });
+    </script>
+  </footer>
+</div>
+</element></div>
+        </mountpoint>
+      </main>
+
+      <!-- Core functionality scripts -->
+      <script>
+        // Initialize interactive elements
+        document.addEventListener('DOMContentLoaded', function() {
+          // Add interactive behaviors
+          const interactiveElements = document.querySelectorAll('.interactive-element');
+          interactiveElements.forEach(element => {
+            element.addEventListener('mouseenter', () => {
+              element.classList.add('hover');
+            });
+            element.addEventListener('mouseleave', () => {
+              element.classList.remove('hover');
+            });
+          });
+
+          // Initialize any dynamic content
+          const dynamicContent = document.querySelectorAll('[data-dynamic]');
+          dynamicContent.forEach(content => {
+            // Add fade-in animation
+            content.classList.add('fade-in');
+          });
+        });
+
+        // Handle navigation
+        function handleNavigation(event) {
+          const link = event.currentTarget;
+          if (link.hasAttribute('data-nav')) {
+            event.preventDefault();
+            const target = link.getAttribute('data-nav');
+            document.querySelector(target).scrollIntoView({ behavior: 'smooth' });
+          }
+        }
+
+        // Initialize navigation
+        document.querySelectorAll('[data-nav]').forEach(link => {
+          link.addEventListener('click', handleNavigation);
+        });
+      </script>
+
+      <!-- Body Scripts -->
+      <script id="body-scripts">
+        // This script tag will be replaced with actual scripts.body content
+        if (window.scripts && window.scripts.body) {
+          document.getElementById('body-scripts').outerHTML = window.scripts.body;
+        }
+      </script>
+   </body>
+</html>
